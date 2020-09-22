@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/*  sample_web.css */
+
+.clearfix:after,
+.clearfix::after { content:" "; display:block; clear:both; }
+
+#wrap { width:1600px; height:auto; min-height:5000px; margin:auto; background-color:rgb(248, 248, 248); }
+
+/* headBox ======================================================== */
+#headBox { width:100%; height:150px; background-color:#ddd; }
+  h1 { float:left; width:250px; height: 80px; margin-left:50px;   margin-top:34px; background-color:#3ec; }
+  h1 a { display:block; width:100%; height:100%; text-align:center; }
+  
+  .gnbBox { float:left; margin-left:75px; margin-top:34px;  width:850px;  height:80px; background-color:#3ec; }
+  .gnbBox ul { margin:0; padding:0; list-style:none; width:100%;  height:100%; }
+  .gnbBox ul li { margin-right:20px; margin-top:5px; float:left; width:150px;   height:70px; background-color:#dd7; }
+  .gnbBox ul li:first-child { margin-left:10px; }
+  .gnbBox ul li:last-child { margin-right:0; }
+  
+  .sidemenuBox { float:left; margin-right:50px; margin-top:34px;  margin-left:75px; width:250px; height:80px; background-color:#3ec; }
+
+/* adViewBox ===================================================== */
+#adViewBox { width:100%; height:750px; background-color:#eeeeee; }
+  .view_outer { float:left; margin-top:28px; margin-bottom:28px;  margin-left:150px; width:1300px; height:600px; background-color:#aad; }
+  .view_indicator {float:left; margin-left:375px; width:850px;  height:60px; background-color:#aad; }
+
+  .view_indicator ul { margin:0; padding:0; list-style:none; width:100%; height:100%; }
+  .view_indicator ul li { margin-right:20px; margin-top:10px;  float:left; width:120px; height:40px; background-color:#dd7; }
+  .view_indicator ul li:first-child { margin-left:15px; }
+  .view_indicator ul li:last-child { margin-right:0; }
+
+/* localNavBox ==================================================== */
+#localNavBox { margin-bottom:50px; padding:18px; width:100%; box-sizing:border-box; height:250px; background-color:rgb(226, 226, 226); }
+  .local_nav_outer { margin:auto; width:1500px; height:196px; background-color:#f9e;}
+  .local_nav_outer ul { margin:0; padding:0; list-style:none; width:100%; height:100%; }
+  .local_nav_outer ul li { margin-right:30px; margin-top:23px;  float:left;  width:200px; height:150px; background-color:#dd7; }
+  .local_nav_outer ul li:first-child { margin-left:75px; }
+  .local_nav_outer ul li:last-child { margin-right:0; }
+
+/* popularContentBox ============================================= */
+#popularContentBox { width:100%; height:600px; background-color:#adadad; }
+#popularContentBox h3 { width:1300px; height:50px; margin:auto; background-color:#aad; }
+  .pop_con_area { margin:auto; margin-top: 30px; width:1300px; height:470px; background-color:#aad; }
+  .pop_01, .pop_02, .pop_03 { float:left; margin-top:20px; margin-right:62px; width:350px; height:430px; background-color:#ef7; }
+  .pop_01 { margin-left: 63px;}
+  .pop_con_img, .pop_con_text { margin:auto; margin-top:8px; width:330px; height:200px; background-color:#9ea;}
+
+/* newContentBox ================================================= */
+#newContentBox { margin-bottom:80px; width:100%; height:900px; background-color:rgb(224, 223, 223); }
+#newContentBox h3 { width:1300px; height:50px; margin:auto; margin-top:60px; background-color:#faa;}
+.new_con_area { margin:auto; margin-top: 30px; width:1300px; height:700px; background-color:#faa; }
+
+/* recommendedContentBox ========================================== */
+#recommendedContentBox { margin-bottom:80px;  width:100%; height:600px; background-color:rgb(185, 185, 185); }
+#recommendedContentBox h3 { width:1300px; height:50px; margin:auto;  background-color:#fca; }
+.recom_con_area { width:1300px; height:440px; margin:auto; margin-top: 30px; padding-top:20px; box-sizing:border-box; background-color:#fca;}
+.re_con_part_area { float:left; width:300px; height:400px; margin-left:33px; background-color:#23a; }
+.re_con_part_area:first-of-type { margin-left: 0; }
+
+/* communityBox ================================================== */
+#communityBox { margin-bottom:80px; padding:60px; box-sizing: border-box; width:100%; height:800px; background-color:#ddd;}
+#communityBox h3 { width:1300px; height:50px; margin:auto; background-color:#aad; }
+  .community_area { width:1300px; height:600px; margin:auto; margin-top:30px; background-color:#aad; }
+  .community_con { width:1300px; height:160px; background-color:#eff; margin-bottom:60px;}
+  .community_con:last-of-type { margin-bottom:0; }
+
+/* miniBox ================================================== */
+#miniBox { margin-bottom:80px; padding:40px; box-sizing: border-box; width:100%; height:400px; background-color:#eee;}
+  .mini_ad_outer { width:1500px; height:300px; margin:auto; background-color:#aad;}
+  .mini_con_01 { float:left; margin-left:0; width:750px; height:300px; background-color:#c67;}
+  .mini_con_02 { float:left; margin-left:25px; width:350px; height:300px; background-color:#c67;}
+  .mini_con_03 { float:left; margin-left:25px; width:350px; height:300px; background-color:#c67;}
+
+/* footBox ================================================== */
+#footBox { padding:22px; box-sizing: border-box; width:100%; height:200px; background-color:#333;}
+.footer { width:1300px; height:140px; margin:auto; background-color:#3ec;}

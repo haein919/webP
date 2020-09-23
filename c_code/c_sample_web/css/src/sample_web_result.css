@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/*  sample_web_result.css */
+
+/* reset.css: 웹페이지 디자인작업을 위해, 매번 처리해야하는 번거로운 작업을 미리 설정하여 초기화 시키는 처리 */
+html,body { margin:0; }
+h1,h2,h3,h4,h5,h6,p,div { margin:0; padding:0; }
+
+/* design.css */
+#wrap { width:1600px; height:auto; min-height:500px; margin:auto; 
+margin-bottom:1000px;}
+
+#wrap > div { width:100%; }
+
+/* headBox ======================================================= */
+#headBox { height:150px; padding:34px 50px 0; box-sizing:border-box;
+  background-color:#ddd; }
+  .main_heading { 
+    float:left; width:250px; height:80px; 
+    margin-right:75px;
+    background-color:#0af; }
+  .search_bar { float:left; width:850px; height:80px; background-color:#0af; }
+  .memeber { float:right; width:250px; height:80px; background-color:#0af; }
+
+/* addViewBox ==================================================== */
+#addViewBox { height:auto; min-height:750px; 
+  padding:28px 0; box-sizing:border-box; 
+  background-color:#bbb; }
+  .view_outer { width:1300px; height:600px; 
+    margin:auto; background-color:#0af; }
+  .view_indicator { width:850px; height:60px;margin:auto; margin-top:28px; 
+    background-color:#0af; }
+
+/* localNavBox =================================================== */
+#localNavBox { height:250px; margin-bottom:50px; 
+  padding:20px 0; box-sizing:border-box; background-color:#aaa; }
+  .local_nav_outer { width:1500px; height:100%; margin:auto;             
+    background-color:#0af;}
+
+/* .content_ara  */
+.contetn_area { height:auto; }
+.contetn_area > div { width:100%; 
+  padding-bottom:30px; box-sizing:border-box; }
+.content_area h3 { width:1300px; height:50px; 
+  margin:auto; margin-bottom:30px;
+  background-color: #0af; }
+.content_area .con_area { width:1300px; height:auto; min-height:400px;
+  margin:auto; background-color:#0af; }
+
+/* popularContentBox ============================================= */
+#popularContentBox { height:600px; background-color:#bbb; }
+
+/* newContentBox ================================================= */
+#newContentBox { height:900px; margin-bottom:80px; background-color:#ccc; }
+
+/* recommendedBox ================================================ */
+#recommendedBox { height:600px; margin-bottom:80px; background-color:#bbb; }
+
+/* communityBox ================================================== */
+#communityBox { height:800px; margin-bottom:80px; background-color:#ddd; }
+
+/* miniAdBox ===================================================== */
+#miniAdBox { height:400px; margin-bottom:80px; background-color:#bbb; }
+
+/* footBox ======================================================= */
+#footBox { height:200px; background-color:#aaa; }

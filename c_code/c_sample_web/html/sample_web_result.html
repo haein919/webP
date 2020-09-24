@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../css/src/sample_web_result.css">
-  <title>Document</title>
-
   <!-- cc:ie -->
   <!--[if IE]>
+    <script src="../ie/modernizr-custom.js"></script>
     <link rel="shortcut icon" href="../favicon.png" type="image/png>
-  <![endif]--> <!-- 익스플로어 기반 이라는 뜻 -->
+  <![endif]--> <!-- 익스플로어 상황에서 호환되게 하기 위함  -->
+
+  <title>sample_web_result</title>
  
  <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
  <link rel="apple-touch-icon" href="../img/favicon.png">
@@ -19,7 +20,16 @@
   <div id="wrap">
     <div id="headBox">
       <h1 class="main_heading">site name</h1>
-      <div class="search_bar">search</div>
+      <div class="navigation">
+        <!-- navigation -->
+        <ul class="clearfix">
+          <li>nav_01</li>
+          <li>nav_02</li>
+          <li>nav_03</li>
+          <li>nav_04</li>
+          <li>nav_05</li>
+        </ul>
+      </div>
       <div class="memeber">memeber</div>
     </div>
     <!-- // headBox ========================== -->
@@ -30,14 +40,30 @@
         광고 내용
       </div>
       <div class="view_indicator">
-        광고 순서 확인
+        <!-- 광고 순서 확인 -->
+        <ol class="clearfix">
+          <li>ad_indi_01</li>
+          <li>ad_indi_02</li>
+          <li>ad_indi_03</li>
+          <li>ad_indi_04</li>
+          <li>ad_indi_05</li>
+          <li>ad_indi_06</li>
+        </ol>
       </div>
     </div>
     <!-- // addViewBox ======================= -->
 
     <div id="localNavBox">
+      <!-- local navigation -->
       <div class="local_nav_outer">
-        local navigation
+        <ul class="clearfix">
+          <li>local_nav_01</li>
+          <li>local_nav_02</li>
+          <li>local_nav_03</li>
+          <li>local_nav_04</li>
+          <li>local_nav_05</li>
+          <li>local_nav_06</li>
+        </ul>
       </div>
     </div>
     <!-- // localNavBox ============================ -->
@@ -46,34 +72,125 @@
       <!-- content -->
       <div id="popularContentBox">
         <h3>인기 내용</h3>
-        <div class="con_area pop_con_ara"></div>
+        <div class="con_area pop_con_area clearfix">
+          <div class="pop_card">
+            <div class="img_context">img</div>
+            <div class="narr_context">narr</div>
+          </div>
+          <div class="pop_card">
+            <div class="img_context">img</div>
+            <div class="narr_context">narr</div>
+          </div>
+          <div class="pop_card">
+            <div class="img_context">img</div>
+          <div class="narr_context">narr</div>
+          </div>
+        </div>
       </div>
       <!-- // popularContentBox =========================== -->
 
       <div id="newContentBox">
         <h3>최신 내용</h3>
-        <div class="con_area new_con_ara"></div>
+        <div class="con_area new_con_area clearfix">
+          <div class="new_con_title_area">
+            <div class="new_con_title_img"></div>
+            <div class="new_con_title_text">
+              <div class="new_con_title_text_01"></div>
+              <div class="new_con_title_text_02"></div>
+            </div>
+          </div>
+          <div class="new_con_more_area">
+            <div class="new_con_more_01">
+              <div class="new_con_more_img"></div>
+              <div class="new_con_more_text"></div>
+            </div>
+            <div class="new_con_more_02">
+              <div class="new_con_more_img"></div>
+              <div class="new_con_more_text"></div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- // newContentBox =================================== -->
 
       <div id="recommendedBox">
         <h3>추천 내용</h3>
-        <div class="con_area recom_con_ara"></div>
+        <div class="con_area recom_con_area clearfix">
+          <div class="re_con_part_area">
+            <div class="re_con_part_img"></div>
+            <div class="re_con_part_text">
+              <p></p>
+            </div>
+          </div>
+          <div class="re_con_part_area">
+            <div class="re_con_part_img"></div>
+            <div class="re_con_part_text">
+              <p></p>
+            </div>
+          </div>
+          <div class="re_con_part_area">
+            <div class="re_con_part_img"></div>
+            <div class="re_con_part_text">
+              <p></p>
+            </div>
+          </div>
+          <div class="re_con_part_area">
+            <div class="re_con_part_img"></div>
+            <div class="re_con_part_text">
+              <p></p>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- // recommendedBox ==================================== -->
       
       <div id="communityBox">
         <h3>community</h3>
-        <div class="con_area community_ara"></div>
+        <div class="con_area community_area clearfix">
+          <ul>
+            <li>
+              <div></div>
+              <dl>
+                <dt></dt>
+                <dd></dd>
+              </dl>
+            </li>
+            <li>   
+              <div></div>
+              <dl>
+                <dt></dt>
+                <dd></dd>
+              </dl>
+            </li>
+            <li>
+              <div></div>
+              <dl>
+                <dt></dt>
+                <dd></dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
       </div>
       <!-- // communityBox ======================================== -->
     </div><!-- // .content_ara -->
 
 
-    <div id="miniAdBox"></div>
+    <div id="miniAdBox">
+      <div class="mini_ad_outer">
+        <div class="mini_con_01"></div>
+        <div class="mini_con_02"></div>
+        <div class="mini_con_03"></div>
+      </div>
+    </div>
     <!-- // miniAdBox =========================================== -->
 
-    <div id="footBox"></div>
+    <div id="footBox">
+      <div class="foot_outer">
+        <div class="foot_info_area"></div>
+        <div class="foot_logo"></div>
+      </div>
+    </div>
     <!-- // footBox ============================================= -->
 
   </div>

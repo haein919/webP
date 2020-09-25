@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- position_02.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../fonts/fontawesome/fontawesome-free-5.14.0-web/css/all.css">
+  <link rel="stylesheet" href="../css/src/position_02.css">
+  <title>웹기초 - 포지션</title>
+ <link rel="shortcut icon" href="../img/icon_01.png" type="image/png">
+ <link rel="apple-touch-icon" href="../img/icon_01.png">
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <div id="headBox">
+      <h1><a href="./contents.html">웹기초</a></h1>
+    </div>
+    <div class="sideBox">
+      <div class="sample_fixed">한쪽으로 치우쳐져있는 요소의 위치</div>
+    </div>
+    <div class="modal_window">
+      <div class="modal_message">
+        <h3>message</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore eius magnam incidunt quam corrupti fugiat eos hic, vero architecto exercitationem quisquam, optio blanditiis repellat alias fugit repellendus in saepe consectetur?</p>
+      </div>
+    </div>
+    <div class="side">우측에 붙이기</div>
+    <div class="adBox">
+      <div class="ad_img_box">
+        <img src="../img/moon.jpg" alt="해당 내용 불러오기">
+        <div class="indicatorBox"></div>
+      </div>
+      <div class="next"></div>
+      <div class="prev"></div>
+    </div>
+    <div id="viewBox">
+      <h2>광고영역</h2>
+      <div class="view_indicator">인디케이터</div>
+      
+      <div class="view_btn">
+        <button type="button" class="next_btn">
+          <span class="hidden">다음</span>
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <button type="button" class="prev_btn">
+          <span class="hidden">이전</span>
+          <i class="fas fa-chevron-left"></i>
+        </button>
+      </div>
+
+      <div class="view_area">
+        <div class="adv_01"></div>
+        <div class="adv_02">adv_02</div>
+        <div class="adv_03">adv_03</div>
+        <div class="adv_04">adv_04</div>
+        <div class="adv_05">
+          <img src="../img/m2.jpg" alt="해당 내용 불러오기">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- script -->
+  <script src="http://unpkg.com/jquery"></script>
+  <script>
+    // console.log($.fn);
+    //$('.modal_window').on('click', function(){
+    //  $(this).fadeOut(300);
+    //});
+    // 화면 아무곳 클릭하면 메시지 창 없애줌
+
+    $('.modal_message').on('click', function(){
+      $('.modal_window').slideUp(300);
+    });
+    // 메시지 창을 클릭해야 없애줌
+
+  </script>
+</body>
+</html>

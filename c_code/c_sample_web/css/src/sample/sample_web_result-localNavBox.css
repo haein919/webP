@@ -1,0 +1,21 @@
+/* smaple_web_result-localNavBox.css */
+
+/* localNavBox =================================================== */
+#localNavBox { position:relative;
+  height:auto; margin-bottom:50px; 
+  padding:20px 0 30px; box-sizing:border-box; background-color:#aaa; }
+
+  .local_btn { position:absolute;
+    width:1550px; height:0; left:0; right:0; top:100px; margin:auto;  }
+
+  .local_btn > button { width:30px; height:30px; font-size:1.8rem;
+    color:#fff; text-shadow:0 0 3px rgba(0,0,0,0.3); }
+    .next_btn { float:right; }
+    .prev_btn { float:left; }
+
+  .local_nav_outer { width:1500px; height:auto; margin:auto;             
+    padding:0 60px; box-sizing:border-box; background-color: var(--step2-color);}
+  .local_nav_outer ul { width:100%; height:auto; }
+  .local_nav_outer li { float:left; width:200px; height:150px;
+    margin:25px 15px;
+    background-color: #fc7; }

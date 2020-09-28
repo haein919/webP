@@ -1,0 +1,6 @@
+/* smaple_web_result-wrap.css */
+
+#wrap { width:var(--max-width_01); height:auto; min-height:500px; margin:auto; 
+  margin-bottom:1000px;}
+  
+  #wrap > div { width:100%; }

@@ -8,10 +8,11 @@ p { margin:0; width:100%; height:auto; line-height:110%;}
 
 .question_02 { width:950px; height:auto; margin:auto; background-color:#ddd;}
 
-.title_img { float:left; width:306px; height:306px; margin:3px; background-color: #acf; }
+.title_img { float:left; width:306px; height:304px; margin:3px; background-color: #acf; }
 
-ul,li { margin:0; padding:0; list-style:none; }
-ul {width: 936px; height:auto; }
-ul:after{ content:" "; display:block; clear:both; }
-li {float:left; width:150px; height: 150px; margin:3px; background-color: #fa0;}
-li:nth-child(4) { height:306px; float:right; }
+.question_02 > ul,
+.question_02 > li { margin:0; padding:0; list-style:none; }
+.question_02 > ul { width: 936px; height:auto; }
+.question_02 > ul:after { content:" "; display:block; clear:both; }
+.question_02 > ul > li {float:left; width:150px; height: 150px; margin:3px; background-color: #fa0;}
+.question_02 > ul > li:nth-child(4) { height:306px; float:right; }

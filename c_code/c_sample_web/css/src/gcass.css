@@ -47,7 +47,7 @@ header,section,article,nav,main,footer,aside,figure { display:block; }
 
       .qna { width:100%; height:150px; background-color:#ace;
       border-radius:100px; }
-      .qna > a { font-size:2.5rem; text-align:center; }
+      .qna > p { font-size:2.5rem; text-align:center;}
 
   #viewBox { 
     float:left;
@@ -108,13 +108,13 @@ header,section,article,nav,main,footer,aside,figure { display:block; }
 
       .family_01_title { 
         float: left;
-        width:100px; height:40px; background-color:#0ae; }
+        width:100px; height:40px; background-color:#6ae; }
       .family_01_text { 
         float: left;
         width:200px; height:40px; background-color:#aae; }
       .family_02_title { 
         float: left;
-        width:100px; height:40px; background-color:#0ae; }
+        width:100px; height:40px; background-color:#6ae; }
       .family_02_text { 
           float: left;
           width:200px; height:40px; background-color:#aae; }

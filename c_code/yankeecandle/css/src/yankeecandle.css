@@ -16,7 +16,7 @@
 /* headBox ========================================================= */
 #headBox { 
   position:fixed; z-index:1000;
-  width:100%; height:150px; background-color:#fff; }
+  width:inherit; height:150px; background-color:#fff; }
   .heading { 
     float:left;
     width:1260px; height:80px; 
@@ -35,19 +35,18 @@
 
     .usermenu { float:right; width:400px; height:inherit; }
 
-    .usermenu > ul { width:100%; height:auto; }
+    .usermenu > ul { width:100%; height:auto; margin-top:40px;}
     .usermenu li { 
-      float:right;
-      width:120px; height:40px;
-      margin:40px 10px 0; }
+      float:left;
+      width:120px; height:40px;}
 
-    .usermenu li:nth-child(1) { text-align:right; border-bottom:2px solid #444;}
+    .usermenu li:nth-child(1) { text-align:right; margin-left:120px; border-bottom:2px solid #444;}
+    .usermenu li:nth-child(2) { text-align:center; margin-left:40px}
     
 #gnbBox { 
   float:left;
   width:1260px; height:70px;
-  margin:auto; margin-left:170px;
-  background-color:#fff; }
+  margin:auto; margin-left:170px; }
 
   .navigation { margin:auto; width:620px; height:70px;}
 

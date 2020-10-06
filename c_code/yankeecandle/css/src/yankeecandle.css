@@ -9,7 +9,7 @@
 
 /* design.css */
 #wrap { width:1600px; height:3100px; 
-  margin:auto;
+  margin:auto; margin-bottom: 50px;
   background-color:#fff; }
 /* wrap ============================================================ */
 
@@ -85,6 +85,7 @@
       border-radius:30px;
       background-color:#fff; }
     .view_indicator li:nth-child(1) {margin-left:20px; }
+    .view_indicator li:hover { background-color:#900; }
 
   .view_outer { position:relative;
     width:100%; height:100%; margin:auto; background-color:#aea;
@@ -93,7 +94,7 @@
    .view_area > div { 
      position:absolute; top:0; left:0;
      width:inherit; height:inherit; color:#fff; }
-     .view_01 { z-index: 3; background-color:#a10909; }
+     .view_01 { z-index: 3; background-image:url("../../img/view_01.jpg"); background-repeat:no-repeat; background-size:100% auto; }
      .view_02 { z-index: 2; background-color:#E486B4; }
      .view_03 { z-index: 1; background-color:#262661; }
 
@@ -117,14 +118,28 @@
 
   .best_img_outer { width:1260px; height:380px;
     margin:auto; margin-top:30px; }
+    .best_img_outer span { display:block; width:0; height:0; overflow: hidden; }
+  
     .articel_01 { float:left; width:300px; height:380px; 
-      margin:0 10px; margin-left:0; background-color:#c44 }
+      margin:0 10px; margin-left:0; 
+      background-image:url("../../img/best_01.jpg"); background-repeat:no-repeat; background-size:100% auto;
+      transition:all 200ms ease;}
     .articel_02 { float:left; width:300px; height:380px; 
-      margin:0 10px; background-color:#727272 }
+      margin:0 10px; background-image:url("../../img/best_02.jpg");
+      background-repeat:no-repeat; background-size:100% auto;
+      transition:all 200ms ease; }
     .articel_03 { float:left; width:300px; height:380px; 
-      margin:0 10px; background-color:#cc4444 }
+      margin:0 10px; background-image:url("../../img/best_03.jpg");
+      background-repeat:no-repeat; background-size:100% auto;
+      transition:all 200ms ease; }
     .articel_04 { float:left; width:300px; height:380px; 
-      margin:0 10px; margin-right:0; background-color:#727272 }
+      margin:0 10px; margin-right:0; 
+      background-image:url("../../img/best_04.jpg");
+      background-repeat:no-repeat; background-size:100% auto;
+      transition:all 200ms ease; }
+    
+    .articel_01:hover, .articel_02:hover, .articel_03:hover,
+    .articel_04:hover { background-size:120% auto; }
 
   .text_outer { width:1260px; height:200px; margin:auto; }
   article { float:left; width:300px; height:200px;
@@ -161,7 +176,8 @@
     .special_area { width:100%; height:100%; }
       .special_area > div { position:absolute; top:0; left:0;
         width:inherit; height:inherit; color:#fff;  }
-        .special_01 { z-index:3; background-color:#35270b; }
+      .special_area span { display:block; width:0; height:0; overflow: hidden; }
+        .special_01 { z-index:3; background-image:url("../../img/special.jpg"); background-repeat:no-repeat; background-size:auto 100%; }
         .special_02 { z-index:2; background-color:#bbba90; }
         .special_03 { z-index:1; background-color:#dd6300; }
     .special_btn { 
@@ -224,4 +240,25 @@ width:125px; height:125px;}
     background-image:url("../../img/sns/sns_blog.png"); background-repeat:no-repeat; background-position:50% 50%; background-size:contain;}
 
 /* footBox ===================================================== */    
-#footBox { width:100%; height:200px; background-color:#313131; }
+#footBox { width:100%; height:200px; 
+  padding:10px; box-sizing:border-box;
+  background-color:#313131; }
+.logo_outer { width:140px; height:50px; 
+  margin:auto; margin-bottom:10px;
+  background-image:url("../../img/logo.png");
+  background-repeat:no-repeat;
+  background-size:contain; }
+
+.corp_area { width:340px; height:30px; margin:auto; }
+.corp_area ul { width:100%; height:auto; }
+.corp_area li { float:left; width:103px; height:30px; margin-right:10px; }
+.corp_area li a { width:auto; height:auto; 
+  font-size:0.7rem; font-weight: bold;
+  color:#fff; text-align:center; }
+
+.addr { width:540px; height:80px; margin:auto; }
+.addr dl { width:100%; height:auto; font-size:0.75rem; }
+.addr dt { display:block; float:left; padding-right: 10px;
+  padding-bottom: 5px; font-style:normal; color:#fff; }
+  .addr dt:nth-child(5) { padding-right:40px; }
+  .addr dt:nth-child(7) { padding-left:150px; }

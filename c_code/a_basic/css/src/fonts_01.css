@@ -1,0 +1,58 @@
+/* fonts_01.css */
+/* @font-face 서체정의 */
+@font-face { font-family: 'Infinity'; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-BoldA1.woff') format('woff'); 
+  font-weight: normal; font-style: normal; }
+
+  /** 웹에서 이해가능한 서체확장자
+    1. eot - IE 하위버전용
+    2. woff - 대부분 브라우저
+    3. woff2 ...
+
+    * @font-face 영역은 사용할 서체에 관해 직접 내용을 설정/정의 하는 곳으로
+    굵기, 기울기, 서체명을 바꿀 수 있다.
+  */
+
+/* font에 대한 설명 */
+
+.part { width:800px; height:auto; padding:16px; padding-left:30px; background-color:#fcd; }
+
+h3 { width:300px; height:50px; line-height:50px; text-align:center;
+  background-color:#fff; }
+
+ul { width:100%; height:auto; }
+.fonts_01 ul li { list-style:decimal; }
+
+.fonts_01 li:nth-child(1) { font-style:italic; }
+.fonts_01 li:nth-child(2) { font-weight:600; }
+.fonts_01 li:nth-child(3) { font-size:16px; }
+.fonts_01 li:nth-child(4) { background-color:#aae; line-height:200%; }
+.fonts_01 li:nth-child(5) { font-family:'Noto Sans CJK KR'; }
+.fonts_01 li:nth-child(6) { font-family:'myriad pro', serif; }
+.fonts_01 li:nth-child(7) { font-family:'Sansita Swashed','Black Han Sans'; }
+.fonts_01 li:nth-child(7) span:nth-of-type(1) { font-weight:300; color:var(--color-white); }
+.fonts_01 li:nth-child(7) span:nth-of-type(2) { font-weight:400; color:var(--color-primary); }
+.fonts_01 li:nth-child(7) span:nth-of-type(3) { font-weight:700; color:var(--color-point); }
+.fonts_01 li:nth-child(8) { font-family:'Infinity'; text-indent:10px; }
+.fonts_01 li:nth-child(9) { letter-spacing:-1px; }
+.fonts_01 li:nth-child(9):first-letter { font-family:Infinity; color:#0af; font-size:2rem; }
+.fonts_01 li:nth-child(10) { word-spacing:10px; }
+.fonts_01 li:nth-child(10)::first-line { color:#fff; text-shadow:0 0 5px var(--color-primary); }
+
+/**font
+  1. font-style 기울기를 설정하는 것으로 normal | italic
+  2. font-weight 굵기를 설정하는 것으로 
+  normal(400) | lighter(200) | light(300) | bold(600) | bolder(800) | black(900)...
+  이지만 실제로는 normal, bold정도만 가지며 서체 디자인이 굵기를 가지고 있는 상태여야만 사용가능
+  3. font-size 서체의 크기를 의미 (%, px, vw, vh...)
+  4. line-height 줄간격을 의미/ 첫줄부터 적용되며, 해당 높이값의 가운데 배치가 된다.
+  5. font-family 서체의 종류를 입력하며, 
+     띄어쓰기, 특수글자는 ""감싸서 처리하고 우선순위의 서체를 먼저 작성 후
+    ','로 구분하여 다음 서체를 선정
+  6. font-family 서체의 종류를 선택하는 기능일 때, 우선순위를 명확하게 지정해야 한다.
+  7. font-face를 이용하여 사용하는 webFont는 내 컴퓨터에 저장되어 있는 서체 대신 
+     별도의 관리하는 공간에서 쓰도록 처리된 기술 (ex.fontawesome)
+  8. text-indent 첫줄 들여쓰기로 -값을 사용하면 왼쪽으로 이동한다.
+  9. letter-spacing 기본은 0 간격을 줄일때는 -값, 넓게할 경우 수치를 높이면 된다.
+  10. word-spacing  기본은 0 간격을 줄일때는 -값, 넓게할 경우 수치를 높이면 된다.
+*/

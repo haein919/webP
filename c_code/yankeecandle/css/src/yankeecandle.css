@@ -250,11 +250,12 @@ width:125px; height:125px;}
   background-size:contain; }
 
 .corp_area { width:340px; height:30px; margin:auto; }
-.corp_area ul { width:100%; height:auto; }
-.corp_area li { float:left; width:103px; height:30px; margin-right:10px; }
+.corp_area ul { width:100%; height:auto; text-align:center;}
+.corp_area li { display:inline-block; width:auto; height:auto; margin-right:10px;padding:5px;  }
 .corp_area li a { width:auto; height:auto; 
   font-size:0.7rem; font-weight: bold;
   color:#fff; text-align:center; }
+.corp_area li:last-child { margin-right:0;}
 
 .addr { width:540px; height:80px; margin:auto; }
 .addr dl { width:100%; height:auto; font-size:0.75rem; }

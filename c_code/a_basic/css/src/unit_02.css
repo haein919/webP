@@ -1,0 +1,18 @@
+/* unit_02.css */
+
+#wrap { 
+  position:fixed; top:0; bottom:0; left:0; right:0; margin:auto;
+  width:600px; height:500px; background-color:#aad; }
+
+.vw { 
+  position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);
+  width:50vw; height:30vw; margin:auto; background-color:#faa; }
+
+.vh { 
+  position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);
+  width:50vh; height:20vh; background-color:#edd; }
+
+.ch { 
+  position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);
+  width:10ch; height:100px; background-color:#79d;
+  font-size:1rem; font-weight:normal; font-family: notoSansKR, sans-serif; }

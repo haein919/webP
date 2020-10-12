@@ -11,15 +11,15 @@
     
     .special_text { float:left; width:100%; height:200px;
       margin-top:50px; }
-      .special_text h3 { margin-bottom:15px; }
-      .special_text h4 { color:#777; }
+      .special_text p:nth-child(1) { font-family:'notoSansKR'; font-weight:600; margin-bottom:20px; }
+      .special_text p:nth-child(2) { font-family:'notoSansKR'; font-weight:300; font-style:normal; color:#777; }
 
     .showmore_btn { float:left; width:220px; height:40px;
       border:1px solid #555; }
-      .show_more h5 { width:220px; height:20px; margin:10px 0;
-        font-size:0.8rem; }
-    .show_more h5:hover { color:#fff; }
-    .showmore_btn:hover { background-color:#900; }
+      .show_more { width:100%; height:100%; padding:10px; box-sizing:border-box; }
+      .show_more a { display:block; width:100%; height:100%; margin:auto;
+        font-size:0.8rem; text-align:center; }
+    .showmore_btn:hover { background-color:#900; color:#fff; }
   
   .special_img_outer { 
     position:relative;

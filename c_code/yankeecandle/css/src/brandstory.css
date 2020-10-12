@@ -64,11 +64,21 @@
 #historyBox { width:100%; height:800px; padding:80px 0; box-sizing:border-box; }
   .history_outer { width:100%; height:640px; }
   .history_outer ul { display:block; width:100%; height:auto; }
-  .history_outer li { float:left; width:320px; height:320px; background-color:#edd; }
+  .history_outer li { float:left; width:320px; height:320px; }
   .history_outer a { display:block; width:100%; height:50px; margin-top:270px; text-align:center; color:#fff; font-weight:600; }
-  .history_outer li:nth-child(2n) { background-color:#ddf; }
+  
+  .history_outer li:nth-child(1) { background-image:url("../../img/brandstory/history/history\ \(1\).jpg"); background-repeat:no-repeat; background-size:cover; }
+  .history_outer li:nth-child(2) { background-image:url("../../img/brandstory/history/history\ \(2\).jpg"); background-repeat:no-repeat; background-size:cover; }
+  .history_outer li:nth-child(3) { background-image:url("../../img/brandstory/history/history\ \(3\).jpg"); background-repeat:no-repeat; background-size:cover; }
+  .history_outer li:nth-child(4) { background-image:url("../../img/brandstory/history/history\ \(4\).jpg"); background-repeat:no-repeat; background-size:cover; }
+  .history_outer li:nth-child(5) { background-image:url("../../img/brandstory/history/history\ \(5\).jpg"); background-repeat:no-repeat; background-size:cover; }
+  .history_outer li:nth-child(6) { background-image:url("../../img/brandstory/history/history\ \(6\).jpg"); background-repeat:no-repeat; background-size:cover; }
+  .history_outer li:nth-child(7) { background-image:url("../../img/brandstory/history/history\ \(7\).jpg"); background-repeat:no-repeat; background-size:cover; }
+  .history_outer li:nth-child(8) { background-image:url("../../img/brandstory/history/history\ \(8\).jpg"); background-repeat:no-repeat; background-size:cover; }
+  .history_outer li:nth-child(9) { background-image:url("../../img/brandstory/history/history\ \(9\).jpg"); background-repeat:no-repeat; background-size:cover; }
+  .history_outer li:nth-child(10) { background-image:url("../../img/brandstory/history/history\ \(10\).jpg"); background-repeat:no-repeat; background-size:cover; }
 
-  .history_outer li:hover { background-color:rgba(0,0,0,0.5); cursor: pointer;}
+  .history_outer li:hover { background-color:rgba(0,0,0,0.9); cursor: pointer;}
 
 /* awardsBox ====================================================== */
 #awardsBox { width:100%; height:400px; background-color:#434343;
@@ -80,11 +90,35 @@
   .awards_content { width:100%; height:260px; }
   .awards_content ul { display:block; width:100%; height:auto; }
   .awards_content li { float:left; width:230px; height:260px; 
-    margin:0 42px; background-color:#3cd; }
-  .awards_content h5 { margin-top:220px; text-align:center; color:#fff; }
+    margin:0 42px; }
+  .awards_content .img_wrap { width:100%; height:200px; background-color:#fff; }
+  .awards_content p { margin-top:10px; text-align:center; color:#fff; }
 
 /* locationBox =================================================== */
-#locationBox { width:100%; height:650px; background-color:#eee; }
- .location_outer { width:1300px; height:610px; margin:auto; padding:20px; box-sizing:border-box; background-color:#edd; }
+#locationBox { width:100%; height:650px; }
+ .location_outer { width:1300px; height:610px; margin:auto; padding:20px; box-sizing:border-box;  }
  .location_title { width:460px; height:60px; margin:auto; }
  .location_title h2 { text-transform:uppercase; text-align:center; }
+
+ .loc_01,
+ .loc_02 { float:left; width:620px; height:510px;}
+ .loc_01 { margin-right:20px; }
+
+    .loc_01_img, .loc_02_img { width:100%; height:350px; }
+    .loc_01_img { background-image:url("../../img/brandstory/loc_01.jpg");
+      background-repeat:no-repeat; background-size:contain; }
+    .loc_02_img { background-image:url("../../img/brandstory/loc_02.jpg");
+      background-repeat:no-repeat; background-size:cover; }
+    
+    .loc_01_context, .loc_02_context 
+    { width:460px; height:120px;  margin:auto; margin-top:20px; }
+
+    .location_content h3 { font-family:'notoSansKR'; font-size:1rem;}
+    .loc_01_context div,
+    .loc_02_context div { width:460px; height:60px; margin-top:30px; }
+    .loc_01_context dl,
+    .loc_02_context dl { float:left; width:230px; height:60px;}
+    .loc_01_context dt,
+    .loc_02_context dt { font-family:'notoSansKR'; font-size:0.8rem; color:#333; }
+    .loc_01_context dd,
+    .loc_02_context dd { font-family:'notoSansKR'; font-size:0.6rem; color:#777; }

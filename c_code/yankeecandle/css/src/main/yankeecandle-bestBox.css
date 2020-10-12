@@ -8,7 +8,7 @@
     margin:auto; }
   #bestBox h2 {
     padding-top:15px; box-sizing:border-box;
-    width:inherit; height:inherit; text-align:center; }
+    width:inherit; height:inherit; text-align:center; text-transform:uppercase; }
 
   .best_btn {
     position:absolute; z-index:50;
@@ -21,29 +21,29 @@
     margin:auto; margin-top:30px; }
     .best_img_outer span { display:block; width:0; height:0; overflow: hidden; }
   
-    .articel_01 { float:left; width:300px; height:380px; 
+    .article_01 { float:left; width:300px; height:380px; 
       margin:0 10px; margin-left:0; 
       background-image:url("../../../img//main/best/best_01.jpg"); background-repeat:no-repeat; background-size:100% auto;
       transition:all 200ms ease;}
-    .articel_02 { float:left; width:300px; height:380px; 
+    .article_02 { float:left; width:300px; height:380px; 
       margin:0 10px; background-image:url("../../../img/main/best/best_02.jpg");
       background-repeat:no-repeat; background-size:100% auto;
       transition:all 200ms ease; }
-    .articel_03 { float:left; width:300px; height:380px; 
+    .article_03 { float:left; width:300px; height:380px; 
       margin:0 10px; background-image:url("../../../img/main/best/best_03.jpg");
       background-repeat:no-repeat; background-size:100% auto;
       transition:all 200ms ease; }
-    .articel_04 { float:left; width:300px; height:380px; 
+    .article_04 { float:left; width:300px; height:380px; 
       margin:0 10px; margin-right:0; 
       background-image:url("../../../img/main/best/best_04.jpg");
       background-repeat:no-repeat; background-size:100% auto;
       transition:all 200ms ease; }
     
-    .articel_01:hover, .articel_02:hover, .articel_03:hover,
-    .articel_04:hover { background-size:120% auto; }
+    .article_01:hover, .article_02:hover, .article_03:hover,
+    .article_04:hover { background-size:120% auto; }
 
   .text_outer { width:1260px; height:200px; margin:auto; }
-  article { float:left; width:300px; height:200px;
+  .article { float:left; width:300px; height:200px;
     padding:30px; box-sizing:border-box;
     margin:0 10px; background-color:#fff; text-align:center; }
     .article_text_01 { margin-left:0; }

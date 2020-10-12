@@ -23,9 +23,9 @@ width:125px; height:125px;}
 .video_title { 
   float:left; margin-top:100px;
   width:180px; height:25px; }
-  .video_title h4 { color:rgba(255,255,255,0.7); font-size:1.25rem;}
+  .video_title h2 { text-transform:uppercase; color:rgba(255,255,255,0.7); font-size:1.25rem;}
 
 .video_text { 
   float:left; margin-top:50px;
   width:560px; height:160px; }
-  .video_text h3 { color:rgba(255,255,255,0.7); font-size:3rem; }
+  .video_text p { color:rgba(255,255,255,0.7); font-size:3rem; font-weight:900; }

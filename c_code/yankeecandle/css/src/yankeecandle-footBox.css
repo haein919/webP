@@ -19,7 +19,10 @@
 
 .addr { width:540px; height:80px; margin:auto; }
 .addr dl { width:100%; height:auto; font-size:0.75rem; }
-.addr dt { display:block; float:left; padding-right: 10px;
+.addr dt { display:block; float:left; padding-right: 5px;
   padding-bottom: 5px; font-style:normal; color:#fff; }
-  .addr dt:nth-child(5) { padding-right:40px; }
-  .addr dt:nth-child(7) { padding-left:150px; }
+.addr dd { display:block; float:left; font-style:normal; color:#fff; margin-right:10px; 
+  margin-bottom:5px;}
+.addr dd:nth-of-type(4) { margin-right:100px; }
+.addr dd:nth-of-type(6) { margin-right:270px; }
+.addr dt:nth-of-type(7) { margin-left:150px;}

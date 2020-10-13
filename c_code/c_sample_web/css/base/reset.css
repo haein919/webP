@@ -2,7 +2,7 @@
 /* reset.css: 
    웹페이지 디자인작업을 위해, 매번 처리해야하는 번거로운 작업을 미리 설정하여 초기화 시키는 처리 
 */
-html,body { margin:0; }
+html,body { margin:0; font-family: 'Roboto', sans-serif; color:#333; }
 h1,h2,h3,h4,h5,h6,p,div { margin:0; padding:0; }
 ul,ol,dl,dd,dt,dd { margin:0; padding:0; list-style:none; }
 button { margin:0; padding:0; border:0; background-color:transparent; cursor:pointer; }

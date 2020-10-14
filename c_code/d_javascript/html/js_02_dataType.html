@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- js_02_dataType.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var a = 2020;
+    var b = '2020';
+    var c = parseInt(b); // parseInt : 강제로 숫자변환
+
+    // console.log(a+1);
+    // console.log(b+1);
+    // console.log(c+1);
+
+    // console.log( typeof(a), a );
+    // console.log( typeof(b), b );
+    // console.log( typeof(c), c );
+
+    var d = String(a); // String : 숫자를 강제로 문자로 변환
+    var typeD = typeof(d);
+    // console.log( typeD, d );
+
+    // parseInt() : 강제로 숫자로 변환하는 기능
+    // 숫자 처리가 가능한 부분만 변환을 한다. ex)20a20 을 변환하면 문자a전 숫자까지만 변환 처리
+    // 처음부터 숫자로 변환이 되지 않으면 값이 도출되지 않는다
+    // 값을 도출할 수 없는 숫자가 생성 (=NaN)
+
+    // -------------------------------------------------------------------------------------------
+    var t = !!!false;
+    // console.log( typeof(t), t );
+
+    var n =0;
+    // console.log(!!n);
+
+    var nn = typeof(n) == 'number' ;
+    // console.log(nn);
+
+    // !는 반대를 의미 true앞에 !를 사용하면 false가 된다.
+    // 숫자 0:false, 1:true를 의미하기도 한다.
+    // == : 같다를 의미하여 비교할때 사용하는 형태
+  // ------------------------------------------------------------------------------------------------
+    // 새로짓는 것(완전한 신축) = undefined
+    // 기존 아파트를 싹 뜯어 고치는 것 = 리모델링
+  var myName;
+  // console.log(myName); // 값이 정해진게 없어 미정의(undefined)됨.
+  // console.log( typeof(maName) ); // 형타입 자체가 undefined
+
+  myName = 100;
+  // console.log( myName );
+  // console.log( typeof(myName) );
+
+  myName = '문자로 변경하여 대체';
+  // console.log( myName );
+  // console.log( typeof(myName) );
+
+  myName = null;
+  // console.log( myName );
+  // console.log( typeof(myName) );
+ // ------------------------------------------------------------------------------------------------
+  
+  var arr = ['포도','사과','키위']; // 1이 아닌 0부터 순서 부여
+  arr[3] = '딸기'; // 4번째 목록 추가
+  arr[0] = '바나나'; // 첫번째 목록 대체
+  // console.log( arr[3] );
+  
+  var arr2 = [ ['귤', '달래', '포도'], ['오렌지', '키위', '거봉'], 1, 100, null, false, ['배고파'] ];
+  // console.log( arr2[0][2] );
+
+ // ------------------------------------------------------------------------------------------------
+  var obj ={ '귤':'주황색', '키위':'녹색', '포도':'보라색', 'my Color':'#f06', 'lunch':'13:20' }; // 객체는 속성을 가진다
+  // console.log( obj['귤'] );
+  // console.log( obj['my Color'] );
+  // console.log( obj.lunch ); // []로 객체를 호출할 수 있으나 영어로 써져있는 객체는 .으로도 호출 할 수 있다
+  // object형태는 순서가 존재하지 않는다.
+ // ------------------------------------------------------------------------------------------------
+ // 함수는 형태를 먼저 만들고, 이를 호출하며 호출 방법은 같다
+ var myFn = function(){}; // 함수 표현식
+ function myFn2(){};      // 함수 선언식
+
+ var FnTest = function(){
+   var n3 = 7;
+   return n3; // 결과를 도출(반환)하는 명령어
+ };
+
+ var nResult = FnTest();
+
+ var F2 = function(){
+   return (7+10+8)*2;
+ };
+
+//  console.log( F2() );
+
+ var per = function(rel, base){
+  return rel / base * 100 +' %';
+ };
+ console.log( per(5, 50) );
+ console.log( per(255, 54321) );
+
+
+  </script>
+</body>
+</html>

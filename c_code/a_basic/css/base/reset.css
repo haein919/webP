@@ -18,8 +18,8 @@ table,thead,tbody,tfoot,th,td { border:1px solid #333; border-spacing:0; border-
 header, nav, section, article, footer, aside, main, figure, figcaption { display:block; }
 
 a { text-decoration:none; color:inherit; }
-button { background-color:transparent; cursor:pointer; }
-hr { border-bottom:1px solid #333; }
+
+hr { width:100%; height:0; border:0; margin:0; border-bottom:1px solid #333; }
 
 a:hover, a:focus,
 button:hover, button:focus { position:relative; z-index:500; outline:3px solid #f70; }
@@ -38,3 +38,18 @@ if( text ) { text기능을 수행 } else { text이외의 기능 수행 } */
   일단 text이외의 기능 수행
 
   @supports(text수행여부확인) { 수행이 가능하면 text기능수행 } */
+
+/* form 영역 */
+  form, fieldset { margin:0; padding:0; border:0; }
+  legend { display:block; position:absolute; z-index:-1; width:0; height:0; overflow:hidden; }
+
+  input[type="text"], input[type="password"], input[type="search"],
+  input[type="email"], input[type="url"], input[type="number"],
+  input[type="tel"] { border:1px solid #777; box-sizing:border-box; 
+    text-indent:0.5rem; cursor: pointer; }
+
+  button,
+  input[type="button"], input[type="submit"], input[type="reset"],
+  input[type="image"] { margin:0; padding:0; border:0; background-color:transparent; cursor:pointer; }
+
+  textarea, select { margin:0; padding:0; border:1px solid #777; box-sizing:border-box; }

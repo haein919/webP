@@ -1,0 +1,28 @@
+/* login.css */
+/* common.css */
+ul,li,ol { margin:0; padding:0; list-style:none;}
+
+#wrap { width:960px; height:auto; margin:auto; padding:30px 0; background-color:rgb(189, 213, 248); }
+
+.form_area { width:95%; height:auto; min-height:300px; margin:auto; background-color:#dcc; 
+  box-shadow:0 0 5px rgba(0, 0, 0, 0.5); }
+
+form {width:100%; height:auto; min-height:400px; background-color:#fff;
+  padding:30px; box-sizing:border-box; }
+
+fieldset { height:auto; min-height:100px; margin-bottom:20px; padding:10px; box-sizing:border-box; background-color:#fee; }
+
+.login { width:300px; height:auto; background-color:#fff; border:1px solid #eee; }
+.sns_login { width:100%; height:120px; background-color:#fff; }
+.sns_login p { width:150px; height:auto; margin:auto; margin-top:10px; text-align:center; }
+.sns_btn { width:100%; height:80px; margin:auto; padding:10px 60px; box-sizing: border-box;}
+.sns_login button { float:left; margin:10px 5px; padding:0; border:0;}
+.sns_login button img { width:50px; height:50px; }
+
+.insert_area { width:100%; height:200px; }
+.user {width:100%; height:auto; padding:10px 20px; box-sizing:border-box;}
+.user li {float:left; width:120px; height:auto; margin-right:60px; }
+.user li:last-child { width:120px; height:50px; margin-right:0; }
+.insertU { width:120px; }
+.log {margin:0; width:auto;}
+.log button { width:60px; height:50px;}

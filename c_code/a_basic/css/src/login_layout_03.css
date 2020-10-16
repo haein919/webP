@@ -1,0 +1,47 @@
+/* login_layout_03.css */
+
+#wrap { width:600px; height:auto; min-height:400px;
+  margin:auto; padding-top:30px; font-family:notoSansKR, sans-serif; }
+
+  /* #headBox ========================================== */
+  #headBox { width:100%; height:55px; margin-bottom:15px; }
+  h1 { width:210px; height:100%; margin:auto; }
+  h1 > a { background-image:url("../../img/logo-coupang.svg"); background-position:50% 50%; background-size:99% auto; }
+
+  /* #joinBox ========================================= */
+  #joinBox { width:465px; height:auto; min-height:300px; 
+    margin:auto; margin-bottom:10px; }
+
+    form { width:100%; height:auto; }
+
+    fieldset { width:100%; height:auto; min-height:20px; 
+      margin-bottom:28px; }
+    fieldset:last-of-type { margin-bottom:0; }
+
+    .user_info ul { width:100%; height:auto; }
+    .user_info ul > li { width:100%; height:auto; margin-bottom:10px;
+      font-size:1rem; }
+    .user_info ul > li:last-child { margin-bottom:0; }
+
+    .input_wrap { width:100%; height:auto; border:1px solid #777; box-sizing: border-box; }
+    .data_narr { display:none;
+      margin-top:10px; font-size:0.875rem; font-weight:300; 
+      text-indent:0.5rem; }
+
+    .error { border-bottom:2px solid #f22; }
+    .error ~ .data_narr { display:block; color:#f22; }
+
+    .user_info label { float:left; width:48px; 
+      height:48px; border-right:1px solid #777; background-color: #eee; text-align:center; line-height:55px; color:#aaa; font-size:1.2rem; }
+      
+    .user_info input { float:left; width:414px; height:48px; border:0; }
+
+    .join button { width:100%; height:50px; border-radius:2px; color:#fff; font-weight:900; font-size:1.125rem; box-shadow:0 2px 0 #059; background-color:#0074e9; }
+
+
+  /* #footBox ========================================== */
+  #footBox { width:465px; height:auto; min-height:50px; margin:auto; }
+  #footBox p { width:100%; height:auto; margin-bottom: 20px; font-size:0.875rem; }
+
+  #footBox p:nth-of-type(1) a { text-decoration:underline;}
+  #footBox p:nth-of-type(2) { text-align:center;}

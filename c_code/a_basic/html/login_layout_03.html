@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- login_layout_03.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../fonts/fontawesome/fontawesome-free-5.14.0-web/css/all.css">
+  <link rel="stylesheet" href="../fonts/noto_sans/noto_sans.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/login_layout_03.css">
+  <title>쿠팡 회원가입</title>
+ <link rel="shortcut icon" href="../img/icon_01.png" type="image/png">
+ <link rel="apple-touch-icon" href="../img/icon_01.png">
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <header id="headBox">
+      <h1 class="hidden_wrap"><a href="#"><span>coupang</span></a></h1>
+    </header>
+
+    <article id="joinBox">
+      <h2 class="hidden_context">회원가입 정보 입력하기</h2>
+      <form action="#" method="POST">
+        <fieldset class="user_info">
+          <legend>회원정보 입력</legend>
+          <ul>
+            <li>
+              <div class="input_wrap clearfix">
+                <label for="userId">
+                  <i class="fas fa-envelope"></i>
+                  <span class="hidden_context">로그인할 사용자의 아이디 또는 이메일을 입력하세요.</span>
+                </label>
+                <input type="text" id="userId" value="" name="userId" required placeholder="아이디(이메일)" />
+              </div>
+              <p class="data_narr">이메일을 올바르게 입력하세요.</p>
+            </li>
+
+            <li>
+              <div class="input_wrap clearfix">
+                <label for="userPw">
+                  <i class="fas fa-lock"></i>
+                  <span class="hidden_context">입력한 계정의 비밀번호를 입력하세요.</span>
+                </label>
+                <input type="password" id="userPw" value="" name="userPw" required placeholder="비밀번호" />
+              </div>
+              <p class="data_narr">영문/숫자/특수문자 2가지 이상 조합 (8~20자)</p>
+              <p class="data_narr">3개 이상 연속되거나 동일한 문자/숫자 제외</p>
+              <p class="data_narr">아이디(이메일) 제외</p>
+            </li>
+
+            <li>
+              <div class="input_wrap clearfix">
+                <label for="userPwCheck">
+                  <i class="fas fa-lock"></i>
+                  <span class="hidden_context">입력한 계정의 비밀번호를 확인하세요.</span>
+                </label>
+                <input type="password" id="userPwCheck" value="" name="userPwCheck" required placeholder="비밀번호 확인" />
+              </div>
+              <p class="data_narr">확인을 위해 새 비밀번호를 다시 입력해주세요.</p>
+            </li>
+
+            <li>
+              <div class="input_wrap clearfix">
+                <label for="username">
+                  <i class="fas fa-user"></i>
+                  <span class="hidden_context">로그인할 사용자의 아이디 또는 이메일을 입력하세요.</span>
+                </label>
+                <input type="text" id="username" value="" name="username" required placeholder="이름" />
+              </div>
+              <p class="data_narr">이름을 정확히 입력하세요.</p>
+            </li>
+
+            <li>
+              <div class="input_wrap clearfix">
+                <label for="userphone">
+                  <i class="fas fa-mobile-alt"></i>
+                  <span class="hidden_context">사용자의 휴대폰 번호를 입력하세요.</span>
+                </label>
+                <input type="tel" id="userphone" value="" name="userphone" required placeholder="휴대폰 번호" />
+              </div>
+              <p class="data_narr">휴대폰 번호를 정확하게 입력하세요.</p>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="join">
+          <legend>동의하고 회원가입하기</legend>
+          <button type="submit">동의하고 가입하기</button>
+        </fieldset>
+      </form>
+    </article>
+
+    <footer id="footBox">
+      <h2 class="hidden_context">쿠팡 정보</h2>
+      <p>본인은 만 14세 이상이며, <a href="#">쿠팡 이용약관</a>, <a href="#">전자금융거래이용약관</a>, <a href="#">개인정보 수집 및 이용</a>, <a href="#">개인정보 제공 내용</a>을 확인 하였으며, 동의합니다.</p>
+      <p>©Coupang Corp. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- script -->
+  <script></script>
+</body>
+</html>

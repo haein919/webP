@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- login_layout_02.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../fonts/fontawesome/fontawesome-free-5.14.0-web/css/all.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/login_layout_02.css">
+  <title>쿠팡 로그인</title>
+ <link rel="shortcut icon" href="../img/icon_01.png" type="image/png">
+ <link rel="apple-touch-icon" href="../img/icon_01.png">
+</head>
+<body>
+  <!-- layout -->
+  <h1 class="hidden_context">쿠팡 로그인 페이지</h1>
+  <div id="wrap">
+    <div class="logo"><span>쿠팡</span></div>
+    <form action="#" method="POST">
+      <fieldset class="member_login">
+        <legend class="hidden_context">멤버 로그인</legend>
+          <div class="user_sign">
+            <div class="userId">
+              <label for="userId">
+                <i class="far fa-envelope">
+                <span class="hidden_context">아이디/이메일</span></i>
+              </label>
+              <input type="text" id="userId" name="userId" value="" placeholder="아이디(이메일)" />
+            </div>
+            <div class="userPw">
+              <label for="userPw"><i class="fas fa-lock">
+                <span class="hidden_context">비밀번호</span></i>
+              </label>
+              <input type="password" id="userPw" name="userPw" value="" placeholder="비밀번호" />
+            </div>
+          </div>
+      </fieldset>
+
+      <fieldset class="auto_and_find">
+        <legend class="hidden_context">자동로그인 및 회원정보 찾기</legend>
+        <input type="checkbox" name="autoLogin" id="autoLogin" value="" />
+          <label for="autoLogin">자동로그인</label>
+        <a href="#">아이디(이메일)/비밀번호 찾기<i class="fas fa-angle-right"></i></a>
+        
+      </fieldset>
+
+      <fieldset class="login">
+        <legend class="hidden_context">로그인버튼</legend>
+        <input type="submit" value="로그인">
+      </fieldset>
+      <hr />
+      <fieldset class="join">
+        <legend class="hidden_context">회원가입</legend>
+        <a href="#">회원가입</a>
+      </fieldset>
+      
+    </form>
+  </div>
+
+  <!-- script -->
+  <script></script>
+</body>
+</html>

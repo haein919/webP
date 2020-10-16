@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- login.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../fonts/fontawesome/fontawesome-free-5.14.0-web/css/all.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/login.css">
+  <title>로그인페이지 만들기</title>
+ <link rel="shortcut icon" href="../img/icon_01.png" type="image/png">
+ <link rel="apple-touch-icon" href="../img/icon_01.png">
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="./contents.html">웹기초</a></h1>
+    <hr />
+    <div class="form_area">
+      <form action="#" method="POST">
+        <fieldset>
+          <div class="login">
+            <div class="sns_login">
+              <p>소셜로그인</p>
+                <div class="sns_btn">
+                  <button type="submit"><img src="../img/fa.png" alt="facebook icon"></button>
+                  <button type="submit"><img src="../img/naver.png" alt="facebook icon"></button>
+                  <button type="submit"><img src="../img/google.png" alt="facebook icon"></button>
+                </div>
+            </div>
+            <hr />
+            <div class="insert_area">
+              <ul class="user">
+                <li class="insertU">
+                  <ul>
+                    <li>
+                      <label for="userId"></label>
+                      <input type="text" name="userId" id="userId" 
+                        maxlength="7" placeholder="이메일/아이디" value="" required="required"/>
+                    </li>
+                    <li>
+                      <label for="userPw"></label>
+                      <input type="password" name="userPw" id="userPw" placeholder="비밀번호" maxlength="12" value="" required />
+                    </li>
+                  </ul>
+                </li>
+                <li class="log"><button type="submit">로그인</button></li>
+              </ul>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <!-- script -->
+  <script></script>
+</body>
+</html>

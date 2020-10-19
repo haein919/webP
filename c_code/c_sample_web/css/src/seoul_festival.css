@@ -1,0 +1,47 @@
+/* seoul_festival.css */
+
+#wrap { width:100%; min-width:1200px; height:auto; margin:auto;
+background-color:#eee; }
+
+/* #headBox =========================================================================== */
+#headBox { width:100%; height:105px; margin:auto; background-color:#ccc;}
+.setting { float:left; width:100%; height:38px; }
+.setting p { float:left; width:auto; min-width:130px; height:100%; background-color:#fff; }
+
+.lang { float:right; width:auto; min-width:190px; height:100%; margin-right:30px; }
+.lang ul { width:100%; height:100%; background-color:#fff; }
+.lang li { float:left; width:auto; min-width:40px; height:100%; margin:10px;}
+.lang li:nth-child(1) {margin-left:60px; }
+
+.gnb { position:relative; float:left; width:100%; height:67px; background-color:#888;}
+.logo { float:left; width:auto; min-width:130px; height:100%; text-align:center;
+  padding:10px; box-sizing:border-box; }
+
+.navigation { position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);
+  width:auto; min-width:580px; height:100%; background-color: #fff;}
+.navigation ul { width:100%; height:100%; }
+.navigation li { float:left; width:auto; min-width:50px; height:100%; margin:10px;}
+
+.sns { float:right; margin-right:30px; width:auto; min-width:160px; height:100%; }
+
+/* #viewBox ==================================================================== */
+#viewBox { width:100%; height:510px; margin:auto; background-color:#333; }
+
+/* showBox ====================================================================== */
+#showBox { position:relative;
+  width:100%; height:615px; margin:auto; margin-bottom:60px; background-color: #fff; }
+.float_menu { position:absolute; top:-40px; left:10%;
+  width:234px; height:182px; background-color:#f01; }
+.float_menu p { color:#fff; text-indent:10px; font-size:1.2rem; }
+
+.show_info { float:left; width:234px; height:315px; 
+  left:20%;
+  background-color:#ffa; }
+
+#brandBox { width:100%; height:140px; margin:auto; margin-bottom:90px; background-color:#eee; }
+
+#sponBox { width:100%; height:690px; margin:auto; background-color:#ddd; }
+
+#subscribeBox { width:100%; height:200px; margin:auto; background-color:#222; }
+
+#footBox { width:100%; height:330px; margin:auto; background-color:#f03; }

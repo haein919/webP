@@ -1,0 +1,4 @@
+/* kakao/e_value.css */
+
+#valueBox { width:100%; min-width:1440px; height:auto; min-height:680px;
+  margin:auto; padding:40px 30px; box-sizing:border-box; background-color:#fff;}

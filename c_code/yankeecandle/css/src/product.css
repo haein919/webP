@@ -28,7 +28,7 @@
     text-align:center; color:#fff; }
 
 /* productBox ======================================================== */
-#productBox { width:100%; height:auto; margin:auto; background-color:#eee; }
+#productBox { width:100%; height:auto; margin:auto;  }
 #productBox span { display:block; width:0; height:0; overflow:hidden; }
   #productNav { width:1260px; height:120px; margin:auto; margin-top:50px; }
    .nav_title { width:100%; height:70px; margin:auto; border-bottom:2px solid #333; }
@@ -53,10 +53,11 @@
   
   .text_outer { width:100%; height:140px; }
   .text_outer ul { width:140px; height:30px; margin:auto; }
-  .text_outer li { float:left; width:60px; height:30px; margin:0; 
-    padding:5px; box-sizing:border-box; border-radius:30px; font-weight:600; }
+  .text_outer li { float:left; width:40px; height:20px; margin:0; margin-top:5px;
+    padding:3px; box-sizing:border-box;
+    border-radius:30px; font-size:0.7rem; font-weight:600; }
     .text_outer li:nth-child(1) { background-color:#900; color:#fff; text-align:center;
-      text-transform:uppercase; margin-right:20px; }
+      text-transform:uppercase; margin-right:20px; margin-left:20px;}
     .text_outer li:nth-child(2) { background-color:#a6937c; color:#fff; text-align:center;
       text-transform:uppercase; }
   
@@ -68,5 +69,15 @@
   .price { width:100%; height:25px; margin:10px 0; }
   .price p { margin-left:80px; font-family:'notoSansKR'; font-size:0.8rem; font-weight:400; }
 
-  .product_indicator { width:100%; height:40px; background-color:#dde;}
-  .indi_outer { width:300px; height:100%; margin:auto; background-color:#fff;}
+  .product_indicator { width:100%; height:40px; }
+  .indi_outer { width:300px; height:100%; margin:auto; }
+  .indi_btn { float:left; width:40px; height:100%; }
+  .indi_btn button { width:40px; height:40px; text-align:center; padding:10px; box-sizing:border-box; font-size:1.2rem; font-weight:600;}
+  .indi_btn:last-child { float:right; padding-right:0; }
+  
+  .indi_pageNumber { float:left; width:220px; height:100%; }
+  .indi_pageNumber ul { width:100%; height:100%; }
+  .indi_pageNumber li { float:left; width:25px; height:30px; margin:0 9.5px;
+    text-align:center; line-height:35px; font-weight:600; font-size:1rem; }
+
+  .indi_pageNumber li:hover {color:#900; border-bottom:1px solid #900;}

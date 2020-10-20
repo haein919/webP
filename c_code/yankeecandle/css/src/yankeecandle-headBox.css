@@ -16,7 +16,7 @@
 
   .logoBox { float:left; width:460px; height:inherit; }    
     
-    h1 { height:inherit; margin:0 150px; text-align:center; }
+    h1 { height:inherit; margin:0 150px; text-align:center; text-transform:uppercase;}
 
     .usermenu { float:right; width:400px; height:inherit; }
 
@@ -38,7 +38,7 @@
   .navigation > ul { width:100%; height:auto; }
   .navigation li { float:left; width:140px; height:auto;
     margin:25px 10px; 
-    text-align:center; }
+    text-align:center;  text-transform:uppercase; }
   
   .navigation li:hover { font-weight:bold; border-bottom:3px solid #900; }
   .navigation li:nth-child(1) { margin-left:0; }

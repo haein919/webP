@@ -1,0 +1,12 @@
+/* kakao/d_function.css */
+
+#functionBox { width:100%; min-width:1440px; max-width:1600px; height:790px;  margin:auto; padding:40px 30px 0; background-color:#ddd; }
+
+.introduction_01 { float:left; width:49%;height:100%; background-color:#aae; }
+.introduction_02 { float:right; width:49%; height:100%; background-color:#ddf; }
+
+#smalltalkBox { width:100%; min-width:1440px; max-width:1600px; height:auto; min-height:800px; margin:auto; padding:30px; box-sizing:border-box;
+background-color:#38332e;}
+
+#heykakaoBox { width:100%; min-width:1440px; max-width:1600px; height:auto; min-height:400px; margin:auto; padding:50px 30px; box-sizing:border-box;
+background-color:#ddd; }

@@ -1,0 +1,41 @@
+/* seoul_festival/b_header.css */
+
+/* #headBox =========================================================================== */
+#headBox { position:absolute; top:0; left:0; z-index:1000;
+  width:100%; height:8rem; padding-top:44px; box-sizing:border-box; background-color:#ccc;}
+
+  .head_area { position:relative;
+    width:100%; height:5.25rem; padding:20px 34px;
+    box-sizing:border-box; background-color:#000; }
+  h1 { float:left; width:105px; height:45px; background-color:#fa0; }
+  #gnbBox { position:absolute; top:20px; left:50%;  transform:translateX(-50%);
+    width:65%; max-width:1200px; min-width:740px; height:45px; }
+    
+    .title_link {width:100%; height:auto; text-align:center; white-space:nowrap; }
+    .title_link > li { position:relative; display:inline-block; height:2.8125rem; margin-right:1%; }
+    .title_link > li:last-child { margin-right:0; }
+    .title_link > li > a { 
+      padding:10px; line-height:3rem;
+      font-size:1.25rem; color:#fff; }
+
+    .title_link > li::before { content:" "; display:block; width:2px;
+      height:50%; background-color:rgba(255,255,255,0.5); 
+      position:absolute; top:20%; right:-5%; }
+      .title_link > li:last-child::before { display:none;}
+
+    .sub_link { display:none; position:absolute; top:100%; left:0; 
+      padding:10px; background-color:#fff; }
+
+    .title_link > li:hover  .sub_link {display:block;}
+
+  #unbBox { float:right; width:175px; height:45px; background-color:#fa5; }
+
+  .people_lang_area { position:absolute; top:0; left:0; 
+    width:100%; height:2.75rem;
+    box-sizing:border-box; border-bottom:1px solid #a4a4a4; background-color:#fa0; }
+
+    /*
+    .vertical_center { position:relative; }
+    .vertical_center span { display:block; position:absolute; top:50%;
+      transform:translateY(-50%); } 
+    */

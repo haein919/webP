@@ -4,6 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../fonts/fontawesome_5/css/all.css">
+  <link rel="stylesheet" href="../fonts/noto_sans/noto_sans.css">
+
+  <!-- [if IE]>
+    <script src="../ie/modernizr-custom.js"></script>
+    <link rel="stylesheet" href="../css/ie/seoul_festival_ie.css">
+  <![endif]-->
+
   <link rel="stylesheet" href="../css/base/reset.css">
   <link rel="stylesheet" href="../css/base/common.css">
   <link rel="stylesheet" href="../css/src/seoul_festival.css">
@@ -14,75 +21,161 @@
 <body>
   <!-- layout -->
   <div id="wrap">
-    <h1 class="hidden_context">seoul festival</h1>
     <header id="headBox" class="clearfix">
-      <h2 class="hidden_context">head영역</h2>
-      <div class="setting">
-        <p>서울디자인페스티벌</p>
-        <div class="lang">
-          <ul>
-            <li>My Fair</li>
-            <li>KOR</li>
-            <li>ENG</li>
+      <div class="head_area" role="banner">
+        <h1><a href="#">
+          <span class="hidden_context">서울 디자인 페스티벌</span></a></h1>
+        <nav id="gnbBox">
+          <h2 class="hidden_context">global navigation</h2>
+          <ul class="title_link clearfix">
+            <li><a href="#" class="vertical_center">
+              <span>서울디자인페스티벌</span></a>
+              <ul class="sub_link">
+                <li><a href="#">전시개요</a></li>
+                <li><a href="#">SDF 2020</a></li>
+                <li><a href="#">지난 전시회</a></li>
+                <li><a href="#">주최사 소개</a></li>
+              </ul>
+            </li>
+            <li><a href="#">전시구성</a>
+            <ul class="sub_link">
+                <li><a href="#">전시개요</a></li>
+                <li><a href="#">SDF 2020</a></li>
+                <li><a href="#">지난 전시회</a></li>
+                <li><a href="#">주최사 소개</a></li>
+              </ul></li>
+              
+            <li><a href="#">참가안내</a>
+            <ul class="sub_link">
+                <li><a href="#">전시개요</a></li>
+                <li><a href="#">SDF 2020</a></li>
+                <li><a href="#">지난 전시회</a></li>
+                <li><a href="#">주최사 소개</a></li>
+              </ul></li>
+              
+            <li><a href="#">관람안내</a>
+            <ul class="sub_link">
+                <li><a href="#">전시개요</a></li>
+                <li><a href="#">SDF 2020</a></li>
+                <li><a href="#">지난 전시회</a></li>
+                <li><a href="#">주최사 소개</a></li>
+              </ul></li>
+              
+            <li><a href="#">디자인 세미나</a>
+            <ul class="sub_link">
+                <li><a href="#">전시개요</a></li>
+                <li><a href="#">SDF 2020</a></li>
+                <li><a href="#">지난 전시회</a></li>
+                <li><a href="#">주최사 소개</a></li>
+              </ul></li>
+              
+            <li><a href="#">뉴스</a>
+            <ul class="sub_link">
+                <li><a href="#">전시개요</a></li>
+                <li><a href="#">SDF 2020</a></li>
+                <li><a href="#">지난 전시회</a></li>
+                <li><a href="#">주최사 소개</a></li>
+              </ul></li>
+              
           </ul>
-        </div>
+        </nav>
+        <nav id="unbBox">
+          <h2 class="hidden_context">utility navigation</h2>
+          <ul class="clearfix hidden_wrap">
+            <li><a href=""><span></span></a></li>
+            <li><a href=""><span></span></a></li>
+            <li><a href=""><span></span></a></li>
+            <li><a href=""><span></span></a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="gnb">
-        <div class="logo">SDF</div>
-        <div class="navigation">
-          <ul>
-            <li>서울디자인페스티벌</li>
-            <li>전시구성</li>
-            <li>참가안내</li>
-            <li>관람안내</li>
-            <li>디자인세미나</li>
-            <li>뉴스</li>
-          </ul>
-        </div>
-        <div class="sns">socialmedia</div>
-      </nav>
+      <div class="people_lang_area"></div> 
     </header>
+    <!-- // #headBox -->
 
     <section id="viewBox">
-      <h2 class="hidden_context">view 영역</h2>
+      <h2 class="hidden_context">페스티벌 주요 광고</h2>
     </section>
+    <!-- // #viewBox -->
 
-    <section id="showBox">
-      <h2 class="hidden_context">전시 안내영역</h2>
-      <div class=float_menu><p>서울 디자인 페스티벌 2020년 참가 브랜드 모집</p></div>
-      <div class="show_info">
-        <ul>
-          <li>SDF 전시개요보기</li>
-          <li>SDF 매뉴얼 다운로드</li>
-        </ul>
+    <article id="showBox" class="clearfix">
+      <div class="festival_summary_area">
+        <h2>제19회 서울페스티벌 일정 내용</h2>
       </div>
-      <div class="content_area">
-        <P>제19회 서울디자인페스티벌<br />
-          2020/12/9 - 2020/12/13
-        </P>
-        <P>
-          50 days 06 hours 11 minutes 48 seconds
-        </P>
-        <P>
-          서울디자인페스티벌은 1976년부터 축적되어 온 월간 <디자인>의 콘텐츠와 국내외 디자인분야 네트워크를 기반하여 2002년 처음 개막한 디자인 전문 전시입니다. ‘디자이너 프로모션’을 모토로 디자이너, 디자인 브랜드, 기업들과 함께 국내외 디자인의 동향을 선보이고, 국내 디자인 경쟁력을 강화시키기 위해 기획된 행사로 한국 디자이너들의 세계 진출을 돕고 세계 디자이너들을 국내에 소개하는 교류의 장으로 역할 해 왔습니다.
-        </P>
+      <div class="festival_attach_area"></div>
+    </article>
+    <!-- // #showBox -->
+
+    <article id="cardImageBox">
+      <h2 class="hidden_context">페스티벌 주요 이미지</h2>
+      <div class="card_indicator_area"></div>
+      <div class="card_image_area"></div>
+    </article>
+    <!-- // #cardImageBox -->
+
+    <aside id="otherBox" class="clearfix">
+      <div class="pr_area">
+        <h2>서울디자인페스티벌과 함께하는 브랜드 기업과 디자이너</h2>
       </div>
-      
-    </section>
+      <div class="pr_list_area"></div>
+    </aside>
+    <!-- // #otherBox -->
 
-    <section id="brandBox">
-      <h2 class="hidden_context">디자이너 브랜드 소개영역</h2>
-    </section>
+    <article id="sponBox">
+      <h2 class="hidden_context">스폰</h2>
+      <dl class="organized_area">
+        <dt></dt>
+        <dd></dd>
+      </dl>
+      <dl class="managed_area">
+        <dt></dt>
+        <dd></dd>
+      </dl>
+      <dl class="sponsored_area">
+        <dt></dt>
+        <dd></dd>
+      </dl>
+      <dl class="support_area">
+        <dt></dt>
+        <dd></dd>
+      </dl>
+      <dl class="special_area">
+        <dt></dt>
+        <dd></dd>
+      </dl>
+      <dl class="media_area">
+        <dt></dt>
+        <dd></dd>
+      </dl>
+    </article>
+    <!-- // #sponBox -->
 
-    <section id="sponBox">
-      <h2 class="hidden_context">스폰 영역</h2>
-    </section>
+    <article id="newsBox">
+      <div class="news_area">
+        <h2>함께해요! 뉴스레터 구독하기</h2>
+        <div class="search_part">
+          <form action="#" method="POST">
+            <fieldset>
+              <legend>뉴스레터 구독 이메일 작성</legend>
+              <label for="myEmail" class="hidden_context">구독할 이메일 주소를 입력하세요.
+              </label>
+              <input type="text" id="myEmail" value="" name="myEmail" placeholder="이메일" />
+              <input type="submit" value="구독하기" />
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </article>
+    <!-- // #newsBox -->
 
-    <section id="subscribeBox">
-      <h2 class="hidden_context">구독 영역</h2>
-    </section>
-
-    <footer id="footBox"></footer>
+    <footer id="footBox">
+      <div class="info_area">
+        <h2>서울디자인페스티벌 관련 정보</h2>
+      </div>
+      <div class="address_otherlink_area"></div>
+      <div class="individual_area"></div>
+    </footer>
+    <!-- // #footBox -->
   </div>
 
   <!-- script -->

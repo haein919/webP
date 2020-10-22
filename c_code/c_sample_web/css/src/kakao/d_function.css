@@ -1,12 +1,20 @@
 /* kakao/d_function.css */
 
-#functionBox { width:100%; min-width:1440px; max-width:1600px; height:790px;  margin:auto; padding:40px 30px 0; background-color:#ddd; }
+#functionBox { width:100%; height:auto; /*min-height:700px;*/
+  padding:20px; box-sizing:border-box; background-color:#ddd; }
+#functionBox:after {content:" "; display:block; clear:both; }
 
-.introduction_01 { float:left; width:49%;height:100%; background-color:#aae; }
-.introduction_02 { float:right; width:49%; height:100%; background-color:#ddf; }
+.ai_area { float:left; 
+  width:47.916667vw; /* 690/1440*100=47.916667vw*/ 
+  height:29.861111vw; /* 430/1440*100=29.861111vw */
+  min-width:690px; min-height:430px; background-color:#aae; }
+.hey_area { float:right; width:47.916667vw; height:29.861111vw;
+  min-width:690px; min-height:430px; background-color:#ddf; }
 
-#smalltalkBox { width:100%; min-width:1440px; max-width:1600px; height:auto; min-height:800px; margin:auto; padding:30px; box-sizing:border-box;
+#smalltalkBox { width:100%; height:100%; min-height:700px; margin-bottom:25px; padding:20px; box-sizing:border-box;
 background-color:#38332e;}
+.inner_wrap { width:100%; height:100%; background-color:#fa0; }
 
-#heykakaoBox { width:100%; min-width:1440px; max-width:1600px; height:auto; min-height:400px; margin:auto; padding:50px 30px; box-sizing:border-box;
-background-color:#ddd; }
+#heykakaoBox { width:100%; height:180px;  
+  margin-bottom:45px;
+  background-color:#ddd; }

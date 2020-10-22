@@ -1,0 +1,184 @@
+/* mediaQuery_02.css */
+
+/* 공통내용 */
+html,body { width:100%; height:100%; }
+#wrap { width:100%; height:auto; min-width:240px; min-height:800px; background-color:#ccc; }
+
+/* mob_v.css */
+@media screen and (max-width:479px) {
+  /* 브라우저 가로폭320px 기준으로 작업 */
+  #wrap { width:100%; }
+  #headBox { position:fixed; top:0; left:0; z-index:1000;
+    width:100%; height:12.5vw; min-height:2.5rem;  }
+    .head_outer { width:100%; height:100%; 
+      padding:1.25vw 3.75vw 1.875vw; box-sizing:border-box;
+      background-color:#333; }
+
+    .head_outer h1 { float:left; width:6.25rem; height:1.875rem;
+      background-color:#33b88f; color:#fff; text-align:center; font-size:1rem;}
+    
+    .navigation { float:right; width:60px; height:30px; }
+    .navigation ul { width:100%; height:100%; }
+    .navigation li { float:left; height:100%; background-color:#33b88f; }
+    .navigation li:nth-child(1) { width:25px; margin-right:5px; }
+    .navigation li:nth-child(2) { width:30px; }
+
+  #viewBox { width:100%; height:auto; min-height:150vw; 
+    padding-top:39.473vw; box-sizing:border-box;
+    background-color:#bbaa77; }
+  .view_outer { width:100%; height:100%;  }
+  .view_outer li { width:84.375vw; height:18.75vw; 
+    margin:auto; margin-bottom:20px;
+    background-color:#fff; }
+
+  #contentBox { width:100%; height:auto; min-height:102.1875vw; 
+    background-color:#547d77; }
+  .title_shape { width:100%; height:100%; margin:auto; }
+  .title_shape li { float:left; width:46.875vw; min-width:110px; height:41.5625vw; 
+    margin:1.5625vw;
+    background-color:#fff; }
+  .title_shape li:nth-child(2n) { float:right; }
+  .title_shape li:nth-child(1), .title_shape li:nth-child(2) { margin-top:6.25vw;}
+
+  #infoBox { width:100%; height:auto; min-height:133.125vw; 
+    overflow: hidden;
+    background-color:#957de9; }
+  .new_area { width:100%; height:100%; padding-top:40px; min-height:30rem; }
+  .new_area ul { width:100%; height:100%; }
+  .new_area li { width:95.9375vw;  height:21.5625vw; 
+    margin:auto; margin-bottom:10px;
+    background-color:#fff; }
+
+  #footBox { width:100%; height:2.5rem;
+    padding:9px; box-sizing:border-box; background-color:#333; }
+  .foot_logo { width:70.9375vw; height:22px; margin:auto; background-color:#33b88f; }
+  
+}
+/* // mob_v.css ----------- */
+
+/* mob_h.css */
+/* 브라우저 가로폭480px 기준으로 작업 */
+@media screen and (min-width:480px) and (max-width:767px) {
+  #wrap { width:100%; height:100vh;  }
+  #headBox { position:fixed; top:0; left:0; z-index:1000;
+    width:100%; height:3.75rem; 
+    padding:0.9375rem 0.625rem; box-sizing:border-box;
+    background-color:#333; }
+    #headBox h1 { float:left; width:7.875rem; height:1.875rem;
+      background-color:#33b88f; color:#fff; text-align:center; font-size:1rem;}
+    
+    .navigation { float:right; width:90px; height:38px; }
+    .navigation ul { width:100%; height:100%; }
+    .navigation li { float:left; height:100%; background-color:#33b88f; }
+    .navigation li:nth-child(1) { width:35px; margin-right:5px; }
+    .navigation li:nth-child(2) { width:45px; }
+
+  #viewBox { width:100%; height:auto; min-height:150vw; 
+    padding-top:200px; box-sizing:border-box;
+    background-color:#bbaa77; }
+  .view_outer { width:100%; height:100%;  }
+  .view_outer li { width:84.7916vw; height:18.75vw; 
+    margin:auto; margin-bottom:20px; background-color:#fff; }
+
+  #contentBox { width:100%; height:auto; min-height:100vw; 
+    background-color:#547d77;  }
+    .title_shape { width:100%; height:100%; margin:auto; }
+    .title_shape li { float:left; width:47.08vw; min-width:110px; height:41.666666vw; 
+      margin:1.458vw; 
+      background-color:#fff; }
+    .title_shape li:nth-child(2n) { float:right; }
+    .title_shape li:nth-child(1), .title_shape li:nth-child(2) { margin-top:6.25vw;}
+
+  #infoBox { width:100%; height:auto; min-height:133.3333vw; 
+    overflow: hidden;
+    background-color:#957de9;  }
+    .new_area { width:100%; height:100%; padding-top:40px; min-height:30rem; }
+    .new_area ul { width:100%; height:100%; }
+    .new_area li { width:95.9375vw;  height:21.5625vw; 
+      margin:auto; margin-bottom:10px;
+      background-color:#fff; }
+
+  #footBox { width:100%; height:3.75rem; 
+    padding:2.6401vw; box-sizing:border-box; background-color:#333; }
+  .foot_logo { width:70.83333vw; height:35px; margin:auto; background-color:#33b88f; }
+}
+/* // mob_h.css ----------- */
+
+/* tab.css */
+@media screen and (min-width:768px) and (max-width:959px) {
+  #wrap { width:100%; margin:auto; }
+  #headBox { position:fixed; top:0; left:0; z-index:1000;
+    width:100%; height:60px; 
+    padding:0.5625rem 0.625rem; box-sizing:border-box;
+    background-color:#333; }
+    .head_outer h1 { float:left; width:7.875rem; height:42px;
+      background-color:#33b88f; color:#fff; text-align:center; font-size:1rem;}
+      
+    .navigation { float:right; width:90px; height:38px; }
+    .navigation ul { width:100%; height:100%; }
+    .navigation li { float:left; height:100%; background-color:#33b88f; }
+    .navigation li:nth-child(1) { width:35px; margin-right:5px; }
+    .navigation li:nth-child(2) { width:45px; }
+  
+
+  #viewBox { width:100%; height:auto; min-height:28.125rem; background-color:#bbaa77; }
+  .view_area { width:100%; height:58.59375vw; overflow: hidden; }
+  .view_area ul { width:400%; height:100%; }
+  .view_area li { float:left; width:25%; height:100%; }
+  .view_area li:nth-child(1) { background-color:#acc;}
+
+  #contentBox { width:100%; height:13.125rem; 
+    padding:10px; box-sizing:border-box;
+    background-color:#547d77;  }
+  .title_shape_01 { 
+    width:11.875rem; height:9.75rem; 
+    background-color:#33b88f; }
+
+  #infoBox { width:100%; height:540px; overflow: hidden; }
+  .new_area { float:left; width:50%; height:100%;  background-color:#957de9; }
+  .notice_area {float:left; width:50%; height:100%; background-color:#95abe9; }
+
+  #footBox { width:100%; height:7.5rem; background-color:#333; }
+}
+/* // tab.css ----------- */
+
+/* pc.css */
+@media screen and (min-width:960px) {
+  #wrap { width:100%; margin:auto; }
+  #headBox { position:fixed; top:0; left:0; z-index:1000;
+    width:100%; height:3.75rem; 
+    background-color:#333; }
+    .head_outer { width:100%; max-width:75rem; height:100%; 
+      margin:auto; padding:0.4375rem 0.625rem; box-sizing:border-box;
+      background-color:#333; }
+    .head_outer h1 { float:left; width:15.625rem; height:2.8125rem;
+      background-color:#33b88f; color:#fff; text-align:center; font-size:1rem;}
+    
+    .navigation { float:right; width:485px; height:30px; }
+    .navigation ul { width:100%; height:100%; }
+    .navigation li { float:left; height:100%; background-color:#33b88f; }
+    .navigation li:nth-child(1) { width:50px; margin-right:5px; }
+    .navigation li:nth-child(2) { width:430px; }
+
+  #viewBox { width:100%; height:28.125rem; 
+    margin:auto; background-color:#bbaa77; }
+
+  #contentBox { width:100%; min-width:960px; max-width:75rem; height:13.125rem; 
+    margin:auto; padding:10px; box-sizing:border-box; background-color:#547d77;  }
+    .title_shape_01 { 
+      width:11.875rem; height:9.75rem; 
+      background-color:#33b88f; }
+
+  #infoBox { width:90%; max-width:75rem; height:33.75rem; 
+    margin:auto; background-color:#957de9;  }
+  .new_area { float:left; width:33.333333%; height:100%;  background-color:#957de9; }
+  .notice_area {float:left; width:33.333334%; height:100%; background-color:#95abe9; }
+  .more_content {float:left; width:33.333333%; height:100%; background-color:#95d2e9; }
+
+  #footBox { width:100%; height:7.5rem; 
+    background-color:#333; }
+    .foot_outer { width:100%; max-width:75rem; height:100%; 
+      margin:auto; padding:10px; box-sizing: border-box; background-color:#333; }
+    .company_info { width:250px; height:45px; background-color:#33b88f; }
+}
+/* // pc.css ----------- */

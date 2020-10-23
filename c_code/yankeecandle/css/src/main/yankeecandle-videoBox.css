@@ -28,4 +28,5 @@ width:125px; height:125px;}
 .video_text { 
   float:left; margin-top:50px;
   width:560px; height:160px; }
-  .video_text p { color:rgba(255,255,255,0.7); font-size:3rem; font-weight:900; }
+  .video_text p { color:rgba(255,255,255,0.7); font-size:3rem; font-weight:900; 
+  text-transform:capitalize;}

@@ -40,3 +40,4 @@
       font-size:1.5rem; color:#fff; }
       .next_view { float:right; }
       .prev_view { float:left; }
+    .special_btn p {margin:auto; width:70px; height:30px; text-align:center; color:#fff; }

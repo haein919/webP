@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url("../../fonts/noto_sans/noto_sans.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /* brandstory.css */
 
 @import url("../src/yankeecandle-headBox.css");
@@ -32,12 +31,10 @@
 #productBox span { display:block; width:0; height:0; overflow:hidden; }
   #productNav { width:1260px; height:120px; margin:auto; margin-top:50px; }
    .nav_title { width:100%; height:70px; margin:auto; border-bottom:2px solid #333; }
-   .nav_title>p { float:left; margin:17px; text-transform:capitalize; font-size:1.5rem;
-    font-family:'notoSansKR'; font-weight:600;}
+   .nav_title>p { float:left; margin:17px; text-transform:capitalize; font-size:1.5rem; font-weight:600;}
     .select { float:right; width:140px; height:40px; margin:15px; border:1px solid #333; }
-    .select p { float:left; font-family:'notoSansKR'; font-size:0.9rem; 
-      margin:10px 50px 10px 10px ; }
-    .select button { display:block; width:25px; height:25px; font-size:1.7rem; }
+  
+  #selectBox {width:140px; height:35px; border:none; }
 
   .sub_nav { width:100%; height:50px; }
   .sub_nav ul {width:100%; height:auto; padding:10px 0; box-sizing:border-box;}
@@ -49,7 +46,46 @@
  .product_outer ul { width:100%; height:auto; }
  .product_outer li { float:left; width:300px; height:445px; margin-right:20px; }
   .product_outer li:nth-of-type(4n) { margin-right:0; }
-  .pro_img { width:300px; height:305px; background-color:#9de; }
+  .pro_img { width:300px; height:305px; }
+
+  .pro_img_01, .pro_img_09 {width:300px; height:305px; 
+    background-image:url('../../img/product/produt_img/product_01.png');
+    background-repeat:no-repeat; background-size:auto 100%; 
+    background-position: -30px;  }
+
+  .pro_img_02, .pro_img_10 { width:300px; height:305px; 
+    background-image:url('../../img/product/produt_img/product_02.png');
+    background-repeat:no-repeat; background-size:auto 100%; }
+  
+  .pro_img_03, .pro_img_11 { width:300px; height:305px; 
+    background-image:url('../../img/product/produt_img/product_03.png');
+    background-repeat:no-repeat; background-size:contain; 
+    background-position:70px;}
+  
+  .pro_img_04, .pro_img_12 { width:300px; height:305px; 
+    background-image:url('../../img/product/produt_img/product_04.png');
+    background-repeat:no-repeat; background-size:170% auto; 
+    background-position:-110px;}
+
+  .pro_img_05, .pro_img_13 {width:300px; height:305px; 
+    background-image:url('../../img/product/produt_img/product_05.png');
+    background-repeat:no-repeat; background-size:auto 100%; 
+    background-position: -30px;  }
+
+  .pro_img_06, .pro_img_14 { width:300px; height:305px; 
+    background-image:url('../../img/product/produt_img/product_06.png');
+    background-repeat:no-repeat; background-size:auto 100%;
+    background-position:30px; }
+  
+  .pro_img_07, .pro_img_15 { width:300px; height:305px; 
+    background-image:url('../../img/product/produt_img/product_07.png');
+    background-repeat:no-repeat; background-size:contain; 
+    background-position:20px;}
+  
+  .pro_img_08, .pro_img_16 { width:300px; height:305px; 
+    background-image:url('../../img/product/produt_img/product_08.png');
+    background-repeat:no-repeat; background-size:85% auto; 
+    background-position:40px 2px;}
   
   .text_outer { width:100%; height:140px; }
   .text_outer ul { width:140px; height:30px; margin:auto; }

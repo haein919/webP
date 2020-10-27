@@ -1,0 +1,123 @@
+/* transition.css */
+
+#wrap { width:60rem; height:auto; min-height:30rem; margin:auto; background-color:#dfdfdf; margin-bottom:50px; }
+
+.part { width:90%; height:400px; margin:auto; border:1px solid #333; box-sizing:border-box; }
+.move_01 { width:200px; height:200px; background-color:#fa0; box-sizing:border-box; border-radius:100%;
+  transition:all 500ms ease;  }
+.move_01:hover { background-color:#07a; color:#fff; 
+  font-size:1.3rem; font-weight:bold; border:10px solid #afc;
+  transition:all 1500ms linear; }
+  
+.vertical_center { position:relative; text-align:center; }
+.vertical_center span { 
+  position:absolute; top:50%;
+  display:block; width:100%; height:0;  }
+.vertical_center span u { display:block; transform:translateY(-50%); text-decoration:none; }
+
+.tr_01 { width:100%; height:auto; background-color:#fff;}
+.tr_01 > li { float:left; width:150px; height:50px; border-radius:50px; border:1px solid #07f;
+  background-color:#fff; text-align:center; box-sizing:border-box; margin:10px; }
+.tr_01 > li:nth-child(1) { 
+  transition-property:background-color, color; 
+  transition-duration:500ms;
+  transition-timing-function:ease; }
+.tr_01 > li:nth-child(1):hover { background-color:#eaf; color:#fff; font-size:2rem; }
+
+/* : 한개의 콜론 의미- 행동,액션을 취할때, 의사전달 행동
+                       hover, focus, visited, linked, checked
+   :: 두개짜리 의미 - 액션처리가 아니라 특정적으로 무엇을 처리할때,
+                      before, after, first-letter, first-line, placeholder, maker */
+
+.tr_01 > li:nth-child(2) { transition-property:border; transition-duration:300ms; transition-timing-function:ease; }
+.tr_01 > li:nth-child(2):hover { border:10px solid #9dc; background-color:#f9a;}
+
+.tr_01 > li:nth-child(3):hover { width:50px; 
+  transition-property:width; transition-duration:1000ms; transition-timing-function:linear; }
+
+.tr_01 > li:nth-child(4):hover { height:100px;
+  transition-property:height; transition-duration:500ms; transition-timing-function:ease-out; }
+
+.tr_01 > li:nth-child(5):hover { background-color:#541; width:30px; height:300px;
+  transition-property:background-color, width; transition-duration:2s; transition-timing-function:ease-in; }
+
+.tr_01 > li:nth-child(6):hover { width:500px; height:200px; 
+  transition-property:width, height; 
+  transition-duration:1000ms; 
+  transition-timing-function:ease;
+  transition-delay:500ms; }
+
+.tr_01 > li:nth-child(7):hover { width:500px; height:200px; background-color:cornflowerblue; transition:all 500ms ease-in 800ms; }
+
+/* 
+  - 속도를 처리하는 형태 : timing-function;
+    ease: 자연스럽게(약간 빨라지다가 조금 천천히 변화)
+    ease-in: 점점 빠르게
+    ease-out: 점점 느리게
+    ease-in-out: 점점 빨라지다가 후반부에 느려지게
+    linear: 동일한 속도로
+    cubic-bezier()
+*/
+
+.tr_01 > li:last-child:hover { height:300px; transition:all 2000ms cubic-bezier(1,1.71,.29,-0.8); }
+
+.border { position:relative; width:200px; height:400px; margin:20px auto 10px; background-color:#add; }
+.border span { position:absolute;
+  --size1:20px; }
+
+.border span:nth-child(1) { 
+  top:0; left:0; width:0; height:var(--size1);      
+  background-color:#07f;
+  transition:all 500ms linear 1500ms;}
+.border span:nth-child(2) { 
+  top:0; right:0; width:var(--size1); height:0;
+  background-color:#07f;
+  transition:all 500ms linear 1100ms; }
+.border span:nth-child(3) { 
+  bottom:0; right:0; width:0; height:var(--size1);
+  background-color:#07f;
+  transition:all 500ms linear 600ms;
+}
+.border span:nth-child(4) { bottom:0; left:0; width:var(--size1); height:0;
+  background-color:#07f;
+  transition:all 500ms linear 200ms ;
+}
+
+.border:hover > span:nth-child(1) {
+  width:100%; height:20px;
+  background-color:#07f; 
+  transition:all 500ms ease; }
+.border:hover > span:nth-child(2)  { 
+  width:20px; height:100%;
+  background-color:#07f; 
+  transition:all 500ms ease 300ms; }
+.border:hover > span:nth-child(3){ 
+  width:100%; height:20px;
+  background-color:#07f; 
+  transition:all 500ms ease 600ms; }
+
+.border:hover > span:nth-child(4) { 
+  width:20px; height:100%;
+  background-color:#07f; 
+  transition:all 500ms ease 900ms; }
+
+.zoom { position:relative; overflow:hidden; }
+.bg { position:absolute;
+  width:100%; height:100%; background-image:url('../../img/moon.jpg');
+  background-repeat:no-repeat; background-size:100% auto; 
+  transition:transform .2s;}
+
+.cover {
+  position:absolute; top:0; left:0; z-index:10;
+  width:100%; height:100%;
+  background-color:rgba(0,0,0,0);
+  transition:all 1000ms ease; }
+.cover p { opacity:0;
+  position:absolute; top:50%; left:40%; width:150px; height:100px; 
+  text-transform:uppercase; color:#fff; text-align:center; font-weight:bold;
+  transition:all 1500ms ease;}
+
+.zoom:hover .bg { transform:scale(1.1); }
+.zoom:hover .cover
+ { background-color:rgba(0,0,0,0.4); }
+.zoom:hover .cover>p { opacity:1; }

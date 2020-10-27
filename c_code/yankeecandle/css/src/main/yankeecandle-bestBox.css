@@ -24,23 +24,23 @@
     .article_01 { float:left; width:300px; height:380px; 
       margin:0 10px; margin-left:0; 
       background-image:url("../../../img//main/best/best_01.jpg"); background-repeat:no-repeat; background-size:100% auto;
-      transition:all 200ms ease;}
+      transition:all 500ms ease;}
     .article_02 { float:left; width:300px; height:380px; 
       margin:0 10px; background-image:url("../../../img/main/best/best_02.jpg");
       background-repeat:no-repeat; background-size:100% auto;
-      transition:all 200ms ease; }
+      transition:all 500ms ease; }
     .article_03 { float:left; width:300px; height:380px; 
       margin:0 10px; background-image:url("../../../img/main/best/best_03.jpg");
       background-repeat:no-repeat; background-size:100% auto;
-      transition:all 200ms ease; }
+      transition:all 500ms ease; }
     .article_04 { float:left; width:300px; height:380px; 
       margin:0 10px; margin-right:0; 
       background-image:url("../../../img/main/best/best_04.jpg");
       background-repeat:no-repeat; background-size:100% auto;
-      transition:all 200ms ease; }
+      transition:all 500ms ease; }
     
     .article_01:hover, .article_02:hover, .article_03:hover,
-    .article_04:hover { background-size:120% auto; }
+    .article_04:hover { background-size:110% auto; }
 
   .text_outer { width:1260px; height:200px; margin:auto; }
   .article { float:left; width:300px; height:200px;

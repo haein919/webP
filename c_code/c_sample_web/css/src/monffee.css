@@ -1,0 +1,210 @@
+/* monffee.css */
+
+#wrap { position:relative; 
+  width:100%; min-width:1024px; height:auto; min-height:768px; margin:auto; 
+  background-color:#eee; }
+
+/* headBox ===================================================================== */
+#headBox { position:absolute; z-index:1000;
+  top:0; left:0; right:0; width:100%; min-width:1024px; 
+  height:120px; margin:auto;  
+  padding:20px; box-sizing:border-box; background-color:#fff; }
+
+#gnbBox { width:960px; height:100%; margin:auto;}
+.logo { float:left; width:220px; height:80px; margin-right:100px; background-color:#a30;
+  background-image:url('../../img/monfee/h1_logo.png');
+  background-repeat:no-repeat;
+  background-position:50% 50%;
+  background-size:auto; }
+.logo a { display:block; width:100%; height:100%; }
+.gnb { float:left; width:620px; height:100%; }
+.gnb li { float:left; width:140px; height:80px; margin-right:20px; padding:20px 10px; 
+  box-sizing:border-box; font-weight:bold; font-size:1.1rem; line-height:35px;
+  text-align:center; }
+.gnb li:last-child { margin-right:0; }
+
+/* adBanner ===================================================================== */ 
+#adBanner { position:relative; 
+  width:100%; min-width:1024px; height:1080px; margin:auto;
+  background-color:#aaa; }
+.ad_btn { position:absolute; z-index:100; top:50%; left:0; right:0; margin:auto; width:90%; min-width:1024px; height:0;}
+
+.ad_btn button { width:90px; height:180px; }
+.next_view { float:right;
+  background-image:url('../../img/monfee/adBanner/slide_btn.png'); 
+  background-repeat:no-repeat;
+  background-position:100% 0; }
+.prev_view { float:left;
+  background-image:url('../../img/monfee/adBanner/slide_btn.png'); 
+  background-repeat:no-repeat;
+  background-position:0 0; }
+
+.ad_indicator { position:absolute; z-index:100;
+  bottom:0; right:60px; 
+  width:380px; height:80px; }
+
+  .ad_indicator ol { width:100%; height:auto; }
+  .ad_indicator li { float:left; width:40px; height:40px; margin:20px; 
+    border-radius:40px; background-color: #a30;  }
+  .ad_indicator li:first-child { margin-left:0;}
+
+.ad_img_outer { overflow:hidden; position:relative; 
+  width:100%; height:100%; margin:auto; }
+.ad_img_area { width:500%; height:100%; }
+.ad_img_area > div { float:left; width:20%; height:100%; }
+.ad_01 { background-image:url('../../img/monfee/adBanner/slide_01.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:50% 50%; }
+
+.ad_text_area { position:absolute; top:0; left:0; z-index:50;
+  width:50%; height:100%; background-color:rgba(170,51,0,0.7); }
+
+.ad_text_area a { position:absolute; top:30%; left:30%; z-index:100;
+  width:380px; height:500px;  }
+.ad_logo { width:100%; height:125px; margin-bottom:30px; 
+  background-image:url('../../img/monfee/monfee_logo.png');
+  background-repeat:no-repeat;
+  background-size:auto 80%;
+  background-position:50% 50%; }
+.ad_text_area p { color:#fff; font-size:1.1rem; }
+
+
+/* bestNews ===================================================================== */
+#bestNews { width:940px; height:1080px; margin:auto; 
+  padding:50px 0; box-sizing:border-box; }
+#bestNews h2 { font-size:2.5rem; margin-bottom:40px; text-decoration:underline #333;}
+
+.best_outer { width:100%; height:890px; }
+.best_outer li { float:left; width:220px; height:400px; margin:0 20px 60px 0; }
+.best_outer li:nth-of-type(4), .best_outer li:nth-of-type(8) { margin-right:0; }
+.best_outer a { display:block; width:100%; height:100%; }
+.menu_img { width:100%; height:260px; border-radius:15px; margin-bottom:20px; }
+
+.best_outer dl { width:100%; height:auto; min-height:120px; padding-left:20px; box-sizing:border-box; }
+.best_outer dt { width:100%; height:20px; font-weight:600;
+  font-size:1.1rem; margin-bottom:10px; }
+.best_outer dd { width:100%; height:auto; }
+
+.best_outer div { background-repeat:no-repeat; background-size:auto 100%; }
+.best_outer li:nth-child(1) > a > div { background-image:url('../../img/monfee/new_menu/menu_01.png'); }
+.best_outer li:nth-child(2) > a > div { background-image:url('../../img/monfee/new_menu/menu_02.png'); }
+.best_outer li:nth-child(3) > a > div { background-image:url('../../img/monfee/new_menu/menu_03.png'); }
+.best_outer li:nth-child(4) > a > div { background-image:url('../../img/monfee/new_menu/menu_04.png'); }
+.best_outer li:nth-child(5) > a > div { background-image:url('../../img/monfee/new_menu/menu_05.png'); }
+.best_outer li:nth-child(6) > a > div { background-image:url('../../img/monfee/new_menu/menu_06.png'); }
+.best_outer li:nth-child(7) > a > div { background-image:url('../../img/monfee/new_menu/menu_07.png'); }
+.best_outer li:nth-child(8) > a > div { background-image:url('../../img/monfee/new_menu/default_menu.png'); }
+
+/* issue_text ===================================================================== */
+.issue_text { width:100%; min-width:1024px; height:860px; margin:auto; padding-top:256px; 
+  box-sizing:border-box;
+  background-image:url('../../img/monfee/issue_banner_03.png');
+  background-repeat:no-repeat;
+  background-size:cover; }
+.text_outer { position:relative; width:80%; min-width:822px; height:520px; margin:auto; 
+  padding:55px 15px; box-sizing:border-box;
+  background-color:rgba(51,221,221,0.7); }
+.text_outer dl { width:76.1718vw; height:400px; }
+.text_outer dt { width:100%; height:50px; font-size:1.5rem; font-weight:bold; 
+  text-decoration:underline; }
+.text_outer dd { width:100%; height:340px; }
+
+.issue_indicator { position:absolute; bottom:0; right:20px;
+  width:250px; height:75px; padding-top:25px; box-sizing:border-box; }
+.issue_indicator li { float:left; width:30px; height:30px; margin-right:10px;
+  background-repeat:no-repeat; background-size:auto; }
+.issue_indicator li:last-child { margin-right:0; }
+.issue_indicator li:nth-child(1) { background-image:url('../../img/monfee/indicator.png'); 
+  background-position:0 0; }
+.issue_indicator li:nth-child(2) { background-image:url('../../img/monfee/indicator.png'); 
+  background-position:0 -41px; }
+.issue_indicator li:nth-child(3) { background-image:url('../../img/monfee/indicator.png'); 
+  background-position:0 -41px; }
+.issue_indicator li:nth-child(4) { background-image:url('../../img/monfee/indicator.png'); 
+  background-position:0 -41px; }
+.issue_indicator li:nth-child(5) { background-image:url('../../img/monfee/indicator.png'); 
+  background-position:-45px 0; }
+.issue_indicator li:nth-child(6) { background-image:url('../../img/monfee/indicator.png'); 
+  background-position:-89px -41px; }
+
+/* issue_icon ===================================================================== */
+.issue_icon { width:100%; min-width:1024px; height:480px; margin:auto;
+  padding:110px 20px; box-sizing:border-box; background-color:#fff; }
+.issue_icon ul { position:relative; width:87.8906vw; min-width:940px; height:260px; margin:auto; }
+.issue_icon li { width:260px; height:260px; margin-right:5.8593vw; border-radius:260px;
+background-repeat:no-repeat;
+background-size:cover; }
+.issue_icon li:nth-child(1) { float:left; background-image:url('../../img/monfee/issue/issue_icon_01.png'); }
+.issue_icon li:nth-child(2) { position: absolute; top:0; left:0; right:0; margin:auto;
+  background-image:url('../../img/monfee/issue/issue_icon_02.png'); }
+.issue_icon li:last-child { float:right; margin-right:0; background-image:url('../../img/monfee/issue/issue_icon_03.png'); }
+
+/* content_text ===================================================================== */
+.content_text { width:100%; min-width:1024px; height:600px; margin:auto; 
+  padding-top:150px; box-sizing:border-box; 
+  background-image:url('../../img/monfee/black_board.png');
+  background-repeat:no-repeat;
+  background-size:cover; }
+.content_text dl { width:76.1718vw; height:350px; margin:auto; }
+.content_text dt { width:100%; height:80px; margin:auto; font-size:2.3rem; font-weight:bold; 
+  color:#fff; text-transform:uppercase; text-align:center; }
+.content_text dd { width:100%; height:230px; margin:auto; color:#fff; text-align:center; }
+
+/* material_icon ===================================================================== */
+.material_icon { position:relative; width:100%; min-width:1024px; height:200px; margin:auto;
+  padding:40px; box-sizing:border-box; background-color:#a30; }
+.material_btn { position:absolute; z-index:100;
+  top:20%; left:0; right:0; margin:auto; width:91.7968vw; height:0; }
+.next_btn { float:right; width:62px; height:120px;
+  background-image:url('../../img/monfee/material/material_btn.png'); 
+  background-repeat:no-repeat;
+  background-position:100% 0; }
+.prev_btn { float:left; width:62px; height:120px;
+  background-image:url('../../img/monfee/material/material_btn.png'); 
+  background-repeat:no-repeat;
+  background-position:0 0; }
+
+.material_icon_outer { width:76.1718vw; overflow:hidden; height:120px; margin:auto; }
+.material_icon_outer ul { width:89.84375vw; height:120px; margin:auto;  }
+.material_icon_outer li { float:left; width:13.6718vw; height:120px; margin-right:1.9531vw; }
+.material_icon_outer li:nth-child(1) {
+  background-image:url('../../img/monfee/material/material_icon.png'); background-repeat:no-repeat; background-position:0 0; }
+.material_icon_outer li:nth-child(2) {
+  background-image:url('../../img/monfee/material/material_icon.png'); background-repeat:no-repeat; background-position:-240px 0; }
+.material_icon_outer li:nth-child(3) { 
+  background-image:url('../../img/monfee/material/material_icon.png'); background-repeat:no-repeat; background-position:-480px 0; }
+.material_icon_outer li:nth-child(4) { 
+  background-image:url('../../img/monfee/material/material_icon.png'); background-repeat:no-repeat; background-position:-720px 0; }
+.material_icon_outer li:nth-child(5) { margin-right:0;
+  background-image:url('../../img/monfee/material/material_icon.png'); background-repeat:no-repeat; background-position:-960px 0; }
+
+.material_icon_outer li:nth-child(6) {
+  background-image:url('../../img/monfee/material/material_icon.png'); background-repeat:no-repeat; background-position:0 0; }
+
+.material_icon_outer a { display: block; width:100%; height:100%; }
+
+/* location ===================================================================== */
+#location { width:100%; min-width:1024px; height:1080px; 
+  margin:auto; margin-bottom:100px; padding-top:130px; box-sizing:border-box;
+  background-image:url('../../img/monfee/black_board.png');
+  background-repeat:no-repeat; background-size:cover; }
+
+.location_outer { width:91.7968vw; height:850px; margin:auto; }
+.location_map { float:left; width:52.7343vw; height:100%; margin-right:20px; 
+  background-image:url('../../img/monfee/map.png');
+  background-repeat:no-repeat;
+  background-size:cover; }
+.location_text { float:right; width:37.1093vw; height:100%;
+  padding:20px; box-sizing:border-box;
+  background-color:#fff; }
+.location_text h2 { text-decoration:underline; font-weight:bold;
+  font-size:2.3rem; margin-bottom:40px; }
+
+.location_text dl { width:100%; height:auto; min-height:260px; }
+.location_text dt { width:100%; height:30px; color:#f31; font-weight:600; }
+.location_text dd { width:100%; height:60px;margin-bottom:20px; text-indent:10px; }
+
+/* footBox ===================================================================== */
+#footBox { width:100%; min-width:1024px; height:400px; margin:auto;
+  background-color:#333; }

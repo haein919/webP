@@ -1,0 +1,26 @@
+/* monffee_main.css */
+
+
+  @import url('./monffee/monffee_wrap.css');
+  @import url('./monffee/monffee_headBox.css');
+
+
+/* #viewBox -------------------------------------------------- */
+#viewBox { width:100%; height:100vh; min-height:800px; background-color:#faa; }
+
+/* #bestNewsBox -------------------------------------------------- */
+#bestNewsBox { width:940px; height:1080px; margin:auto; background-color:#D47F8C; }
+
+/* #issueBox -------------------------------------------------- */
+#issueBox { width:100%; height:auto; min-height:1340px; }
+  .issue_text { width:100%; height:860px; background-color:#caa; }
+  .issue_icon { width:100%; max-width:1260px; height:480px; margin:auto; background-color:#aca; }
+
+/* #conBox -------------------------------------------------- */
+#conBox { width:100%; height:auto; min-height:1880px; }
+  .content_text { width:100%; height:600px; background-color:#add; }
+  .material_icon { width:100%; height:200px; background-color:#fdd; }
+  #location { width:100%; height:1080px; background-color:#C9DAFB; }
+
+/* #footBox -------------------------------------------------- */
+#footBox { width:100%; height:396px; background-color:#581428; }

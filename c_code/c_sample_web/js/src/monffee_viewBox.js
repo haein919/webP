@@ -1,4 +1,43 @@
 // monffee_viewBox.js
+
+// var count = 0;
+// setTimeout(function(){},시간);
+// setINterval(function(){},시간);
+// clearInterval(setInterval함수이름);
+// 0.1초마다 실행해라
+// setInterval(function(){
+  // count +=1;
+  // console.log(count);
+// },100); 
+
+// var Go = setInterval(function(){
+//   count +=1;
+//   console.log(count);
+//   if(count > 20) {
+//     clearInterval(Go); //20초가 넘으면 setInterval의 수행을 지칭하는 Go를 멈춰라
+//    }
+// },1000);
+
+/*
+  var count = 0;
+  var start;
+  var myCount = function(){
+    start = setInterval(function(){
+      count +=1;
+      console.log(count);
+    },500);
+  };
+  myCount();
+
+  $('h1').on('mouseenter',function(){
+    clearInterval(start);
+  })
+  $('h1').on('mouseleave',function(){
+    count = 0 // 이식을 넣음으로 초기화 시켜 처음부터 다시 숫자를 셈. 없으면 멈춘 숫자 이후부터 다시 카운트
+    myCount();
+  });
+*/
+
 (function($){
   var viewBox = $('#viewBox');
   viewBox.css({'overflow': 'hidden'});
@@ -24,7 +63,10 @@
   var nextSlideBtn = slideBtn.children('button').eq(0); // next 버튼
   var prevSlideBtn = slideBtn.children('button').eq(1); // prev 버튼
   // console.log(nextSlideBtn, prevSlideBtn);
-  var slideN = 0;
+  var slideN = 0; // 최초의 값
+  var timed = 2000; // 일정시간마다 처리하게하는 시간 
+
+  // 다음버튼 클릭
   nextSlideBtn.on('click', function(e){
     // a, button 기능처럼 이벤트 기능이 이미 내장된 요소는 미리 이벤트 기능을 제거할 필요가 있다.
     // a 가 가진 기능 -> 페이지 이동(href) / button : submit 
@@ -48,6 +90,7 @@
     }
   });
 
+  // 이전버튼 클릭
   prevSlideBtn.on('click', function(e){
     e.preventDefault();
     if(permission){
@@ -76,7 +119,8 @@ indiLi.on('click', function(e){
   indiLi.eq(slideN).siblings().removeClass('action');
   indiLi.eq(slideN).addClass('action');
 });
-// -------------------------------------------------------------------------
+
+// indicatro focus 처리 ---------------------------------------------------------------------
 indiLi.children('a').on('focus', function(e){
   e.preventDefault();
   var its = $(this);
@@ -86,6 +130,44 @@ indiLi.children('a').on('focus', function(e){
   indiLi.eq(slideN).addClass('action');
 });
 
+// 광고영역 일정 시간마다 자동수행/ 마우스 올릴경우 일시 정지 --------------------------------------
+var startInterval;
+var Start = function(){
+  startInterval = setInterval(function(){
+    // 1. trigger() 기능 - 대신 처리하는 방아쇠 역할 (여기서는 버튼을 대신 클릭하게 됨)
+    // nextSlideBtn.trigger('click');
+
+    // 2. 직접 카운트 처리해서 수행
+    slideN +=1;
+    backImg.stop().animate({'left':slideN * -100 + '%'}, function(){
+      if(slideN >= backLi.length-1){
+        slideN =-1;
+        backImg.stop().css({'left':slideN * -100 + '%'});
+      }
+    });
+    indiLi.eq(slideN).siblings().removeClass('action');
+    indiLi.eq(slideN).addClass('action');
+  }, timed);
+};
+Start();
+
+var stopSlide = function(){
+  clearInterval(startInterval);
+};
+
+// 1. viewBox에 마우스를 올리면 일시정지!
+// viewBox.on('mouseenter', function(){ stopSlide(); });
+
+// 2. viewBox에서 마우스 벗어나면 재실행 
+// viewBox.on('mouseleave', function(){ Start(); });
+
+// 1,2번 기능 통합
+viewBox.on({
+  'mouseenter':stopSlide, 'mouseleave' : Start
+});
+
+
+// jQuery End
 })(jQuery);
 
 /** jQuery 선택자

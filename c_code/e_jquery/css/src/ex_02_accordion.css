@@ -1,0 +1,19 @@
+/* ex_02_accordion.css */
+
+#wrap { width:60rem; height:auto; margin:auto; }
+.part { width:40rem; height:auto; margin:auto; border:0.0625rem solid #333; padding:0.5rem; }
+
+.accor { width:100%; height:auto; margin:auto; padding-top:20px; }
+.accor dt { width:37.5rem; height:3.125rem; margin:auto; border-bottom:0.0625rem solid #fff; 
+  background-color:#076; }
+.accor dt > a {position: relative; display:block; width:100%; height:100%; text-align:left; padding:1rem; 
+  box-sizing:border-box; color:#fff; font-weight:bold; font-size:1.2rem; line-height:1.2rem;
+  text-transform:uppercase; }
+.accor dt span {position: absolute; top: 0; bottom: 0; right:1rem; margin:auto; float:right; width:25px; height:25px; font-size:2.5rem; color:#fff;
+transition: all 300ms ease; }
+.accor dt span i { display:block; height: 0; margin: 0; padding: 0; line-height:10px; }
+.accor dt.action span { transform:rotate(180deg); }
+.accor dt a:hover,
+.accor dt a:focus { background-color:#047; }
+
+.accor dd { display:none; width:37.5rem; height:auto; margin:auto; padding:0.7rem; box-sizing:border-box; background-color:#ace; }

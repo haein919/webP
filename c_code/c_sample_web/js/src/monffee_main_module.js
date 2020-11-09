@@ -8,8 +8,15 @@
   // jQuery
   var headBox = $('#headBox');
   var viewBox = $('#viewBox');
+  var bestNewsBox = $('#bestNewsBox');
+  var issueBox = $('#issueBox');
+
   headBox.load('./monffee/headBox.html');
   viewBox.load('./monffee/viewBox.html');
+  bestNewsBox.append('<script src="../js/src/monffee_bestNewsBox.js"></script>');
+  issueBox.load('./monffee/issueBox.html', function(){
+    $(this).append('<script src="../js/src/monffee_issueBox.js"></script>');
+  });
 
 })(jQuery);
 

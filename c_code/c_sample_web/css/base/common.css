@@ -13,6 +13,7 @@
 .hidden_wrap a>span,  
 .hidden_wrap button>span { display:block; position:absolute; z-index:-1; width:0; height:0; overflow:hidden; }
 
+.clearfix { width:100%; height:auto; }
 .clearfix:after,
 .clearfix::after { content:" "; display:block; clear:both; }
 

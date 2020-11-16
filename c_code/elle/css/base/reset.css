@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@import url("./variable.css");
+/* reset.css: 
+   웹페이지 디자인작업을 위해, 매번 처리해야하는 번거로운 작업을 미리 설정하여 초기화 시키는 처리 
+*/
+:root {font-size:16px;}
+html,body { margin:0; font-family:'notoSansKR', Roboto, sans-serif; font-weight:400; color:#333; }
+h1,h2,h3,h4,h5,h6,p,div,img,pre { margin:0; padding:0; border:0; font-size:1rem; }
+ul,ol,dl,dd,dt,dd { margin:0; padding:0; list-style:none; }
+button { margin:0; padding:0; border:0; background-color:transparent; cursor:pointer; }
+a { text-decoration:none; color:inherit; }
+
+address { font-style:normal; }
+abbr { text-decoration:none; }
+
+hr { width:100%; height:0; border:0; margin:0;
+     border-bottom:1px solid #333; }
+
+a:hover, a:focus,
+button:hover, button:focus { position: relative; z-index:500; outline:3px solid #f70; }
+
+/* form 영역 */
+form, fieldset { margin:0; padding:0; border:0; }
+legend { display:block; position:absolute; z-index:-1; width:0; height:0; overflow:hidden; }
+
+input[type="text"], input[type="password"], input[type="search"],
+input[type="email"], input[type="url"], input[type="number"],
+input[type="tel"] { border:1px solid #777; box-sizing:border-box; 
+  text-indent:0.5rem; cursor: pointer; }
+
+button,
+input[type="button"], input[type="submit"], input[type="reset"],
+input[type="image"] { margin:0; padding:0; border:0; background-color:transparent; cursor:pointer; }
+
+textarea, select { margin:0; padding:0; border:1px solid #777; box-sizing:border-box; }

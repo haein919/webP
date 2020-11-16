@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- ex_03_modal.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../fonts/fontawesome_5/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/ex_03_modal.css">
+
+  <title>jQuery</title>
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../img/favicon.png">
+</head>
+
+<body>
+<!-- layout -->
+<div id="wrap">
+  <h1><a href="./content.html">modal</a></h1>
+  <div class="modal_01">
+    <ul>
+      <li data-big="juice_big_01.jpg">
+        <button type="button">
+          <span>이미지_01</span>
+        </button>
+      </li>
+      <li data-big="juice_big_02.jpg">
+        <button type="button">
+          <span>이미지_02</span>
+        </button>
+      </li>
+      <li data-big="juice_big_03.jpg">
+        <button type="button">
+          <span>이미지_03</span>
+        </button>
+      </li>
+      <li data-big="juice_big_04.jpg">
+        <button type="button">
+          <span>이미지_04</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="gallery_box">
+    <div class="gallery_area">
+      <div class="close"><button type="button"><span>닫기</span></button></div>
+      <div class="big_img">
+        <!-- background-image -->
+        <p>narration</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- script -->
+<script src="../js/base/jquery-3.5.1.js"></script>
+<script src="../js/base/jquery-ui.js"></script>
+<script src="../js/src/ex_03_modal.js"></script>
+</body>
+</html>

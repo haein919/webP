@@ -28,46 +28,34 @@
     }else { 
       console.log('...');
     }
-    // switch(evt.type){
-    //   case 'focus':
-    //     console.log('f');
-    //     break;
-    //   case 'click':
-    //     console.log('c');
-    //     break;
   };
 
   // indicator 클릭 시 ul 이동 -> a에 focus 처리로 변경 -> 실제 배너에 a는 별도로 focus 처리
-  indiLi.children('a').on('focus', function(e){
+  indiLi.children('a').on('mouseenter focus click', function(e){
     e.preventDefault();
-    
-      typeTest(e);
-
-      var it= $(this);
-      indiSlN = it.parent('li').index();
-      indiLi.eq(indiSlN).addClass('action');
-      indiLi.eq(indiSlN).siblings().removeClass('action');
-      slideUl.stop().css({'margin-left':indiSlN * -100 + '%'})
-
-  }); // indiLi.children('a').on('focus')
-
-  // 클릭 기능 수행
-  indiLi.on('click', function(e){
-    e.preventDefault();
-
-    typeTest(e);
-
-    var it = $(this);
-    indiSlN = it.index(); // 클릭한 애가 몇번째인지
-    var propertyLink = it.children('a').attr('href');
-    var thatPosition = $(propertyLink);
-
-    // slideUl.stop().css({'margin-left':indiSlN * -100 + '%'});
+  
+    var it= $(this);
+    indiSlN = it.parent('li').index();
     indiLi.eq(indiSlN).addClass('action');
     indiLi.eq(indiSlN).siblings().removeClass('action');
-    slideUl.stop().animate({'margin-left':indiSlN * -100 + '%'})
-    thatPosition.attr({'tabIndex':'1'}); // 이전에 처리한 tabIndex를 풀어줌
-    thatPosition.focus();
+    // slideUl.stop().css({'margin-left':indiSlN * -100 + '%'})
+    // typeTest(e);
+
+    if(e.type === 'focus' || e.type === 'mouseenter'){
+      slideUl.stop().animate({'margin-left': indiSlN * -100 + '%'}, timed);
+    }else if(e.type = 'click'){
+      setTimeout(function(){
+        var thatLink = it.attr('href');
+        $(thatLink).attr({'tabIndex':0});
+        // $(thatLink).parent('li').siblings().children('a').attr({'tabIndex': -1});  //  아래와 같은 식
+        slideLi.eq(indiSlN).siblings().children('a').attr({'tabIndex': -1});
+        $(thatLink).focus();
+      }, timed + 10);
+    }
+  }); // indiLi.children('a').on('focus')
+
+  slideLi.find('a').on('blur', function(){
+    $(this).attr({'tabIndex': -1});
   });
 
 })(jQuery);

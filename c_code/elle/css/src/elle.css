@@ -4,25 +4,52 @@ html,body { width:100%; height:100%; }
 #wrap { width:100%; height:auto; min-width:240px; min-height:800px; background-color:#ccc; }
 
 /* mob.css */
-@media screen and (min-width:480px) and (max-width:1023px) {
+@media screen and (max-width:599px) {
   /* 브라우저 가로폭480px 기준으로 작업 */
-  #wrap { width:100%; }
+  #wrap { width:100%; margin:auto; }
+  
+  #headBox { width:100%; height:100px; margin:auto; background-color:rgba(255,255,255,0.5); }
+  #viewBox { display:none; }
+  #fashionBox { width:100%; height:900px; padding-top:50px; box-sizing:border-box; }
+  .fashion_outer { width:100%; height:850px; background-color:#ade;
+    border-top-left-radius:30px; border-top-right-radius:30px; }
+ 
+  #beautyBox { width:100%; height:600px; padding-top:50px; box-sizing:border-box; }
+  .beauty_outer { width:100%; height:550px; background-color:#0a9; 
+    border-top-left-radius:30px; border-top-right-radius:30px; }
+ 
+  #starBox { width:100%; height:600px; padding-top:50px; box-sizing:border-box; }
+ .star_outer {  width:100%; height:550px; background-color:#fde; 
+  border-top-left-radius:30px; border-top-right-radius:30px; }
+
+  #lovelifeBox { width:100%; height:600px; padding-top:50px; box-sizing:border-box; }
+ .lovelife_area { width:100%; height:550px; background-color:#dae; 
+  border-top-left-radius:30px; border-top-right-radius:30px; }
+
+  #subscribeBox { width:100%; height:200px; background-color:#444; }
+  .form_area { width:340px; height:auto; min-height:30px; margin:auto;
+    box-shadow:0 0 5px rgba(0,0,0,0.5); }
+  form { width:100%; height:auto; padding:10px; box-sizing:border-box; background-color:#fff; }
+
+
+  #footBox {  }
 }
 
 /* tab.css */
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:600px) and (max-width:1023px) {
   /* 브라우저 가로폭1024px 기준으로 작업 */
   #wrap { width:100%; margin:auto; }
 }
 
-/* 1440.css */
-@media screen and (min-width:1440px) and (max-width:1919px) {
+
+/* pc.css */
+@media screen and (min-width:1024px) and (max-width:1439px) {
   /* 브라우저 가로폭1440px 기준으로 작업 */
   #wrap { width:100%; margin:auto; }
 }
 
-/* 1920.css */
-@media screen and (min-width:1920px) {
+/* pcFull.css */
+@media screen and (min-width:1440px) {
   /* 브라우저 가로폭1920px 기준으로 작업 */
   #wrap { width:100%; margin:auto; }
 }

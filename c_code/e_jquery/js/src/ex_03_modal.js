@@ -12,8 +12,8 @@
   var galleryCode = '<div class="gallery_box"><div class="gallery_area"><div class="close"><button type="button"><span>닫기</span></button></div><div class="big_img"><p>narration</p></div></div></div>';
   // -------------------------------------------------------------------------------
   var modal = $('.modal_01');
-  // modal.append(galleryCode); // 선택자 내부의 뒤에
-  modal.after(galleryCode);     // 선택자 바로 뒤에
+
+
   
   var modalUl = modal.children('ul');
   
@@ -29,19 +29,14 @@
     modalBtn.css({'background-image':'url('+ url + data[i].thumImg + ')', textTransform:'uppercase'});
     modalBtn.find('span').text(data[i].title);
 
-    temLi.attr({'data-big':data[i].bigImg, 'data-narr':data[i].content});
+    // temLi.attr({'data-big':data[i].bigImg, 'data-narr':data[i].content});
   };
 
   var modalLi = modal.find('li');
   var btn = modalLi.find('button');
 
-  var galleryBox = $('.gallery_box');
-  var close = galleryBox.find('.close');
-
-  var bigImg = galleryBox.find('.big_img');
-  var narr = bigImg.children('p');
+  var galleryBox, close, bigImg, narr;
   var timed = 500;
-
   var indexCheck;
 
   btn.on('click', function(e){
@@ -49,25 +44,32 @@
     var it = $(this).parent('li');
     var itI = it.index();
     indexCheck = itI; 
-    var thisBig = it.attr('data-big');
-    var thisNarr = it.attr('data-narr');
+ // ------------------------------------------------
+    modal.after(galleryCode);     // 선택자 바로 뒤에
+    galleryBox = $('.gallery_box');
+    close = galleryBox.find('.close');
+    bigImg = galleryBox.find('.big_img');
+    narr = bigImg.children('p');
 
-    bigImg.css({'background-image':'url('+ url + thisBig + ')'});
-    narr.text(thisNarr);
-
+ // ---------------------------------------------------------------------------------
+    bigImg.css({'background-image':'url('+ url + data[indexCheck].bigImg + ')'});
+    narr.text(data[indexCheck].content);
+    
     galleryBox.stop().fadeIn(function(){
       close.children('button').focus();
       setTimeout(function(){
         narr.addClass('action');
       }, timed/2);
     });
-  });
-
-  close.on('click', function(e){
-    e.preventDefault();
-    galleryBox.stop().fadeOut();
-    modalLi.eq(indexCheck).find('button').focus();
-    narr.removeClass('action');
+ // ----------------------------------------------
+    close.on('click', function(e){
+      e.preventDefault();
+      galleryBox.stop().fadeOut();
+      modalLi.eq(indexCheck).find('button').focus();
+      narr.removeClass('action');
+      galleryBox.remove(); // galleryBox 해당 내용 자체를 삭제(F12로 확인 시 생성되면 사라지지 않고 계속 생기기 때문에 기입)
+    });
+ // ------------------------------------------------
   });
 
 })(jQuery);

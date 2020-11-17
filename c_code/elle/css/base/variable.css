@@ -16,16 +16,16 @@
 
   --border-line1:1px solid #333;
 
-  --color-monffee-primary:#aa3300;
-  --color-monffee-primary-opacity:rgba(164,51,0,0.7);
-  --color-monffee-red:#cc0000;
-  --color-monffee-yellow:#ffaf00;
-  --color-monffee-mint:#33dddd;
-  --color-monffee-mint-opacity:rgba(10,160,160,0.9);
-  --color-monffee-black:#171717;
-  --color-monffee-deep-grey:#656565;
-  --color-monffee-light-grey:#bbbbbb;
-  --color-monffee-white:#ffffff;
+  --color-elle-primary:#aa3300;
+  --color-elle-primary-opacity:rgba(164,51,0,0.7);
+  --color-elle-red:#cc0000;
+  --color-elle-yellow:#ffaf00;
+  --color-elle-mint:#33dddd;
+  --color-elle-mint-opacity:rgba(10,160,160,0.9);
+  --color-elle-black:#171717;
+  --color-elle-deep-grey:#656565;
+  --color-elle-light-grey:#bbbbbb;
+  --color-elle-white:#ffffff;
 }
 
 p { background-color:var(--color1);}

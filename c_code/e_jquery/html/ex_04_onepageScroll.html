@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- ex_04_onepageScroll.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- font -->
+  <link rel="stylesheet" href="../fonts/fontawesome_5/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+<!-- css -->
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/ex_04_onepageScroll.css">
+<!-- favicon -->
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../img/favicon.png">
+  <title>jQuery - onepagescroll</title>
+</head>
+
+<body>
+<!-- layout -->
+<div id="wrap">
+  <div class="popup_dp">
+    <h2>팝업창만들기</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum animi suscipit ut laudantium eaque nostrum numquam magnam voluptatum quidem nam?</p>
+    <div class="close"><button type="button">닫기</button></div>
+  </div>
+  <header id="headBox">
+    <h1><a href="./content.html">jQuery</a></h1>
+    <nav id="navBox">
+      <h2>navigation</h2>
+      <ul>
+        <li><a href="#wrap">home</a></li>
+        <li><a href="#viewBox">광고영역</a></li>
+        <li><a href="#conBox_01">본문영역1</a></li>
+        <li><a href="#conBox_02">본문영역2</a></li>
+        <li><a href="#footBox">회사정보</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="viewBox">
+    <h2>광고영역</h2>
+  </section>
+  <article id="conBox_01">
+    <h2>본문영역1</h2>
+    <div class="tab_li">
+      <ul>
+        <li><a href="#">tab_01</a></li>
+        <li><a href="#">tab_02</a></li>
+        <li><a href="#">tab_03</a></li>
+        <li><a href="#">tab_04</a></li>
+      </ul>
+    </div>
+    <div class="tab_content">
+      <div class="tab_con_01">
+        <h3>tab_01</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis veritatis dicta repellendus inventore ipsam perspiciatis odit voluptate delectus, molestias nihil iste illum voluptates necessitatibus minima earum velit eos magnam labore.</p>
+      </div>
+      <div class="tab_con_02">
+        <h3>tab_02</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nobis quia nemo quisquam illum perferendis quo corporis, eum natus, voluptate sed laborum dolorem! Provident harum odit corporis totam architecto cumque?</p>
+      </div>
+      <div class="tab_con_03">
+        <h3>tab_03</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, eaque voluptatem. Esse magnam possimus molestias ut? Ad eveniet incidunt molestiae, modi nesciunt cum architecto, minima rem fugit in, cumque voluptatem!</p>
+      </div>
+      <div class="tab_con_04">
+        <h3>tab_04</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sequi minima inventore eius obcaecati, qui dolorum voluptatem ratione eveniet possimus tenetur nihil voluptas quis cumque, dolorem quibusdam quidem odit animi.</p>
+      </div>
+    </div>
+  </article>
+  <article id="conBox_02">
+    <h2>본문영역2</h2>
+    <div class="title_tab_style">
+      <dl>
+        <dt><a href="#">tab_title_01</a></dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sapiente?</dd>
+        <dt><a href="#">tab_title_02</a></dt>
+        <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, voluptatibus blanditiis? Maiores, vitae neque impedit repudiandae beatae eius quisquam id?</dd>
+        <dt><a href="#">tab_title_03</a></dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet incidunt tenetur provident doloribus ipsa eligendi rerum, sint quo! Perferendis, incidunt? Aliquam accusamus maxime saepe, autem velit dolorum! Unde, dolorem error.</dd>
+        <dt><a href="#">tab_title_04</a></dt>
+        <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ex voluptate earum necessitatibus officia inventore est asperiores deserunt, iste dolorem, doloribus repudiandae delectus ipsa odit impedit fugiat magni harum, sunt quam amet culpa. Sint ex, eaque quam aliquid corporis reiciendis.</dd>
+      </dl>
+    </div>
+  </article>
+  
+  <div class="top_move_btn">
+    <a href="#wrap">상단으로 이동</a>
+  </div>
+
+  <footer id="footBox">
+    <h2>회사정보</h2>
+  </footer>
+</div>
+
+<!-- script -->
+<script src="../js/base/jquery-3.5.1.js"></script>
+<script src="../js/base/jquery-ui.js"></script>
+<script src="../js/src/ex_04_onepageScroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+// ex_04_onepagescroll.js
+
+(function($){
+ // jQuery start
+ /**
+  * 1. 스크롤 시 $('#headBox') 상단 고정
+  * 1-1. 상단 이동 버튼 기능 추가
+  * 2. $('.popup_dp')의 닫기버튼 클릭 시 팝업창 삭제
+  */
+
+  /** 1번 사용시: offset().top, scrollTop, on('scroll'), $(window) */
+   var win =  $(window);
+   var headBox =  $('#headBox');
+   var topBtn = $('.top_move_btn');
+   var navBox = $('#navBox');
+   var navUl = navBox.children('ul');
+   var navLi = navUl.children('li');
+
+   // 브라우저 상단에서 떨어져있는 양 체크
+   var headOffset = headBox.offset().top;
+   console.log('offset:', headOffset );
+
+   // 1-1번 보이지 않았다가, 1000px 이동 후 나타나기
+   topBtn.hide();
+
+   win.on('scroll', function(e){
+    // 스크롤이 이동한 위치값 파악
+    var winSt = win.scrollTop();
+    console.log(winSt);
+
+    // if( winSt >= headOffset ){
+    //   headBox.css({'position':'fixed', 'top':0, 'zIndex':1500});
+    // }else{
+    //   headBox.removeAttr('style');
+    // } ↓와 기능 똑같음
+    (winSt >= headOffset) ?
+      headBox.css({'position':'fixed', 'top':0, 'zIndex':1500}) :
+      headBox.removeAttr('style') ;
+
+    // if( winSt >= 500 ){
+    //   topBtn.stop().fadeIn();
+    // }else{
+    //   topBtn.stop().fadeOut();
+    // } ↓와 동일 --> ( ) ? : ; -->삼항연산자
+
+    (winSt >= 500) ? topBtn.stop().fadeIn() : topBtn.stop().fadeOut();
+  });
+// -----------------------------------------------------------------------------------------
+// 클릭 시 처리되는 내용을 별도의 함수로 처리
+var liScrollMove = function(e){
+  e.preventDefault();
+  var it = $(this).find('a');
+  
+  // a요소의 연결된 선택자 파악
+  var itAttr = it.attr('href'); 
+  
+  // a요소의 href값이 상단에서 떨어져있는 양 체크
+  var itOffset = $(itAttr).offset().top; 
+
+  // 브라우저를 이동(스크롤처리)시키는 명령어 -> itOffset으로 파악된 크기만큼 이동
+  $('html, body').animate({ scrollTop: itOffset });
+}; // liScrollMove();
+// -----------------------------------------------------------------------------------------
+  // topBtn.on('click', ['a'], liScrollMove);
+  // navLi.on('click', ['a'], liScrollMove);
+  // 배열.forEach(function(배열요소각각, 해당배열요소순서){});
+  // $.each(배열, function(배열요소순서, 순서에맞는배열요소각각){});
+  
+  // 동일한 기능을 처리, 하나의 함수를 수행함으로인하여, 기능을 하나로 묶어주기
+  var btnCollection = [topBtn, navLi];
+  $.each(btnCollection, function(i, btn){
+    btn.on('click', ['a'], liScrollMove);
+  });
+/* 
+  // top버튼 클릭 시 맨 상단으로 이동
+  topBtn.on('click', ['a'], function(e){
+    e.preventDefault();
+    var it = $(this).find('a');
+    var itAttr = it.attr('href'); 
+    var itOffset = $(itAttr).offset().top;
+    $('html, body').animate({ scrollTop: itOffset });
+  });
+// -----------------------------------------------------------------------------------------------
+// 메뉴버튼 클릭 시 해당 본문 내용으로 각각 이동
+navLi.on('click', ['a'], function(e){
+  e.preventDefault();
+  var it = $(this).find('a');
+  var itAttr = it.attr('href');
+  var itOffset = $(itAttr).offset().top;
+  $('html, body').animate({scrollTop : itOffset});
+}); */
+
+// ---------------------------------------------------------------------------------------------
+// 2번기능 (닫기 눌렀을 때 팝업창 사라지기)
+var popupDp = $('.popup_dp');
+var popupBtn = popupDp.find('button');
+popupBtn.on('click', function(e){
+  e.preventDefault();
+  popupDp.remove();
+});
+// ---------------------------------------------------------------------------------------------
+// 3. tab메뉴 처리
+var tab = $('.tab_li');
+var tabLi = tab.find('li');
+var tabConWrap = $('.tab_content');
+var tabCon = tabConWrap.find('div');
+
+tabLi.on('click', ['a'], function(e){
+  e.preventDefault();
+  var it = $(this);
+  var itI = it.index();
+
+  tabCon.eq(itI).show();
+  tabCon.eq(itI).siblings().hide();
+});
+// ----------------------------------------------------------------------------------------------
+var titleTab = $('.title_tab_style');
+var titleTabDl = titleTab.children('dl');
+var titleTabDt = titleTabDl.children('dt');
+var titleTabDd = titleTabDl.children('dd');
+
+titleTabDt.eq(0).addClass('action');
+
+titleTabDt.on('click', ['a'], function(e){
+  e.preventDefault();
+  var it = $(this);
+  
+  it.siblings('dt').removeClass('action');
+  it.addClass('action');
+
+  titleTabDd.hide();
+  it.next('dd').show();
+});
+// ----------------------------------------------------------------------------------------------
+
+  // jQuery end
+})(jQuery);

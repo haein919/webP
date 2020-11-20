@@ -9,6 +9,7 @@ html,body { width:100%; height:100%; }
   #wrap { position:relative; width:100%; margin:auto; background-image:url('../../img/main/wrap_image.jpg');
     background-repeat:no-repeat; background-position:50% 50%; background-size:auto 100%; }
   
+/* headBox ================================================================================ */
   #headBox { position:fixed; top:0; z-index:500; width:100%; height:100px; margin:auto; }
   .head_outer { width:100%; height:100%; padding-top:20px; box-sizing:border-box; background-color:rgba(255,255,255,0.9); }
   .head_outer h1 { position:relative; top:0; z-index:600; float:left; margin-left:10px; }
@@ -38,47 +39,132 @@ html,body { width:100%; height:100%; }
     .sns_outer li:nth-of-type(4) a { background-image:url('../../img/sns/f_logo_RGB-White_58.png'); }
     .sns_outer li:nth-of-type(5) a { background-image:url('../../img/sns/kakaostory.png'); }
 
-  #viewBox { display:none; }
-
-  #fashionBox { width:100%; height:187.5vw; margin-top:100px; padding-top:50px; box-sizing:border-box; }
+/* fashionBox ================================================================================ */
+  #fashionBox { width:100%; height:auto; min-height:187.5vw; margin-top:100px; padding-top:50px; box-sizing:border-box; }
   .fashion_outer { width:100%; height:auto; padding:30px 10px 20px; box-sizing:border-box;
     background-color:rgba(255,255,255,0.6);
     border-top-left-radius:30px; border-top-right-radius:30px; }
-    .con_title { width:auto; min-width:95.833333vw; height:50px; }
-  .con_title h3 { float:left; width:160px; height:50px; font-size:1.625rem; text-transform:uppercase; }
+  
+  .con_title { width:auto; min-width:95.833333vw; height:50px; }
+  .con_title h3 { float:left; width:160px; height:50px; font-size:1.625rem; text-transform:uppercase; color:#222; }
   .title_btn { float:right; margin-right:10px; width:40px; height:40px; }
   .title_btn button { width:100%; height:100%; font-size:2rem; }
 
-  .fashion_img_area { width:100%; height:152.083333vw; margin-top:20px; }
+  .fashion_img_area { width:100%; height:152.083333vw; margin-top:1.25rem; }
   .fashion_img_area ul { width:100%; height:100%; }
   .fashion_img_area li { width:100%; height:47.916666vw; margin-bottom:20px; }
-  .fashion_img_area li a { display: block; width:100%; height:100%; border-radius:15px;
-    background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
+  .fashion_img_area li a { display: block; position:relative; width:100%; height:100%;
+    border-radius:15px; background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
   .fashion_img_area li:nth-of-type(1) a {background-image:url('../../img/main/main_fashion_img01.png'); }
   .fashion_img_area li:nth-of-type(2) a {background-image:url('../../img/main/main_fashion_img02.png'); }
   .fashion_img_area li:nth-of-type(3) a {background-image:url('../../img/main/main_fashion_img03.png'); }
 
+  .fashion_img_area li a::before { content:" "; display: block; position:absolute; top:0; left:0; 
+    width:100%; height:100%; opacity:0; transition:all 300ms ease; background-color:rgba(0,0,0,0.7); }
+  .fashion_img_area li a::after { content:"코로나 시대에도 패션위크 가능? 가능!"; 
+    display: block; position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:50%; height:50%; 
+    text-align:center; color:#fff; opacity:0; transition:all 300ms linear 150ms;}
 
- 
-  #beautyBox { width:100%; height:125vw; min-height:37.5rem; padding-top:10.416666vw; box-sizing:border-box; }
-  .beauty_outer { width:100%; height:auto;  padding:30px 10px 20px; box-sizing:border-box;
+  .fashion_img_area li a:hover::before,
+  .fashion_img_area li a:focus::before { opacity:1;}
+
+  .fashion_img_area li a:hover::after,
+  .fashion_img_area li a:focus::after { opacity:1; background-position-y:80%;}
+
+
+/* beautyBox ================================================================================ */
+  #beautyBox { width:100%; height:auto; min-height:125vw; padding-top:10.416666vw; box-sizing:border-box; }
+  .beauty_outer { width:100%; height:auto;  padding:1.875rem 0.625rem 1.25rem; box-sizing:border-box;
     background-color:rgba(255,255,255,0.6); border-top-left-radius:30px; border-top-right-radius:30px; }
- 
-  #starBox { width:100%; height:600px; padding-top:50px; box-sizing:border-box; }
- .star_outer {  width:100%; height:550px; background-color:#fde; 
-  border-top-left-radius:30px; border-top-right-radius:30px; }
+  
+  .beauty_img_area { width:100%; height:auto; min-height:95.833333vw; margin-top:1.25rem;}
+  .beauty_img_area ul { width:100%; height:100% }
+  .beauty_img_area li { float:left; width:43vw; height:29.166666vw; 
+    margin-bottom:1.25rem; }
+  .beauty_img_area li:nth-last-child(-n+2) { margin-bottom: 0;}
+  .beauty_img_area li:nth-child(2n) { float:right; }
+  .beauty_img_area li a { display:block; position:relative; 
+    width:100%; height:100%;  border-radius:15px;
+    background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
+  .beauty_img_area li:nth-of-type(1) a { background-image:url('../../img/main/main_beauty05.png'); }
+  .beauty_img_area li:nth-of-type(2) a { background-image:url('../../img/main/main_beauty01.jpg'); }
+  .beauty_img_area li:nth-of-type(3) a { background-image:url('../../img/main/main_beauty02.jpg'); }
+  .beauty_img_area li:nth-of-type(4) a { background-image:url('../../img/main/main_beauty03.jpg'); }
+  .beauty_img_area li:nth-of-type(5) a { background-image:url('../../img/main/main_beauty04.jpg'); }
+  .beauty_img_area li:nth-of-type(6) a { background-image:url('../../img/main/main_beauty06.jpg.png'); }
 
-  #lovelifeBox { width:100%; height:600px; padding-top:50px; box-sizing:border-box; }
- .lovelife_area { width:100%; height:550px; background-color:#dae; 
-  border-top-left-radius:30px; border-top-right-radius:30px; }
+  .beauty_img_area li a::before { content:" "; display: block; position:absolute; top:0; left:0; 
+    width:100%; height:100%; opacity:0; transition:all 300ms ease; background-color:rgba(0,0,0,0.7); }
+  .beauty_img_area li a::after { content:"다가오는 겨울 메이크업"; 
+    display: block; position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:50%; height:50%; 
+    text-align:center; color:#fff; opacity:0; transition:all 300ms linear 150ms;}
 
+  .beauty_img_area li a:hover::before,
+  .beauty_img_area li a:focus::before { opacity:1;}
+
+  .beauty_img_area li a:hover::after,
+  .beauty_img_area li a:focus::after { opacity:1; background-position-y:80%;}
+
+/* starBox ================================================================================ */
+  #starBox { width:100%; height:auto; min-height:125vw; padding-top:50px; box-sizing:border-box; }
+ .star_outer {  width:100%; height:auto;  padding:30px 10px 20px; box-sizing:border-box;
+  background-color:rgba(255,255,255,0.6); border-top-left-radius:30px; border-top-right-radius:30px; }
+
+  .star_img_area { width:100%; height:auto; min-height:97.916666vw; margin-top:1.25rem; }
+  .star_img_area ul { width:100%; height:100%; }
+  .star_img_area li { float:left; width:43vw; height:45.833333vw; margin-bottom:1.25rem; }
+  .star_img_area li:nth-child(2n) { float:right; }
+  .star_img_area li:nth-last-child(-n+2) { margin-bottom: 0; }
+
+  .star_img_area li a { display:block; position:relative; 
+    width:100%; height:100%; border-radius:15px;
+    background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
+
+  .star_img_area li:nth-of-type(1) a { background-image:url('../../img/main/main_star01.jpg');}
+  .star_img_area li:nth-of-type(2) a { background-image:url('../../img/main/main_star02.jpg');}
+  .star_img_area li:nth-of-type(3) a { background-image:url('../../img/main/main_star03.jpg');}
+  .star_img_area li:nth-of-type(4) a { background-image:url('../../img/main/main_star04.jpg');}
+
+  .star_img_area li a::before { content:" "; display: block; position:absolute; top:0; left:0; 
+    width:100%; height:100%; opacity:0; transition:all 300ms ease; background-color:rgba(0,0,0,0.7); }
+  .star_img_area li a::after { content:"스타들의 반다나 착용법"; 
+    display: block; position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:50%; height:50%; 
+    text-align:center; color:#fff; opacity:0; transition:all 300ms linear 150ms;}
+
+  .star_img_area li a:hover::before,
+  .star_img_area li a:focus::before { opacity:1;}
+
+  .star_img_area li a:hover::after,
+  .star_img_area li a:focus::after { opacity:1; background-position-y:80%;}
+
+/* lovelifeBox ================================================================================ */
+  #lovelifeBox { width:100%; height:auto; min-height:125vw; padding-top:50px; box-sizing:border-box; }
+ .lovelife_outer { width:100%; height:auto;  padding:30px 10px 20px; box-sizing:border-box;
+  background-color:rgba(255,255,255,0.6); border-top-left-radius:30px; border-top-right-radius:30px; }
+
+  .lovelife_img_area { width:100%; height:auto; min-height:97.916666vw; margin-top:1.25rem; }
+  .lovelife_img_area ul { width:100%; height:100%; }
+  .lovelife_img_area li { width:100%; height:20.833333vw; margin-bottom:20px;
+    border-radius:15px; background-color:#fff; }
+    .ll_img { float:left; width:35%; height:100%; border-radius:10px; }
+    .ll_img a { display:block; position:relative; 
+      width:100%; height:100%; background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
+    .ll_context { float:right; position:relative; width:60%; height:100%;  }
+    .ll_context dl { width:100%; height:100%; padding:10px; box-sizing:border-box; }
+    .ll_context dt { width:100%; height:; }
+    .ll_context dd { margin-top:5px; font-size:0.8rem; }
+    .ll_context button { position:absolute; bottom:10px; right:10px; 
+      width:60px; height:20px; border-radius:5px; background-color:#444; color:#fff; }
+
+
+/* subscribeBox ================================================================================ */
   #subscribeBox { width:100%; height:200px; 
     padding:1.25rem; box-sizing:border-box; background-color:#444; }
-  .form_area { width:21.25rem; height:auto; min-height:30px; margin:auto; }
+  .form_area { width:70.833333vw; height:auto; min-height:30px; margin:auto; }
   form { width:100%; height:auto; box-shadow:0 0 5px rgba(0,0,0,0.5); }
   .input_wrap { width:100%; height:40px; outline:2px solid #333; }
-  .input_wrap input { float:left; height:100%; width:260px; }
-  .input_wrap button { float:right; width:5rem; height:100%; background-color:#a00; color:#fff; font-weight:bold; }
+  .input_wrap input { float:left; height:100%; width:80%; }
+  .input_wrap button { float:right; width:20%; height:100%; background-color:#a00; color:#fff; font-weight:bold; }
 
   .subs_notice { width:100%; height:80px; margin:auto; margin-top:20px; }
   .subs_notice p { font-size:0.8rem; color:#fff; text-align:center; }
@@ -88,6 +174,7 @@ html,body { width:100%; height:100%; }
   .subs_notice dd:nth-of-type(2) { float:right; font-weight:bold; font-size:1rem; font-style:italic; }
     .subs_info p { font-size:0.6rem; }
 
+/* footBox ================================================================================ */
   #footBox { width:100%; height:100px; padding:10px; box-sizing:border-box; background-color:#333; }
   .footlink, .familysite, .addr { display:none; }
   #footBox h2 a { display: block; width:140px; height:50px; margin:auto; background-image:url('../../img/logo/Elle_logo_white.png');

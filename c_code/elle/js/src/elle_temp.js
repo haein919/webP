@@ -5,7 +5,7 @@ var deviceType = function(){
   (function($){
 
   var device = [
-    { type:'mob', size: 600 },
+    { type:'mob', size: 599 },
     { type:'tab', size: 1024 },
     { type:'lap', size: 1440 },
     { type:'pc'}

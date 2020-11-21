@@ -1,59 +1,66 @@
 <!-- elle_m_other.html -->
   <header id="headBox">
-    <div class="head_outer">
-      <h1><a href="./elle.html"><span class="hidden_context">elle로고</span></a></h1>
-      <nav class="navigation">
-        <ul class="gnb">
-          <li><a>subscribe</a></li>
-          <li><a>login</a></li>
-          <li><button class="btn_search" type="button"></button></li>
-          <li><div class="searchpop"></div></li>
-        </ul>
-      </nav>
-      <button class="btn_menu_open" type="button"><i class="fas fa-bars"></i></button>
-      <div class="allmenu">
-        <ul>
-          <li>fashion</li>
-          <li>beauty</li>
-          <li>star</li>
-          <li>love&life</li>
-          <li>horoscope</li>
-          <li>event</li>
-        </ul>
-        <div class="sns_outer">
-          <ul>
-            <li><a href="#">twitter</a></li>
-            <li><a href="#">instagram</a></li>
-            <li><a href="#">youtube</a></li>
-            <li><a href="#">facebook</a></li>
-            <li><a href="#">kakaostory</a></li>
-          </ul>
+    <div class="head_outer clearfix">
+      <h1><a href="./elle_m_other.html"><span class="hidden_context">elle로고</span></a></h1>
+      <ul class="gnb clearfix">
+        <li><a href="#">subscribe</a></li>
+        <li><a href="#">login</a></li>
+        <li><button class="btn_search" type="button"><i class="fas fa-search"></i></button></li>
+        <li><div class="searchpop"></div></li>
+      </ul>
+      <nav class="navigation clearfix">
+        <div class="btn_area">
+          <button class="btn_menu_open" type="button"><i class="fas fa-bars"></i></button>
         </div>
-      </div>
+        <div class="allmenu_outer">
+          <div class="allmenu">
+            <ul class="clearfix">
+              <li><a href="#">fashion</a></li>
+              <li><a href="#">beauty</a></li>
+              <li><a href="#">star</a></li>
+              <li><a href="#">love &amp; life</a></li>
+              <li><a href="#">horoscope</a></li>
+              <li><a href="#">event</a></li>
+            </ul>
+            <div class="sns_outer">
+              <ul class="clearfix">
+                <li><a href="#"><span class="hidden_context">twitter</span></a></li>
+                <li><a href="#"><span class="hidden_context">instagram</span></a></li>
+                <li><a href="#"><span class="hidden_context">youtube</span></a></li>
+                <li><a href="#"><span class="hidden_context">facebook</span></a></li>
+                <li><a href="#"><span class="hidden_context">kakaostory</span></a></li>
+              </ul>
+            </div> <!-- sns_outer -->
+          </div> <!-- allmenu -->
+        </div> <!-- allmenu_outer -->
+      </nav> <!-- navigation -->
     </div> <!-- // head_outer -->
   </header> <!-- // #headBox -->
 
   <section id="viewBox">
     <h2><span class="hidden_context">view영역</span></h2>
-    <div class="view_outer">
+    <div class="view_outer clearfix">
       <div class="view_big_img"></div>
-      <div class="view_small_img"></div>
+      <div class="view_small_img">
+        <span></span>
+      </div>
     </div>
   </section> <!-- // #viewBox -->
 
   <article id="fashionBox">
     <h2><span class="hidden_context">fashion영역</span></h2>
     <div class="fashion_outer">
-      <h3>fashion<h3>
-      <button class="fashion_Nbtn" type="button"><span>다음내용</span></button>
-      <button class="more_btn" type="button"><span>more</span></button>
-      <div class="fashion_img_area">
-        <ul>
-          <li class="fashion_img01"><a href="#">fashion01</a></li>
-          <li class="fashion_img02"><a href="#">fashion02</a></li>
-        </ul>
+      <h3>fashion</h3>
+      <div class="fashion_Nbtn">
+        <button type="button"><span class="hidden_context">다음내용</span></button>
       </div>
-    </div>
+      <div class="fashion_img_area">
+        <ul class="fashion_img_outer">
+          <li class="fashion_img01"><a href="#"><span class="hidden_context">fashion01</span></a></li>
+          <li class="fashion_img02"><a href="#"><span class="hidden_context">fashion02</span></a></li>
+        </ul>
+      </div> <!-- fashion_img_area -->
+    </div> <!-- fashion_outer -->
   </article> <!-- // #fashionBox -->
 
   <article id="beautyBox">

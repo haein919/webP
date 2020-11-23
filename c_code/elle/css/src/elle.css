@@ -471,10 +471,13 @@ html,body { width:100%; height:100%; }
 /* #beautyBox ====================================================================================== */
   #beautyBox { width:100%; height:auto; margin-bottom:50px; }
   
-  .beauty_outer { width:69.055555vw; height:auto; max-height:31.597222vw; margin:auto; }
+  .beauty_outer { position:relative; width:69.055555vw; height:auto; max-height:31.597222vw; margin:auto; }
   .beauty_outer h3 { float:right; width:auto; height:31.597222vw;  writing-mode: vertical-lr; font-size:2rem;
   letter-spacing:1rem; text-transform:uppercase; text-align:center; }
-  .beauty_outer button { display: none; }
+  .beauty_outer button { display:block; position:absolute; top:50%; left:0; z-index:100; 
+    transform:rotate(180deg) translateY(50%); width:60px; height:60px; 
+    background-image:url('../../img/main/next_btn.png'); background-repeat:no-repeat;
+    background-position:50% 50%; background-size:cover; }
 
   .beauty_img_area { float:left; width:auto; min-width:61.458333vw; height:auto; min-height:31.597222vw;; }
   .beauty_img_area ul { width:auto; min-width:61.458333vw; height:100%; }

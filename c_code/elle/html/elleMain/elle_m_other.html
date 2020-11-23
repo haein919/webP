@@ -164,42 +164,45 @@
 
   <article id="lovelifeBox">
     <h2><span class="hidden_context">love&life영역</span></h2>
-    <div class="lovelife_area">
-      <div class="lovelife_text">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, perferendis? Deserunt distinctio eum tempora incidunt accusamus id ab esse excepturi!</p>
-      </div>
-      <div class="lovelife_img_area">
+    <div class="lovelife_outer">
+      <div class="lovelife_img_area clearfix">
         <div class="love_area">
           <dl>
-            <dt><a href="#"><span>love이미지</span></a></dt>
-            <dd><a href="#">셀프웨딩의 모든것</a></dd>
+            <a href="#">
+              <dt><span class="hidden_context">love이미지</span></dt>
+              <dd>셀프웨딩의 모든것</dd>
+            </a>
           </dl>
           <h3>love</h3>
-        </div>
+        </div> <!-- // love_area -->
         <div class="lovelife_area">
-          <div class="lovelife_img">
-            <a href="#">중간이미지</a>
-          </div>
-          <div class="lovelife_title">
-            <a href="#">코로나시대 캠린이 열풍</a>
-          </div>
-        </div>
+          <a href="#">
+            <div class="lovelife_img">
+              <span class="hidden_context">중간이미지</span>
+            </div>
+            <div class="lovelife_title">
+              코로나시대 캠린이 열풍
+            </div>
+          </a>
+        </div> <!--// lovelife_area -->
         <div class="life_area">
           <dl>
-            <dt><a href="#"><span>life이미지</span></a></dt>
-            <dd><a href="#">지금은 레트로 감성</a></dd>
+            <a href="#">
+              <dt><span class="hidden_context">life이미지</span></dt>
+              <dd>지금은 레트로 감성</dd>
+            </a>
           </dl>
           <h3>life</h3>
-        </div>
-      </div>
-    </div>
+        </div> <!-- // life_area -->
+      </div> <!-- // lovelife_img_area -->
+    </div> <!-- // lovelife_outer -->
   </article> <!-- // #lovelifeBox -->
 
   <footer id="footBox">
     <h2><a href="#"><span class="hidden_context">elle하단로고</span></a></h2>
-    <div class="company_info">
+    <div class="company_info clearfix">
       <div class="footlink">
-        <ul>
+        <ul class="clearfix">
           <li><a href="#">개인정보처리방침</a></li>
           <li><a href="#">이용약관</a></li>
           <li><a href="#">이메일무단수집금지</a></li>
@@ -211,13 +214,15 @@
         </ul>
       </div>
       <div class="familysite">
-        <a href="https://www.cosmopolitan.co.kr/">cosmopolitan</a>
-        <a href="http://www.harpersbazaar.co.kr/">bazaar</a>
-        <a href="http://www.esquirekorea.co.kr/">esquire</a>
+        <ul class="clearfix">
+          <li><a href="https://www.cosmopolitan.co.kr/"><span class="hidden_context">cosmopolitan</span></a></li>
+          <li><a href="http://www.harpersbazaar.co.kr/"><span class="hidden_context">bazaar</span></a></li>
+          <li><a href="http://www.esquirekorea.co.kr/"><span class="hidden_context">esquire</span></a></li>
+        </ul>
+        <p>&copy; 2020 Heast Joongang. All Rights Reserved.</p>
       </div>
-      <p>&copy; 2020 Heast Joongang. All Rights Reserved.</p>
       <address class="addr">
-        <dl>
+        <dl class="clearfix">
           <dt>허스트중앙(유)</dt>
           <dt>서울시 강남구 도산대로156 jtbc plus 5층</dt>
           <dt>대표자:</dt><dd>강주연</dd>

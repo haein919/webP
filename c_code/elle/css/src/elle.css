@@ -2,7 +2,7 @@
 /* 공통내용 */
 html,body { width:100%; height:100%; }
 #wrap { width:100%; height:auto; min-width:240px; min-height:800px; background-color:#ccc; }
-#headBox {  position:fixed; top:0; z-index:500; width:100%; height:100px; margin:auto;  }
+#headBox {  position:fixed; top:0; z-index:500; width:100%; height:100px; margin:auto; border-bottom:1px solid rgba(0,0,0,0.4);  }
 .head_outer { width:100%; height:100%; padding-top:20px; box-sizing:border-box; background-color:rgba(255,255,255,0.9); }
 .head_outer h1 { position:relative; width:160px; top:0; z-index:600; float:left; margin-left:20px; }
 .head_outer h1 a { float:left;  width:100%; height:5rem; height:60px;
@@ -21,14 +21,14 @@ html,body { width:100%; height:100%; }
   .btn_area button { width:100%; height:100%; font-size:3rem; line-height:3rem; }
   
   .allmenu_outer { display:none; position:absolute; top:0; left:0; z-index:-600; width:100vw; height:100vh; 
-    padding-top:120px; box-sizing:border-box; background-color:rgba(0,0,0,0.5); }
-  .allmenu { width:100%; height:85%; }
+    padding-top:120px; box-sizing:border-box; background-color:rgba(0,0,0,0.8); }
+  .allmenu { float:left; width:100%; height:85%; }
   .allmenu ul { width:100%; height:100%; }
-  .allmenu li { width:100%; height:16%; border-bottom:1px dotted #fff; }
+  .allmenu li { width:90%; height:16%; margin:auto; border-bottom:1px dotted #fff; }
   .allmenu li a { display: block; font-size:2rem; color:#fff; font-weight:bold; 
-    text-transform:capitalize; text-align:center; line-height:7rem; }
+    text-transform:capitalize; text-align:right; line-height:7rem; }
   
-  .sns_outer { width:80%; height:15%; margin:auto; padding:50px; 
+  .sns_outer { float:right; width:auto; height:15%; margin:auto; padding:20px; margin-right:50px;
     box-sizing: border-box; }
   .sns_outer ul { width:auto; height:100%; }
   .sns_outer li { display:inline-block; width:30px; height:30px; border-bottom:none; }
@@ -135,6 +135,7 @@ html,body { width:100%; height:100%; }
 
   .center_line {display: block; position: absolute; z-index:10; top: 50%; left: 0; width: 100%; height:0; background-color: #fff; text-align: center; color:#fff; }
   .center_line > .center_text{ display: block; width: 100%; height: auto; transform:translateY(-10%); transition: all 300ms ease; opacity: 0;}
+  .center_text > span { text-transform:uppercase; }
   .beauty_img_area li a:hover .center_text{ transform:translateY(-50%); opacity: 1;}
   .beauty_img_area li a:hover::before{opacity: 1;}
   .beauty_img_area li a:hover{background-size: 120% auto;}
@@ -280,8 +281,9 @@ html,body { width:100%; height:100%; }
   .fashion_Nbtn { position:absolute; top:50%; right:5%; z-index:100; transform:translateY(-50%);
     width:60px; height:60px; }
   .fashion_Nbtn button { width:90%; height:90%; 
-    background-image:url('../../img/main/next_btn.png');
-    background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
+    background-image:url('../../img/btn/next_btn_white.png');
+    background-repeat:no-repeat; background-position:50% 50%; background-size:cover;
+    filter:drop-shadow(1px 1px 2px rgba(0,0,0,0.5)); }
   
   .fashion_img_area { float:right; width:75%; height:100%; min-height:58.59375vw; }
   .fashion_img_area ul { width:100%; height:100%; }
@@ -319,6 +321,7 @@ html,body { width:100%; height:100%; }
 
   .center_line {display: block; position: absolute; z-index:10; top: 50%; left: 0; width: 100%; height:0; background-color: #fff; text-align: center; color:#fff; }
   .center_line > .center_text{ display: block; width: 100%; height: auto; transform:translateY(-10%); transition: all 300ms ease; opacity: 0; }
+  .center_text > span { text-transform:uppercase; }
   .beauty_img_area li a:hover .center_text{ transform:translateY(-50%); opacity: 1;}
   .beauty_img_area li a:hover::before{opacity: 1;}
   .beauty_img_area li a:hover{background-size:auto 120%;}
@@ -364,8 +367,8 @@ html,body { width:100%; height:100%; }
     background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
   .lovelife_img_area dt { width:100%; height:100%; }
   .lovelife_img_area dd { position:absolute; bottom:0; left:50%; transform:translateX(-50%);
-    width:100%; height:10%; background-color:rgba(0,0,0,0.7); color:#fff; text-align:center;
-    line-height:2.5rem; }
+    width:100%; height:auto; padding:1rem 0;
+    background-color:rgba(0,0,0,0.7); color:#fff; text-align:center; }
   .lovelife_img_area h3 { width:100%; height:5.859375vw; 
     font-size:2rem; text-transform:uppercase; letter-spacing:1rem; text-align:center; }
 
@@ -388,8 +391,11 @@ html,body { width:100%; height:100%; }
   #footBox h2 a { display: block; width:100%; height:100%; 
     background-image:url('../../img/logo/Elle_logo_white.png'); background-repeat:no-repeat; background-position:50% 50%; background-size:contain; }
 
-    .company_info { width:95.703125vw; height:70%; }
-    .footlink { float:left; width:30%; height:100%; margin-right:2.3vw; }
+    .company_info { width:100%; height:70%; text-align:center; padding-top:20px; box-sizing: border-box; }
+    .company_info > div, .company_info > address {display:inline-block; margin-right:2vw; }
+    .company_info > address { margin-right:0;}
+
+    .footlink { float:left; width:28%; height:100%; margin-right:2.3vw; }
     .footlink ul { width:100%; height:100%; padding-top:15%; box-sizing: border-box; }
     .footlink li { display:inline-block; margin-right:10px; }
     .footlink li a { display:block; color:#fff; font-size:0.7rem; text-align:right; 
@@ -405,26 +411,27 @@ html,body { width:100%; height:100%; }
     .familysite li:nth-of-type(3) a { background-image:url('../../img/logo/familysite/El_PC_foot_family_esquire.png'); }
 
     .familysite p { display:block; padding-top:30%; width:100%; height:20%; color:#fff; font-size:0.7rem;
-      text-align:center; }
-
-    .addr { float:right; width:30%; height:100%; }
-    .addr dl { width:100%; height:100%; padding-top:15%; box-sizing: border-box; }
-    .addr dt { float:left; width:auto; height:20px; margin-right:5px;
-      color:#fff; font-size:0.7rem; font-style:normal; }
-    .addr dt:nth-of-type(2) { margin-right:60px; }
-    .addr dd:nth-of-type(3) { margin-right:40px;}
-    .addr dd { float:left; width:auto; height:20px; margin-right:10px;
-      color:#fff; font-size:0.7rem; font-style:normal; }
+     text-align:center; }
+     .addr { width:27%; height:auto; }
+     .addr > div { width:100%; height:100%; }
+  
+     .addr dl { float:left; width:auto; height:auto; margin-right:20px; margin-bottom:5px;
+       color:#fff; font-size:0.7rem; font-style:normal; }
+  
+     .addr dt { float:left; width:auto; height:auto; margin-right:5px;
+       color:#fff; font-size:0.7rem; font-style:normal; }
+     .addr dd { float:left; width:auto; height:auto; }
+    
 
 }
 /* tab_02.css */
 @media screen and (min-width:600px) and (max-width:900px) {
   #footBox { width:100%; height:200px; padding:50px 10px 10px; box-sizing:border-box; background-color:#222; }
-  .footlink, .addr, .familysite ul { display:none; }
-  #footBox h2 a { display: block; width:300px; height:60px; margin:auto; background-image:url('../../img/logo/Elle_logo_white.png');
-    background-repeat:no-repeat; background-position:50% 50%; background-size:contain; }
-  .familysite { width:100%; height:auto; }
-  .familysite p { display:block; height:10px; padding-top:0; margin-top:30px; text-align:center; color:#fff; font-size:0.5rem; }
+  .company_info { width:100%; height:auto; text-align:center; padding-top:20px; box-sizing: border-box; }
+  .company_info > div:nth-of-type(1), .company_info > address {display:none; margin-right:0; }
+  .familysite { display:block; width:100%; height:auto; margin-top:30px;}
+  .familysite p { display:block; height:auto; padding-top:0; margin-top:0; text-align:center; color:#fff; font-size:0.5rem; }
+
 }
 
 
@@ -456,8 +463,9 @@ html,body { width:100%; height:100%; }
   .fashion_Nbtn { position:absolute; top:50%; right:5%; z-index:100; transform:translateY(-50%);
     width:60px; height:60px; }
   .fashion_Nbtn button { width:90%; height:90%; 
-    background-image:url('../../img/main/next_btn.png');
-    background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
+    background-image:url('../../img/btn/next_btn_white.png');
+    background-repeat:no-repeat; background-position:50% 50%; background-size:cover;
+    filter:drop-shadow(1px 1px 2px rgba(0,0,0,0.5)); }
   
   .fashion_img_area { float:right; width:75%; min-width:56.944444vw; height:100%; min-height:38.888888vw; }
   .fashion_img_area ul { width:100%; height:100%; }
@@ -469,14 +477,14 @@ html,body { width:100%; height:100%; }
   .fashion_img_area .fashion_img02 { position:absolute; top:0; right:0; z-index:40; }
 
 /* #beautyBox ====================================================================================== */
-  #beautyBox { width:100%; height:auto; margin-bottom:50px; }
+  #beautyBox { width:100%; height:auto; margin-bottom:250px; }
   
   .beauty_outer { position:relative; width:69.055555vw; height:auto; max-height:31.597222vw; margin:auto; }
   .beauty_outer h3 { float:right; width:auto; height:31.597222vw;  writing-mode: vertical-lr; font-size:2rem;
   letter-spacing:1rem; text-transform:uppercase; text-align:center; }
   .beauty_outer button { display:block; position:absolute; top:50%; left:0; z-index:100; 
     transform:rotate(180deg) translateY(50%); width:60px; height:60px; 
-    background-image:url('../../img/main/next_btn.png'); background-repeat:no-repeat;
+    background-image:url('../../img/btn/next_btn.png'); background-repeat:no-repeat;
     background-position:50% 50%; background-size:cover; }
 
   .beauty_img_area { float:left; width:auto; min-width:61.458333vw; height:auto; min-height:31.597222vw;; }
@@ -498,23 +506,125 @@ html,body { width:100%; height:100%; }
 
   .center_line {display: block; position: absolute; z-index:10; top: 50%; left: 0; width: 100%; height:0; background-color: #fff; text-align: center; color:#fff; }
   .center_line > .center_text{ display: block; width: 100%; height: auto; transform:translateY(-10%); transition: all 300ms ease; opacity: 0; }
+  .center_text > span { text-transform:uppercase; }
   .beauty_img_area li a:hover .center_text{ transform:translateY(-50%); opacity: 1;}
   .beauty_img_area li a:hover::before{opacity: 1;}
   .beauty_img_area li a:hover{background-size:auto 120%;}
 
-  #starBox { width:100%; height:600px;  background-color:#77a; }
-  #lovelifeBox { width:100%; height:900px;  background-color:rgb(255, 255, 72); }
-  #footBox { width:100%; height:300px; padding:10px; box-sizing:border-box; background-color:#333; }
+/* #starBox ============================================================================================ */
+  #starBox { width:100%; height:auto; min-height:36.458333vw; margin-bottom:160px; }
+  .star_outer { width:68.055555vw; height:auto;  margin:auto; }
+  .star_outer h3 { float:left; width:10%; height:auto; margin-top:40px; 
+    font-size:1.8rem; text-transform:uppercase; writing-mode:vertical-rl; text-orientation: upright; letter-spacing:1rem; text-align:center; }
+  
+  .star_img_area { float:right; width:80%; height:auto; }
+  .star_img_area ul { width:auto; height:auto; }
+  .star_img_area li { float:left; width:17.8vw; height:18.194444vw; margin-right:5px; }
+  .star_img_area li:nth-child(-n+3) { margin-bottom:5px; }
+  .star_img_area li:nth-child(3n) { margin-right:0; }
+  .star_img_area li a { display:block; position:relative; 
+    width:100%; height:100%; transition:all 300ms ease;
+    background-repeat:no-repeat; background-position:50% 50%;background-size:cover;}
 
+  .star_img01 a { background-image:url('../../img/main/main_star01.jpg'); }
+  .star_img02 a { background-image:url('../../img/main/main_star02.jpg'); }
+  .star_img03 a { background-image:url('../../img/main/main_star03.jpg'); }
+  .star_img04 a { background-image:url('../../img/main/main_star04.jpg'); }
+  .star_img05 a { background-image:url('../../img/main/main_star05.jpg'); }
+  .star_img06 a { background-image:url('../../img/main/main_star06.jpg'); }
+
+  .star_img_area li a::before { content:" "; display: block; 
+    position:absolute; top:0; left:0;
+    width:100%; height:100%; opacity:1; transition:all 300ms ease; background-color: rgba(0,0,0,0.7); border:8px solid #a00;
+    box-sizing:border-box; opacity: 0;}
+
+  .center_line {display: block; position: absolute; z-index:10; top: 50%; left: 0; width: 100%; height:0; background-color: #fff; text-align: center; color:#fff; }
+  .center_line > .center_text{ display: block; width: 100%; height: auto; transform:translateY(-10%); transition: all 300ms ease; opacity: 0; }
+  .star_img_area li a:hover .center_text{ transform:translateY(-50%); opacity: 1;}
+  .star_img_area li a:hover::before{opacity: 1;}
+
+/* #lovelifeBox ========================================================================================= */
+ #lovelifeBox { width:100%; height:auto; margin-bottom:100px; }
+  .lovelife_outer { width:100%; height:auto; margin:auto; padding-top:20px; box-sizing: border-box; }
+  .lovelife_img_area { width:100%; height:34.72222vw; text-align: center; }
+  
+  .lovelife_img_area>div{ display: inline-block;  margin-left:3vw;  }
+  .lovelife_img_area>div:first-of-type{margin-left: 0;}
+  
+  .lovelife_img_area dl { position:relative; width:100%; height:80%; margin-bottom:20px;
+    background-color:#111; padding-top:20px; box-sizing: border-box; box-shadow:2px 2px 5px rgba(0,0,0,0.7);}
+  .lovelife_img_area dl a { display: block; width:100%; height:100%; 
+    background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
+  .lovelife_img_area dt { width:100%; height:100%; }
+  .lovelife_img_area dd { position:static; width:100%; height:auto; margin-top:1vw;
+    color:#fff; text-align:center;  }
+  .lovelife_img_area h3 { width:100%; height:10%; 
+    font-size:2rem; text-transform:uppercase; letter-spacing:1rem; text-align:center; }
+
+  .love_area { width:20.833333vw; height:100%; }
+  .love_area dl a { width:90%; height:85%; margin:auto; background-image:url('../../img/main/main_lovlife01.jpg'); }
+
+  .lovelife_area { position:relative; width:23.611111vw; height:32.986111vw; background-color:#4ce; }
+  .lovelife_area a { display:block; width:100%; height:100%; }
+  .lovelife_img { width:100%; height:100%; background-image:url('../../img/main/main_lovlife02.jpg');
+    background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
+  .lovelife_title { position:absolute; bottom:10%; left:50%; transform:translateX(-50%);
+    width:100%; height:10%; color:#fff; text-align:center; line-height:2.5rem; }
+  
+  .life_area { width:20.833333vw; height:100%;}
+  .life_area dl a { width:90%; height:85%; margin:auto; background-image:url('../../img/main/lovelife_img3.png'); }
+
+  .lovelife_img_area dl::after { position:absolute; top:-6%; left:0; right:0; margin:auto; content:" ";
+    width:6.944444vw; height:30px; background-color:rgba(234,234,234,0.6);  }
+
+/* #footBox ============================================================================================ */
+ #footBox { width:100%; height:300px; padding:4vw 3vw 1vw; box-sizing:border-box; background-color:#222; }
+  #footBox h2 { width:300px; height:60px; margin:auto; }
+  #footBox h2 a { display: block; width:100%; height:100%; 
+    background-image:url('../../img/logo/Elle_logo_white.png'); background-repeat:no-repeat; background-position:50% 50%; background-size:contain; }
+
+    .company_info { width:100%; height:70%; text-align:center; padding-top:20px; box-sizing: border-box; }
+    .company_info > div, .company_info > address {display:inline-block; margin-right:2vw; }
+    .company_info > address { margin-right:0;}
+
+    .footlink {  width:28%; height:auto;  }
+    .footlink ul { width:100%; height:100%;  }
+    .footlink li { display:inline-block; margin-right:10px; }
+    .footlink li a { display:block; color:#fff; font-size:0.7rem; text-align:right; 
+      text-decoration:underline;}
+
+    .familysite {  width:35%; height:auto; }
+    .familysite ul { width:100%; height:100%;  }
+    .familysite li { display:inline-block; margin-right:1vw; }
+    .familysite li:last-child { margin-right:0; }
+    .familysite li a { display:block; width:100px; height:30px; background-repeat:no-repeat;
+      background-position:50% 50%; background-size:contain; }
+    .familysite li:nth-of-type(1) a { background-image:url('../../img/logo/familysite/El_PC_foot_family_cosmopolitan.png'); }
+    .familysite li:nth-of-type(2) a { background-image:url('../../img/logo/familysite/El_PC_foot_family_bazaar.png'); }
+    .familysite li:nth-of-type(3) a { background-image:url('../../img/logo/familysite/El_PC_foot_family_esquire.png'); }
+
+    .familysite p { display:block; padding-top:10px; width:100%; height:20%; color:#fff; font-size:0.7rem;
+      text-align:center; }
+
+    .addr { width:27%; height:auto; }
+    .addr > div { width:100%; height:100%; }
+  
+    .addr dl { float:left; width:auto; height:auto; margin-right:20px; margin-bottom:5px;
+      color:#fff; font-size:0.7rem; font-style:normal; }
+  
+    .addr dt { float:left; width:auto; height:auto; margin-right:5px;
+      color:#fff; font-size:0.7rem; font-style:normal; }
+    .addr dd { float:left; width:auto; height:auto; }
+    
 }
 
 /* pcFull.css */
 @media screen and (min-width:1440px) {
   /* 브라우저 가로폭1920px 기준으로 작업 */
-  #wrap { width:100%; margin:auto; }
+  #wrap { width:100%; margin:auto; background-color:#fff; }
   
 /* #viewBox ================================================================================== */
-#viewBox { width:100%; height:auto; max-height:67.5vw; background-color:#ffd798; }
+#viewBox { width:100%; height:auto; max-height:67.5vw; margin-bottom:350px; background-color:#ffd798; }
 .view_outer { width:100%; height:auto; }
 .view_big_img { float:left; width:60%; height:100%; min-height:67.5vw;
   background-image:url('../../img/main/main_big.jpg'); background-repeat:no-repeat;
@@ -527,9 +637,166 @@ html,body { width:100%; height:100%; }
   background-position:50% 50%; background-size:cover;  }
 
 
-  #fashionBox { width:100%; height:1200px;  background-color:#a99; }
-  #beautyBox { width:100%; height:600px;  background-color:#f32; }
-  #starBox { width:100%; height:1000px;  background-color:#c9a; }
-  #lovelifeBox { width:100%; height:1000px;  background-color:#e88; }
-  #footBox { width:100%; height:300px; padding:10px; box-sizing:border-box; background-color:#333; }
+/* #fashionBox =================================================================================== */
+#fashionBox { width:100%; height:auto; min-height:31.25vw; margin-bottom:350px; }
+.fashion_outer { position:relative; width:73.958333vw; height:auto; min-height:31.25vw;
+  margin:auto;  }
+
+.fashion_outer h3 { position:absolute; top:50%; left:-10%; z-index:100; transform:translateY(-50%); font-size:3rem; text-transform:uppercase; letter-spacing:1rem; }
+
+.fashion_Nbtn { position:absolute; top:50%; right:5%; z-index:100; transform:translateY(-50%);
+  width:80px; height:80px; }
+.fashion_Nbtn button { width:90%; height:90%; 
+  background-image:url('../../img/btn/next_btn_white.png');
+  background-repeat:no-repeat; background-position:50% 50%; background-size:cover; 
+  filter:drop-shadow(1px 1px 2px rgba(0,0,0,0.5)); }
+
+.fashion_img_area { float:right; width:auto; height:31.25vw; }
+.fashion_img_area ul { width:65.625vw; height:100%; }
+.fashion_img_area li { width:100%; height:100%;  }
+.fashion_img_area .fashion_img01 { position:absolute; top:0; right:0; z-index:50;
+  background-image:url('../../img/main/main_fashion_big.jpg');
+  background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
+.fashion_img_area .fashion_img01 a { display: block; width:100%; height:100%; }
+.fashion_img_area .fashion_img02 { position:absolute; top:0; right:0; z-index:40; }
+
+/* #beautyBox ====================================================================================== */
+#beautyBox { width:100%; height:auto; margin-bottom:250px;  }
+  
+.beauty_outer { position:relative; width:73.958333vw; height:auto; max-height:31.597222vw; margin:auto; }
+.beauty_outer h3 { float:right; width:auto; height:31.597222vw;  writing-mode: vertical-lr; font-size:2rem;
+letter-spacing:2rem; text-transform:uppercase; text-align:center; }
+.beauty_outer button { display:block; float:left; width:60px; height:60px; margin-top:13vw;
+  background-image:url('../../img/btn/left-arrow.png'); background-repeat:no-repeat;
+  background-position:50% 50%; background-size:cover; }
+
+.beauty_img_area { float:left; width:auto; height:auto; min-height:31.597222vw; margin-left:4vw;  }
+.beauty_img_area ul { width:auto; height:100%; }
+.beauty_img_area li { float:left; width:14.444444vw; height:31.597222vw; margin-right:20px; }
+.beauty_img_area li:last-child { margin-right:0; }
+.beauty_img_area li a { display:block; position:relative; 
+  width:100%; height:100%; transition:all 300ms ease;
+  background-repeat:no-repeat; background-position:50% 50%; background-size:auto 100%;}
+.beauty_img01 a { background-image:url('../../img/main/main_beauty01.jpg'); }
+.beauty_img02 a { background-image:url('../../img/main/main_beauty02.jpg'); }
+.beauty_img03 a { background-image:url('../../img/main/main_beauty03.jpg'); }
+.beauty_img04 a { background-image:url('../../img/main/main_beauty04.jpg'); }
+
+.beauty_img_area li a::before { content:" "; display: block; 
+  position:absolute; top:0; left:0;
+  width:100%; height:100%; opacity:1; transition:all 300ms ease; background-color: rgba(0,0,0,0.7); border:8px solid #a00;
+  box-sizing:border-box; opacity: 0;}
+
+.center_line {display: block; position: absolute; z-index:10; top: 50%; left: 0; width: 100%; height:0; background-color: #fff; text-align: center; color:#fff; }
+.center_line > .center_text{ display: block; width: 100%; height: auto; transform:translateY(-10%); transition: all 300ms ease; opacity: 0; }
+.center_text > span { text-transform:uppercase; }
+.beauty_img_area li a:hover .center_text{ transform:translateY(-50%); opacity: 1;}
+.beauty_img_area li a:hover::before{opacity: 1;}
+.beauty_img_area li a:hover{background-size:auto 120%;}
+
+/* #starBox ============================================================================================ */
+#starBox { width:100%; height:auto;  margin-bottom:250px; }
+.star_outer { width:73.958333vw; height:auto; max-height:36.458333vw; margin:auto; }
+.star_outer h3 { float:left; width:10%; height:auto; margin-top:40px; 
+  font-size:2rem; text-transform:uppercase; writing-mode:vertical-rl; text-orientation: upright; letter-spacing:1rem; text-align:center; }
+
+.star_img_area { float:right; width:80%; height:auto;  }
+.star_img_area ul { width:auto; height:100%; }
+.star_img_area li { float:left; width:19vw; height:17.7vw; margin-right:15px; }
+.star_img_area li:nth-child(-n+3) { margin-bottom:15px; }
+.star_img_area li:nth-child(3n) { margin-right:0; }
+.star_img_area li a { display:block; position:relative; 
+  width:100%; height:100%; transition:all 300ms ease;
+  background-repeat:no-repeat; background-position:50% 50%;background-size:cover;}
+
+.star_img01 a { background-image:url('../../img/main/main_star01.jpg'); }
+.star_img02 a { background-image:url('../../img/main/main_star02.jpg'); }
+.star_img03 a { background-image:url('../../img/main/main_star03.jpg'); }
+.star_img04 a { background-image:url('../../img/main/main_star04.jpg'); }
+.star_img05 a { background-image:url('../../img/main/main_star05.jpg'); }
+.star_img06 a { background-image:url('../../img/main/main_star06.jpg'); }
+
+.star_img_area li a::before { content:" "; display: block; 
+  position:absolute; top:0; left:0;
+  width:100%; height:100%; opacity:1; transition:all 300ms ease; background-color: rgba(0,0,0,0.7); border:8px solid #a00;
+  box-sizing:border-box; opacity: 0;}
+
+.center_line {display: block; position: absolute; z-index:10; top: 50%; left: 0; width: 100%; height:0; background-color: #fff; text-align: center; color:#fff; }
+.center_line > .center_text{ display: block; width: 100%; height: auto; transform:translateY(-10%); transition: all 300ms ease; opacity: 0; }
+.star_img_area li a:hover .center_text{ transform:translateY(-50%); opacity: 1;}
+.star_img_area li a:hover::before{opacity: 1;}
+
+/* #lovelifeBox ========================================================================================= */
+#lovelifeBox { width:100%; height:auto; margin-bottom:100px; }
+.lovelife_outer { width:100%; height:auto; margin:auto; padding-top:20px; box-sizing: border-box; }
+.lovelife_img_area { width:100%; height:34.72222vw; text-align: center; }
+
+.lovelife_img_area>div{ display: inline-block;  margin-left:3vw;  }
+.lovelife_img_area>div:first-of-type{margin-left: 0;}
+
+.lovelife_img_area dl { position:relative; width:100%; height:80%; margin-bottom:20px;
+  background-color:#111; padding-top:20px; box-sizing: border-box; box-shadow:2px 2px 5px rgba(0,0,0,0.7);}
+.lovelife_img_area dl a { display: block; width:100%; height:100%; 
+  background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
+.lovelife_img_area dt { width:100%; height:100%; }
+.lovelife_img_area dd { position:static; width:100%; height:auto; margin-top:1vw;
+  color:#fff; text-align:center;  }
+.lovelife_img_area h3 { width:100%; height:10%; 
+  font-size:2rem; text-transform:uppercase; letter-spacing:1rem; text-align:center; }
+
+.love_area { width:20.833333vw; height:100%; }
+.love_area dl a { width:90%; height:85%; margin:auto; background-image:url('../../img/main/main_lovlife01.jpg'); }
+
+.lovelife_area { position:relative; width:23.611111vw; height:32.986111vw; background-color:#4ce; }
+.lovelife_area a { display:block; width:100%; height:100%; }
+.lovelife_img { width:100%; height:100%; background-image:url('../../img/main/main_lovlife02.jpg');
+  background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
+.lovelife_title { position:absolute; bottom:10%; left:50%; transform:translateX(-50%);
+  width:100%; height:10%; color:#fff; text-align:center; line-height:2.5rem; }
+
+.life_area { width:20.833333vw; height:100%;}
+.life_area dl a { width:90%; height:85%; margin:auto; background-image:url('../../img/main/lovelife_img3.png'); }
+
+.lovelife_img_area dl::after { position:absolute; top:-4%; left:0; right:0; margin:auto; content:" ";
+  width:6.944444vw; height:30px; background-color:rgba(234,234,234,0.6);  }
+
+/* #footBox ============================================================================================ */
+#footBox { width:100%; height:300px; padding:4vw 3vw 1vw; box-sizing:border-box; background-color:#222; }
+#footBox h2 { width:300px; height:60px; margin:auto; }
+#footBox h2 a { display: block; width:100%; height:100%; 
+  background-image:url('../../img/logo/Elle_logo_white.png'); background-repeat:no-repeat; background-position:50% 50%; background-size:contain; }
+
+  .company_info { width:100%; height:70%; text-align:center; padding-top:20px; box-sizing: border-box; }
+  .company_info > div, .company_info > address {display:inline-block; margin-right:2vw; }
+  .company_info > address { margin-right:0;}
+
+  .footlink {  width:28%; height:auto;  }
+  .footlink ul { width:100%; height:100%;  }
+  .footlink li { display:inline-block; margin-right:10px; }
+  .footlink li a { display:block; color:#fff; font-size:0.7rem; text-align:right; 
+    text-decoration:underline;}
+
+  .familysite {  width:35%; height:auto; }
+  .familysite ul { width:100%; height:100%;  }
+  .familysite li { display:inline-block; margin-right:1vw; }
+  .familysite li:last-child { margin-right:0; }
+  .familysite li a { display:block; width:100px; height:30px; background-repeat:no-repeat;
+    background-position:50% 50%; background-size:contain; }
+  .familysite li:nth-of-type(1) a { background-image:url('../../img/logo/familysite/El_PC_foot_family_cosmopolitan.png'); }
+  .familysite li:nth-of-type(2) a { background-image:url('../../img/logo/familysite/El_PC_foot_family_bazaar.png'); }
+  .familysite li:nth-of-type(3) a { background-image:url('../../img/logo/familysite/El_PC_foot_family_esquire.png'); }
+
+  .familysite p { display:block; padding-top:10px; width:100%; height:20%; color:#fff; font-size:0.7rem;
+    text-align:center; }
+
+  .addr { width:27%; height:auto; }
+  .addr > div { width:100%; height:100%; }
+
+  .addr dl { float:left; width:auto; height:auto; margin-right:20px; margin-bottom:5px;
+    color:#fff; font-size:0.7rem; font-style:normal; }
+
+  .addr dt { float:left; width:auto; height:auto; margin-right:5px;
+    color:#fff; font-size:0.7rem; font-style:normal; }
+  .addr dd { float:left; width:auto; height:auto; }
+
 }

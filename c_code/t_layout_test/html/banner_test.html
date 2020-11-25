@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- banner_test.html -->
+<html lang="ko-KR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="../fonts/fontawesome_5/css/all.css">
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+ 
+ <link rel="stylesheet" href="../css/base/reset.css">
+ <link rel="stylesheet" href="../css/base/common.css">
+ <link rel="stylesheet" href="../css/src/banner_test.css">
+ 
+ <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+ <link rel="apple-touch-icon" href="../img/favicon.png">
+ <title>스크롤, 인디케이터 테스트</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <header id="headBox">
+      <h1><a href="./banner_test.html"><span>banner test</span></a></h1>
+      <nav id="navBox">
+        <h2 class="hidden_context">navigation</h2>
+        <ul class="gnb">
+          <li><a href="#">menu1</a></li>
+          <li><a href="#">menu2</a></li>
+          <li><a href="#">menu3</a></li>
+          <li><a href="#">menu4</a></li>
+        </ul>
+      </nav> <!-- // #navBox -->
+    </header> <!-- // #headBox -->
+    
+    <section id="viewBox">
+      <h2 class="hidden_context">광고영역</h2>
+      <div class="indicatior clearfix">
+        <ul class="slide_indi clearfix hidden_wrap">
+          <li class="action"><a href="#"><span>광고1</span></a></li>
+          <li><a href="#"><span>광고2</span></a></li>
+          <li><a href="#"><span>광고3</span></a></li>
+          <li><a href="#"><span>광고4</span></a></li>
+          <li><a href="#"><span>광고5</span></a></li>
+        </ul>
+        <div class="indi_btn">
+          <button class="prev_btn" type="button">
+            <i class="fas fa-chevron-left"></i>
+            <span class="hidden_context">이전 내용 보기</span>
+          </button>
+          <button class="next_btn" type="button">
+            <i class="fas fa-chevron-right"></i>
+            <span class="hidden_context">다음 내용 보기</span>
+          </button>
+        </div>
+      </div> <!-- // indicator -->
+      <div class="view_outer">
+        <ul class="view_img">
+          <li class="view_01"><span class="hidden_context">광고1</span></li>
+          <li class="view_02"><span class="hidden_context">광고2</span></li>
+          <li class="view_03"><span class="hidden_context">광고3</span></li>
+          <li class="view_04"><span class="hidden_context">광고4</span></li>
+          <li class="view_05"><span class="hidden_context">광고5</span></li>
+        </ul>
+      </div>
+    </section> <!-- // #viewBox -->
+    <article id="contentBox">
+      <h2>content</h2>
+    </article> <!-- // #contentBox -->
+    <footer id="footBox">
+      <h2>company_info</h2>
+    </footer> <!-- // #footBox -->
+    <div class="top_btn">
+      <a href="#wrap">
+        <i class="fas fa-arrow-up"></i>
+        <span class="hidden_context">top</span>
+      </a>
+    </div>
+  </div> <!-- // #wrap -->
+  <!-- script -->
+<script src="../js/base/jquery-3.5.1.js"></script>
+<script src="../js/base/jquery-ui.js"></script>
+<script src="../js/src/banner_test.js"></script>
+</body>
+</html>

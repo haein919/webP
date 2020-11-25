@@ -1,0 +1,46 @@
+/* banner_test.css */
+
+#wrap { position:relative; width:100%; min-width:960px; height:auto; margin:auto; background-color:#ececec; }
+/* #headBox ============================================================================================ */
+#headBox { position:absolute; top:45px; left:0; right:0; z-index:1000; width:80%; height:90px;
+  margin:auto; padding:10px; box-sizing:border-box; background-color:rgba(85,85,85,0.5); }
+h1 { float:left; width:220px; height:70px; text-align:center; line-height:4rem; background-color:#fff; }
+
+#navBox { float:right; width:auto; height:auto;  }
+#navBox ul { width:auto; height:auto; }
+#navBox li { float:left; width:120px; height:auto; margin-right:50px; margin-top:10px; }
+#navBox li a { display:block; width:auto; padding:1rem; text-align:center; color:#fff; }
+#navBox li a:hover,
+#navBox li a:focus { background-color:#ff0; color:#333; }
+
+/* #viewBox ============================================================================================ */
+#viewBox { position:relative; width:100%; height:100vh; 
+  min-height:800px; background-color:#ace; margin-bottom:150px; }
+
+.indicatior { position:absolute; bottom:40px; right:50px; z-index:500;
+  width:230px; height:35px; padding:5px; box-sizing:border-box; border-radius:50px; background-color:rgba(85,85,85,0.5); }
+  .slide_indi { float:left; width:170px; height:35px; }
+  .slide_indi li { float:left; width:24px; height:25px;
+    margin-right:10px;  border-radius:100%; background-color:#fff; }
+  .slide_indi li a { display:block; width:100%; height:100%; border-radius:100%; box-sizing:border-box; }
+  .slide_indi li.action a { background-color:#07c; }
+  
+  .indi_btn { float:right; width:50px; height:100%; }
+  .indi_btn button { float:left; width:25px; height:25px; color:#fff; font-size:1.5rem; }
+
+.view_outer { width:100%; height:100%; overflow:hidden; }
+  .view_img { position:relative; z-index:100; width:500%; height:100%; margin-left:-100%; background-color:#076; }
+  .view_img li { float:left; width:20%; height:100%; background-repeat:no-repeat;
+    background-position:50% 50%; background-size:cover; }
+  .view_img li.view_01 { background-image:url('../../img/view_01.jpg'); }
+  .view_img li.view_02 { background-image:url('../../img/view_02.jpg'); }
+  .view_img li.view_03 { background-image:url('../../img/view_03.jpg'); }
+  .view_img li.view_04 { background-image:url('../../img/view_04.jpg'); }
+  .view_img li.view_05 { background-image:url('../../img/view_05.jpg'); }
+
+#contentBox { width:100%; height:600px; background-color:#dea; }
+#footBox { width:100%; height:200px; background-color:#222;  }
+
+.top_btn { position:fixed; right:1rem; bottom:3rem; width:100px; height:100px;
+  background-color:rgba(85,85,85,0.5); color:#fff; text-align:center; }
+.top_btn a { display:block; width:100%; height:100%; font-size:4rem; text-align:center; }

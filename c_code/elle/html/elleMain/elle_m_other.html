@@ -6,11 +6,45 @@
         <li><a href="#">subscribe</a></li>
         <li><a href="#">login</a></li>
         <li><button class="btn_search" type="button"><i class="fas fa-search"></i></button></li>
-        <li><div class="searchpop"></div></li>
       </ul>
+      <div class="searchpop">
+        <div class="pop_close">
+          <button type="button"><i class="fas fa-times"><span class="hidden_context">닫기</span></i></button>
+        </div>
+        <div class="searchBox">
+          <form action="#" method="GET">
+            <fieldset class="search_area">
+              <legend>검색</legend>
+              <div class="textinput">
+                <div class="input_wrap">
+                  <input type="text" id="search" value="" name="search" placeholder="내일 뭐 입지?"/>
+                  <button type="button" class="search_btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="issue_area">
+                  <div class="issue_title"><a href="#">hot issue</a></div>
+                  <div class="issue_context">
+                    <ul class="clearfix">
+                      <li><a href="#">진주 주얼리를 한 스타들</a></li>
+                      <li><a href="#">보송보송한 겨울가방</a></li>
+                      <li><a href="#">화사도 갔다</a></li>
+                      <li><a href="#">우리나라의 숨겨진 보석같은 허니문 플레이스!</a></li>
+                      <li><a href="#">옷잘입는 스타들이 픽한 아우터 바로 '이것'</a></li>
+                    </ul>
+                  </div> <!-- // issue_context -->
+                </div> <!-- // issue_area -->
+              </div> <!-- // textinput -->
+            </fieldset>
+          </form>
+        </div> <!-- // searchBox -->
+      </div> <!-- // searchpop -->
+
       <nav class="navigation clearfix">
         <div class="btn_area">
-          <button class="btn_menu_open" type="button"><i class="fas fa-bars"></i></button>
+          <button class="btn_menu_open" type="button">
+            <i class="line_01"></i>
+            <i class="line_02"></i>
+            <i class="line_03"></i>
+          </button>
         </div>
         <div class="allmenu_outer">
           <div class="allmenu">
@@ -56,7 +90,7 @@
       </div>
       <div class="fashion_img_area">
         <ul class="fashion_img_outer">
-          <li class="fashion_img01"><a href="#"><span class="hidden_context">fashion01</span></a></li>
+          <li class="fashion_img01 action"><a href="#"><span class="hidden_context">fashion01</span></a></li>
           <li class="fashion_img02"><a href="#"><span class="hidden_context">fashion02</span></a></li>
         </ul>
       </div> <!-- fashion_img_area -->
@@ -245,5 +279,10 @@
         </div>
       </address>
     </div>
-
   </footer> <!-- // #footBox -->
+
+  <div class="top_btn">
+    <a href="#wrap">
+      <i class="fas fa-chevron-up"><span class="hidden_context">top</span></i>
+    </a>
+  </div>

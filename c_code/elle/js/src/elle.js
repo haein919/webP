@@ -14,5 +14,5 @@ var body = $('body');
       body.append('<script src="../js/src/elle_m_other.js"></script>');
     });
   }
-
+  
 })(jQuery);

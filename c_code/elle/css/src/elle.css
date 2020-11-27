@@ -1,4 +1,5 @@
 /* elle.css */
+
 /* 공통내용 */
 html,body { width:100%; height:100%; }
 #wrap { width:100%; height:auto; min-width:240px; min-height:800px; background-color:#ccc; }
@@ -61,7 +62,8 @@ html,body { width:100%; height:100%; }
   
   .btn_area button:hover i { background-color:#d00; }
 
-  .allmenu_outer { display:none; position:absolute; top:0; left:0; z-index:-600; width:100vw; height:100vh; 
+  .allmenu_outer { display:none; position:absolute; top:0; left:0; z-index:-600; 
+    width:100vw; height:1000px; ;
     padding-top:120px; box-sizing:border-box; background-color:rgba(0,0,0,0.9); }
   .allmenu { float:left; width:100%; height:85%; }
   .allmenu ul { width:100%; height:100%; }
@@ -84,6 +86,7 @@ html,body { width:100%; height:100%; }
     background-color:rgba(51,51,51,0.8); color:#fff; line-height:4rem; text-align:center; }
   .top_btn a { display: block; width:100%; height:100%; font-size:2rem;}
 
+
 /* mob.css */
 @media screen and (max-width:599px) {
   /* 브라우저 가로폭480px 기준으로 작업 */
@@ -97,7 +100,7 @@ html,body { width:100%; height:100%; }
   .head_outer h1 a { float:left; width:160px; height:60px; 
     background-image:url('../../img/logo/Elle_logo.png');
     background-position:50% 50%; background-size:contain; background-repeat:no-repeat; }
-  .gnb { float:right; width:50px; height:50px; margin-right:10px; margin-top:5px; padding-top:0; margin-left:0; }
+  .gnb { float:right; width:40px; height:40px; margin-right:10px; margin-top:10px; padding-top:0; margin-left:0; }
     .btn_area { width:100%; height:100%; }
     .btn_area button { width:100%; height:100%; font-size:3rem; line-height:3rem; }
     
@@ -506,17 +509,16 @@ html,body { width:100%; height:100%; }
   #beautyBox { width:100%; height:auto; margin-bottom:250px; }
   
   .beauty_outer { position:relative; width:69.055555vw; height:auto; max-height:31.597222vw; margin:auto; }
-  .beauty_outer h3 { float:right; width:auto; height:31.597222vw;  writing-mode: vertical-lr; font-size:2rem;
+  .beauty_outer h3 { float:left; width:auto; height:31.597222vw;  writing-mode: vertical-lr; text-orientation:upright; font-size:1.8rem;
   letter-spacing:1rem; text-transform:uppercase; text-align:center; }
-  .beauty_outer button { display:block; position:absolute; top:50%; left:0; z-index:100; 
-    transform:rotate(180deg) translateY(50%); width:60px; height:60px; 
-    background-image:url('../../img/btn/next_btn.png'); background-repeat:no-repeat;
+  .beauty_outer button { display:block; position:absolute; top:50%; right:-8%; z-index:100; 
+    transform:translateY(-50%); width:60px; height:60px; 
+    background-image:url('../../img/btn/next.png'); background-repeat:no-repeat;
     background-position:50% 50%; background-size:cover; }
 
-  .beauty_img_area { float:left; width:auto; min-width:61.458333vw; height:auto; min-height:31.597222vw;; }
-  .beauty_img_area ul { width:auto; min-width:61.458333vw; height:100%; }
-  .beauty_img_area li { float:left; width:14.444444vw; height:31.597222vw; margin-right:20px; }
-  .beauty_img_area li:last-child { margin-right:0; }
+  .beauty_img_area { float:right; width:63.5vw; height:31.597222vw; margin-left:1vw; }
+  .beauty_img_area ul { width:400%; height:100%; }
+  .beauty_img_area li { float:left; width:25%; height:inherit; margin-right:1.953125vw; }
   .beauty_img_area li a { display:block; position:relative; 
     width:100%; height:100%; transition:all 300ms ease;
     background-repeat:no-repeat; background-position:50% 50%; background-size:auto 100%;}
@@ -540,8 +542,8 @@ html,body { width:100%; height:100%; }
 /* #starBox ============================================================================================ */
   #starBox { width:100%; height:auto; min-height:36.458333vw; margin-bottom:160px; }
   .star_outer { width:68.055555vw; height:auto;  margin:auto; }
-  .star_outer h3 { float:left; width:10%; height:auto; margin-top:40px; 
-    font-size:1.8rem; text-transform:uppercase; writing-mode:vertical-rl; text-orientation: upright; letter-spacing:1rem; text-align:center; }
+  .star_outer h3 { float:left; width:auto; height:auto; margin-top:40px; 
+    font-size:1.8rem; text-transform:uppercase; letter-spacing:1rem; text-align:center; }
   
   .star_img_area { float:right; width:80%; height:auto; }
   .star_img_area ul { width:auto; height:auto; }
@@ -690,16 +692,15 @@ html,body { width:100%; height:100%; }
 #beautyBox { width:100%; height:auto; margin-bottom:250px;  }
   
 .beauty_outer { position:relative; width:73.958333vw; height:auto; max-height:31.597222vw; margin:auto; }
-.beauty_outer h3 { float:right; width:auto; height:31.597222vw;  writing-mode: vertical-lr; font-size:2rem;
+.beauty_outer h3 { float:left; width:auto; height:31.597222vw;  writing-mode: vertical-rl; text-orientation:upright; font-size:2rem;
 letter-spacing:2rem; text-transform:uppercase; text-align:center; }
-.beauty_outer button { display:block; float:left; width:60px; height:60px; margin-top:13vw;
-  background-image:url('../../img/btn/left-arrow.png'); background-repeat:no-repeat;
+.beauty_outer button { display:block; float:right; width:60px; height:60px; margin-top:13vw;
+  background-image:url('../../img/btn/next.png'); background-repeat:no-repeat;
   background-position:50% 50%; background-size:cover; }
 
-.beauty_img_area { float:left; width:auto; height:auto; min-height:31.597222vw; margin-left:4vw;  }
-.beauty_img_area ul { width:auto; height:100%; }
-.beauty_img_area li { float:left; width:14.444444vw; height:31.597222vw; margin-right:20px; }
-.beauty_img_area li:last-child { margin-right:0; }
+.beauty_img_area { float:left; width:61vw; height:31.597222vw; margin-left:4vw;  }
+.beauty_img_area ul { width:400%; height:100%; }
+.beauty_img_area li { float:left; width:25%; height:inherit; margin-right:1.041666vw; }
 .beauty_img_area li a { display:block; position:relative; 
   width:100%; height:100%; transition:all 300ms ease;
   background-repeat:no-repeat; background-position:50% 50%; background-size:auto 100%;}
@@ -723,8 +724,8 @@ letter-spacing:2rem; text-transform:uppercase; text-align:center; }
 /* #starBox ============================================================================================ */
 #starBox { width:100%; height:auto;  margin-bottom:250px; }
 .star_outer { width:73.958333vw; height:auto; max-height:36.458333vw; margin:auto; }
-.star_outer h3 { float:left; width:10%; height:auto; margin-top:40px; 
-  font-size:2rem; text-transform:uppercase; writing-mode:vertical-rl; text-orientation: upright; letter-spacing:1rem; text-align:center; }
+.star_outer h3 { float:left; width:auto; height:auto; margin-top:40px; 
+  font-size:2rem; text-transform:uppercase; letter-spacing:1rem; text-align:center; }
 
 .star_img_area { float:right; width:80%; height:auto;  }
 .star_img_area ul { width:auto; height:100%; }

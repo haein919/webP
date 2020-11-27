@@ -6,8 +6,8 @@ var deviceType = function(){
 
   var device = [
     { type:'mob', size: 599 },
-    { type:'tab', size: 1024 },
-    { type:'lap', size: 1440 },
+    { type:'tab', size: 1023 },
+    { type:'lap', size: 1439 },
     { type:'pc'}
   ];
 

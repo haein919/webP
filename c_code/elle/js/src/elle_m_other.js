@@ -3,23 +3,7 @@
 (function($){
  // jQuery start
 
-// 메뉴버튼 기능
-  var headBox = $('#headBox');
-  var menuBtn = headBox.find('.btn_area');
-  var allmenu = headBox.find('.allmenu_outer');
-
-  menuBtn.on('click', ['button'], function(e){
-    e.preventDefault();
-
-    var allmenuDp = allmenu.css('display');
-    if(allmenuDp === 'none'){
-      allmenu.stop().fadeIn();
-      menuBtn.addClass('on');
-    }else{
-      allmenu.stop().fadeOut();
-      menuBtn.removeClass('on');
-    }
-  });
+ var headBox = $('#headBox');
  
 // 검색창 기능
   var searchBtn = headBox.find('.btn_search');
@@ -83,33 +67,5 @@
     };
   });
 
-// beautyBox 이미지 slide
-  var beautyBox = $('#beautyBox');
-  var beautyBtn = beautyBox.find('button');
-  var beautyImg = beautyBox.find('.beauty_img_area');
-  var beautyUl = beautyImg.find('ul');
-  var beautyLi = beautyUl.find('li');
-
-// top버튼 기능  
-  var win = $(window);
-  var topBtn = $('.top_btn');
-  topBtn.hide();
- 
-  win.on('scroll',function(e){
-    var winSt = win.scrollTop();
-    if(winSt >= 900){
-      topBtn.stop().fadeIn();
-    }else{
-      topBtn.stop().fadeOut();
-    }
-  });
-  topBtn.on('click', ['a'], function(e){
-    e.preventDefault();
-    var it = $(this).find('a');
-    var itAttr = it.attr('href');
-    var itOffset = $(itAttr).offset().top;
-    $('html, body').animate({scrollTop: itOffset });
-  });
- 
  // jQuery end
 })(jQuery);

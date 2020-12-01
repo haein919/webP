@@ -50,36 +50,51 @@
    menuDd = allMenuUl.children('li').eq(i).find('dd');
    tMenu = menuList[i].titlemenu;
 
-   menuDt.append('<a href="'+ tMenu.tlink +'">' + sMenu.sname + '</a>');
+   menuDt.append('<a href="'+ tMenu.tlink +'">' + tMenu.tname + '</a>');
 
-   subMenuLen = menuList[i].submenu.length;
+  //  subMenuLen = menuList[i].submenu.length;
+  // sunmenu중 하위메뉴가 있는게있고 없는게 있기 때문에 아래와 같은 연산이 필요 (sub메뉴가 있으면 실행, 없으면 실행하지 않음) 
+  (!!menuList[i].submenu) ? subMenuLen = menuList[i].submenu.length :  subMenuLen = 0; 
    for( j=0; j<subMenuLen; j+=1){
      sMenu = menuList[i].submenu[j];
-     menuDd.append('<a href="'+sMenu.slink+'">'+'</a>');
+     menuDd.append('<a href="'+sMenu.slink+'">' + sMenu.sname + '</a>');
    };
  };
 
- var menuFindDt = navBox.find('dt');
+ var menuDl = allMenuUl.find('dl')
+ var menuFindDt = allMenuUl.find('dt');
  var menuFindDtLink = menuFindDt.find('a');
- var menuFindDd = navBox.find('dd');
+ var menuFindDd = allMenuUl.find('dd');
  var menuFindDdLink = menuFindDd.find('a');
  menuFindDd.hide();
 
- munuDt.on('click',['a'], function(e){
+var menuSlideDown = function(){menuFindDd.stop().slideDown(); };
+var menuSlideUp = function(){menuFindDd.stop().slideUp(); };
+
+// allMenuUl.on({
+//   'mouseenter':menuSlideDown,
+//   'mouseleave':menuSlideUp
+// });
+// menuFindDtLink.on('focus',menuSlideDown);
+// menuFindDdLink.eq(-1).on('blur',menuSlideUp);
+
+menuFindDt.on('mouseenter', function(e){
   e.preventDefault();
   var it = $(this);
-  it.next('dd').stop().slideToggle(function(){
-    var itDdDisplay = it.next('dd').css('display');
-    // console.log(itDdDisplay);
-    if(itDdDisplay === 'block'){
-      it.addClass('action');
-      it.siblings().removeClass('action');
-    }else if(itDdDisplay === 'none'){
-      it.removeClass('action');
-    }
-  });
-  it.siblings('dt').next('dd').stop().slideUp();
+  it.nextAll('dd').stop().slideDown(600);
+  it.parents('li').siblings('li').find('dd').stop().slideUp(600);
 });
+
+allMenu.on('mouseleave', function(e){
+  e.preventDefault();
+  menuFindDd.stop().slideUp();
+});
+
+menuFindDdLink.on('mouseenter',function(){
+  var it = $(this);
+  it.css({'color':'#fff', 'font-weight':500 });
+  it.siblings('a').css({'color':'#dfdfdf', 'font-weight':300});
+})
 
  // jQuery end
 })(jQuery);

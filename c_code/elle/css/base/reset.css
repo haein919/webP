@@ -31,7 +31,6 @@ button:hover, button:focus { position:relative; outline:3px solid #f70; }
 @supports (--var:100%){ 
   html,body { color: var(--color-font1); }
   hr { border-bottom: var(--border-line1); }
-  a:hover, a:focus, button:hover, button:focus { outline:3px solid var(--color-point); }
 }
 
 /* 일반 언어형태

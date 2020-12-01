@@ -24,7 +24,7 @@ html,body { width:100%; height:100%; }
   .pop_close button i { transition:all 400ms ease;}
   .pop_close button:hover i {transform:rotate(180deg);}
 
-  .searchBox { width:100%; height:auto; min-height:700px; margin-top:100px; padding:0 100px; box-sizing:border-box;}
+  .searchBox { width:100%; height:auto;  margin-top:50px; padding:0 100px; box-sizing:border-box;}
   .searchBox form { width:100%; height:100%; }
   .search_area { width:100%; height:100%; }
   legend { width:0; height:0; }

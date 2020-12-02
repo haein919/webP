@@ -38,13 +38,13 @@ html,body { width:100%; height:100%; }
     .input_wrap button { float:right; width:10%; height:100%; color:#fff; font-size:2.5rem;  }
   
   .issue_area { width:80%; height:auto; margin:auto; margin-top:50px; }
-  .issue_title { width:100%; height:auto; }
+  .issue_title { width:100%; height:auto; margin-bottom:50px; }
   .issue_title a { display:block; width:200px; height:auto; margin:auto; color:#fff; 
     font-weight:bold; font-size:1.2rem; text-transform:uppercase; text-align:center; text-decoration:underline; }
-  .issue_context { width:100%; height:auto; margin-top:20px; }
-  .issue_context ul { width:100%; height:auto; overflow-y:hidden; }
-  .issue_context li { float:left; width:100%; height:30px; margin-top:50px; }
-  .issue_context li a { display:block; color:#fff; text-align:center; font-size:1.2rem; }
+  .issue_context { width:100%; height:400px; overflow:hidden; margin:auto;  }
+  .issue_context ul { position:relative; width:100%; height:100%; }
+  .issue_context li { width:80%; height:30px; margin:auto; margin-bottom:50px; }
+  .issue_context li a { display:block; color:#fff; text-align:center; font-size:1rem; }
 
   /* navigation ======================================================================================== */
   .navigation { float:right; width:40px; height:40px; margin-right:20px; margin-top:10px; }
@@ -88,9 +88,9 @@ html,body { width:100%; height:100%; }
   .sns_outer li:nth-of-type(4) a { background-image:url('../../img/sns/f_logo_RGB-White_58.png'); }
   .sns_outer li:nth-of-type(5) a { background-image:url('../../img/sns/kakaostory.png'); }
 
-  .top_btn { position:fixed; right:1rem; bottom:2rem; width:4rem; height:4rem;
-    background-color:rgba(51,51,51,0.8); color:#fff; line-height:4rem; text-align:center; }
-  .top_btn a { display: block; width:100%; height:100%; font-size:2rem;}
+  .top_btn { position:fixed; right:1rem; bottom:2rem; width:3rem; height:3rem;
+    background-color:rgba(0,0,0,0.9); color:#fff; line-height:3rem; text-align:center; }
+  .top_btn a { display: block; width:100%; height:100%; font-size:1.5rem;}
 
 
 /* mob.css */
@@ -102,11 +102,11 @@ html,body { width:100%; height:100%; }
 /* headBox ================================================================================ */
   #headBox { position:fixed; top:0; z-index:500; width:100%; height:100px; margin:auto; }
   .head_outer { width:100%; height:100%; padding-top:20px; box-sizing:border-box; background-color:rgba(255,255,255,0.9); }
-  .head_outer h1 { position:relative; top:0; z-index:600; float:left; margin-left:10px; }
+  .head_outer h1 { position:relative; top:0; z-index:600; float:left; margin-left:20px; }
   .head_outer h1 a { float:left; width:160px; height:60px; 
     background-image:url('../../img/logo/Elle_logo.png');
     background-position:50% 50%; background-size:contain; background-repeat:no-repeat; }
-  .gnb { float:right; width:40px; height:40px; margin-right:10px; margin-top:10px; padding-top:0; margin-left:0; }
+  .gnb { float:right; width:40px; height:40px; margin-right:20px; margin-top:10px; padding-top:0; margin-left:0; }
     .btn_area { width:100%; height:100%; }
     .btn_area button { width:100%; height:100%; font-size:3rem; line-height:3rem; }
     
@@ -116,8 +116,9 @@ html,body { width:100%; height:100%; }
     background-color:#fff;
     border-top-left-radius:15px; border-top-right-radius:15px; }
   
-  .con_title { width:auto; height:50px; }
+  .con_title { width:auto; height:50px; padding:0 10px; box-sizing: border-box;}
   .con_title h3 { float:left; width:auto; min-width:33.333333vw; height:50px; font-size:1.625rem; text-transform:uppercase; color:#222; }
+  .fashion_outer > .con_title { padding:0;}
   .title_btn { float:right;  width:40px; height:40px; }
   .title_btn button { width:100%; height:100%; font-size:2rem; }
 
@@ -150,7 +151,7 @@ html,body { width:100%; height:100%; }
   .beauty_img_area { width:100%; height:auto; min-height:95.833333vw; margin-top:1.25rem;}
   .beauty_img_area ul { width:100%; height:100% }
   .beauty_img_area li { float:left; width:43vw; height:29vw; 
-    margin-bottom:1.25rem; }
+    margin-bottom:3rem; }
   .beauty_img_area li:nth-last-child(-n+2) { margin-bottom: 0;}
   .beauty_img_area li:nth-child(2n) { float:right; }
   .beauty_img_area li a { display:block; position:relative; 
@@ -182,7 +183,7 @@ html,body { width:100%; height:100%; }
 
   .star_img_area { width:100%; height:auto; min-height:97.916666vw; margin-top:1.25rem; }
   .star_img_area ul { width:100%; height:100%; }
-  .star_img_area li { float:left; width:43vw; height:45.833333vw; margin-bottom:1.25rem; }
+  .star_img_area li { float:left; width:43vw; height:45.833333vw; margin-bottom:3rem; }
   .star_img_area li:nth-child(2n) { float:right; }
   .star_img_area li:nth-last-child(-n+2) { margin-bottom: 0; }
 
@@ -212,11 +213,11 @@ html,body { width:100%; height:100%; }
 
   .lovelife_img_area { width:100%; height:auto; min-height:97.916666vw; margin-top:1.25rem; }
   .lovelife_img_area ul { width:100%; height:auto; }
-  .lovelife_img_area li { position:relative; width:100%; height:auto; min-height:20.833333vw; margin-bottom:20px;
+  .lovelife_img_area li { position:relative; width:100%; height:35vw; margin-bottom:50px;
     border-radius:15px; background-color:#eee; }
     .lovelife_img_area li:last-child { margin-bottom:0; }
-    .ll_img { float:left; width:40%; height:20.833333vw; border-radius:10px; }
-    .ll_img a { display:block; width:100%; height:100%;
+    .ll_img { float:left; width:40%; height:100%; border-radius:10px; }
+    .ll_img a { display:block; width:100%; height:100%; min-height:20.83333vw;
       border-top-left-radius:10px; border-bottom-left-radius:10px; background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
     
     .ll_img_01 a { background-image:url('../../img/main/main_lovlife01.jpg');}
@@ -226,10 +227,10 @@ html,body { width:100%; height:100%; }
 
     .ll_context { float:right; width:60%; height:auto; }
     .ll_context dl { width:100%; height:100%; padding:10px; box-sizing:border-box; }
-    .ll_context dt { width:100%; height:20%; font-size:0.9rem; font-weight:bold; word-break:keep-all; }
-    .ll_context dd { width:100%; height:70%; margin-top:5px; font-size:0.7rem; color:#333; word-break:keep-all; }
-    .ll_context button { position:absolute; bottom:10px; right:10px; 
-      width:60px; height:20px; border-radius:5px; background-color:#444; color:#fff; }
+    .ll_context dt { width:100%; height:20%; font-size:1rem; font-weight:bold; word-break:keep-all; }
+    .ll_context dd { width:100%; height:70%; margin-top:5px; font-size:1rem; color:#333; word-break:keep-all; line-height:1; }
+    .ll_context button { position:absolute; bottom:10px; right:10px; font-size:1rem;
+      width:60px; height:30px; border-radius:5px; background-color:#444; color:#fff; }
 
 
 /* subscribeBox ================================================================================ */
@@ -261,21 +262,33 @@ html,body { width:100%; height:100%; }
 
 /* mob_02.css */
 @media screen and (max-width:450px) {
+
+  /* headBox ================================================================================ */
+  #headBox { position:fixed; top:0; z-index:500; width:100%; height:100px; margin:auto; }
+  .head_outer { width:100%; height:100%; padding-top:20px; box-sizing:border-box; background-color:rgba(255,255,255,0.9); }
+  .head_outer h1 { position:relative; top:0; z-index:600; float:left; margin-left:20px; }
+  .head_outer h1 a { float:left; width:120px; height:60px; 
+    background-image:url('../../img/logo/Elle_logo.png');
+    background-position:50% 50%; background-size:contain; background-repeat:no-repeat; }
+  .gnb { float:right; width:40px; height:40px; margin-right:20px; margin-top:10px; padding-top:0; margin-left:0; }
+    .btn_area { width:100%; height:100%; }
+    .btn_area button { width:100%; height:100%; font-size:3rem; line-height:3rem; }
+
   .lovelife_img_area { width:100%; height:auto; min-height:97.916666vw; margin-top:1.25rem; }
   .lovelife_img_area ul { width:100%; height:auto; }
   .lovelife_img_area li { width:100%; height:auto; min-height:20.833333vw; margin-bottom:20px;
     padding:10px; box-sizing:border-box;
     background-color:#fff; }
-    .ll_img { float:none; margin:auto; width:100%; max-width:240px; height:200px; border-radius:none; }
+    .ll_img { float:none; margin:auto; width:100%; max-width:240px; height:200px; border-radius:0; }
     .ll_img a { display:block; position:relative; width:100%; height:100%; border-radius:10px;
      background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
 
     .ll_context { float:none; position:relative; width:80%; height:auto; margin:auto; }
     .ll_context dl { width:100%; height:100%; padding:10px; box-sizing:border-box; text-align:center; }
-    .ll_context dt { width:100%; height:20%; font-size:0.9rem; font-weight:bold; word-break:keep-all; }
-    .ll_context dd { width:100%; height:70%; margin-top:5px; font-size:0.7rem; color:#333; word-break:keep-all; }
-    .ll_context button {display:block; position:static; margin:auto;
-      width:60px; height:20px; border-radius:5px; background-color:#444; color:#fff; }
+    .ll_context dt { width:100%; height:20%; font-size:1rem; font-weight:bold; word-break:keep-all; }
+    .ll_context dd { width:100%; height:70%; margin-top:5px; font-size:1rem; color:#333; word-break:keep-all; }
+    .ll_context button {display:block; position:static; margin:auto; margin-top:10px;
+      width:60px; height:30px; border-radius:5px; background-color:#444; color:#fff; }
 
   #subscribeBox { width:100%; height:auto; 
     padding:1.25rem; box-sizing:border-box; background-color:rgba(0,0,0,0.7); }
@@ -311,14 +324,9 @@ html,body { width:100%; height:100%; }
   #fashionBox { width:100%; height:auto; min-height:58.59375vw; margin-bottom:400px; }
   .fashion_outer { position:relative; width:100%; height:auto; min-height:58.59375vw;  }
   
-  .fashion_outer h3 { position:absolute; top:50%; left:10%; z-index:100; transform:translateY(-50%); font-size:2rem; text-transform:uppercase; letter-spacing:1rem; }
-  
-  .fashion_Nbtn { position:absolute; top:50%; right:5%; z-index:100; transform:translateY(-50%);
-    width:60px; height:60px; }
-  .fashion_Nbtn button { width:90%; height:90%; 
-    background-image:url('../../img/btn/next_btn_white.png');
-    background-repeat:no-repeat; background-position:50% 50%; background-size:cover;
-    filter:drop-shadow(1px 1px 2px rgba(0,0,0,0.5)); }
+  .fashion_outer h3 { position:absolute; top:50%; left:10%; z-index:100; 
+    transform:translateY(-50%); font-size:2rem; text-transform:uppercase; letter-spacing:1rem;
+    transition:all 300ms }
   
   .fashion_img_area { float:right; width:75%; height:100%; }
   .fashion_img_area ul { width:100%; height:58.59375vw; }
@@ -589,14 +597,14 @@ html,body { width:100%; height:100%; }
     background-color:#111; padding-top:20px; box-sizing: border-box; box-shadow:2px 2px 5px rgba(0,0,0,0.7);}
   .lovelife_img_area dl a { display: block; width:100%; height:100%; 
     background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
-  .lovelife_img_area dt { width:100%; height:100%; }
+  .lovelife_img_area dt { width:100%; height:85%; }
   .lovelife_img_area dd { position:static; width:100%; height:auto; margin-top:1vw;
     color:#fff; text-align:center;  }
   .lovelife_img_area h3 { width:100%; height:10%; 
     font-size:2rem; text-transform:uppercase; letter-spacing:1rem; text-align:center; }
 
   .love_area { width:20.833333vw; height:100%; }
-  .love_area dl a { width:90%; height:85%; margin:auto; background-image:url('../../img/main/main_lovlife01.jpg'); }
+  .love_area dl a { width:90%; height:100%; margin:auto; background-image:url('../../img/main/main_lovlife01.jpg'); }
 
   .lovelife_area { position:relative; width:23.611111vw; height:32.986111vw; background-color:#4ce; }
   .lovelife_area a { display:block; width:100%; height:100%; }
@@ -606,7 +614,7 @@ html,body { width:100%; height:100%; }
     width:100%; height:10%; color:#fff; text-align:center; line-height:2.5rem; }
   
   .life_area { width:20.833333vw; height:100%;}
-  .life_area dl a { width:90%; height:85%; margin:auto; background-image:url('../../img/main/lovelife_img3.png'); }
+  .life_area dl a { width:90%; height:100%; margin:auto; background-image:url('../../img/main/lovelife_img3.png'); }
 
   .lovelife_img_area dl::after { position:absolute; top:-6%; left:0; right:0; margin:auto; content:" ";
     width:6.944444vw; height:30px; background-color:rgba(234,234,234,0.6);  }
@@ -771,14 +779,14 @@ letter-spacing:2rem; text-transform:uppercase; text-align:center; }
   background-color:#111; padding-top:20px; box-sizing: border-box; box-shadow:2px 2px 5px rgba(0,0,0,0.7);}
 .lovelife_img_area dl a { display: block; width:100%; height:100%; 
   background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
-.lovelife_img_area dt { width:100%; height:100%; }
+.lovelife_img_area dt { width:100%; height:85%; }
 .lovelife_img_area dd { position:static; width:100%; height:auto; margin-top:1vw;
   color:#fff; text-align:center;  }
 .lovelife_img_area h3 { width:100%; height:10%; 
   font-size:2rem; text-transform:uppercase; letter-spacing:1rem; text-align:center; }
 
 .love_area { width:20.833333vw; height:100%; }
-.love_area dl a { width:90%; height:85%; margin:auto; background-image:url('../../img/main/main_lovlife01.jpg'); }
+.love_area dl a { width:90%; height:100%; margin:auto; background-image:url('../../img/main/main_lovlife01.jpg'); }
 
 .lovelife_area { position:relative; width:23.611111vw; height:32.986111vw; background-color:#4ce; }
 .lovelife_area a { display:block; width:100%; height:100%; }
@@ -788,7 +796,7 @@ letter-spacing:2rem; text-transform:uppercase; text-align:center; }
   width:100%; height:10%; color:#fff; text-align:center; line-height:2.5rem; }
 
 .life_area { width:20.833333vw; height:100%;}
-.life_area dl a { width:90%; height:85%; margin:auto; background-image:url('../../img/main/lovelife_img3.png'); }
+.life_area dl a { width:90%; height:100%; margin:auto; background-image:url('../../img/main/lovelife_img3.png'); }
 
 .lovelife_img_area dl::after { position:absolute; top:-4%; left:0; right:0; margin:auto; content:" ";
   width:6.944444vw; height:30px; background-color:rgba(234,234,234,0.6);  }

@@ -58,25 +58,13 @@
    for( j=0; j<subMenuLen; j+=1){
      sMenu = menuList[i].submenu[j];
      menuDd.append('<a href="'+sMenu.slink+'">' + sMenu.sname + '</a>');
-   };
- };
+   }
+ }
 
- var menuDl = allMenuUl.find('dl')
  var menuFindDt = allMenuUl.find('dt');
- var menuFindDtLink = menuFindDt.find('a');
  var menuFindDd = allMenuUl.find('dd');
  var menuFindDdLink = menuFindDd.find('a');
  menuFindDd.hide();
-
-var menuSlideDown = function(){menuFindDd.stop().slideDown(); };
-var menuSlideUp = function(){menuFindDd.stop().slideUp(); };
-
-// allMenuUl.on({
-//   'mouseenter':menuSlideDown,
-//   'mouseleave':menuSlideUp
-// });
-// menuFindDtLink.on('focus',menuSlideDown);
-// menuFindDdLink.eq(-1).on('blur',menuSlideUp);
 
 menuFindDt.on('mouseenter', function(e){
   e.preventDefault();
@@ -94,7 +82,7 @@ menuFindDdLink.on('mouseenter',function(){
   var it = $(this);
   it.css({'color':'#fff', 'font-weight':500 });
   it.siblings('a').css({'color':'#dfdfdf', 'font-weight':300});
-})
+});
 
  // jQuery end
 })(jQuery);

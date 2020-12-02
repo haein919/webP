@@ -12,32 +12,38 @@
 
   searchBtn.on('click', function(e){
     e.preventDefault();
-    var searchPopDp = searchPop.css('display');
-    if(searchPopDp === 'none'){
-      searchPop.stop().fadeIn();
-    }else{
-      searchPop.stop().fadeOut();
-    }
+    searchPop.stop().fadeIn();
   });
 
   searchClose.on('click', ['button'], function(e){
     e.preventDefault();
-    var searchPopDp = searchPop.css('display');
-    if(searchPopDp === 'block'){
-      searchPop.stop().fadeOut();
-    }else{
-      searchPop.stop().fadeIn();
-    }
+    searchPop.stop().fadeOut();
   });
 
 // fashionBox 이미지 slide
+  var win = $(window);
   var fashionBox = $('#fashionBox');
   var fashionBtn = fashionBox.find('button');
+  var fashionTitle = fashionBox.find('h3');
   var fashionImg = fashionBox.find('.fashion_img_area');
   var fashionUl = fashionImg.find('ul');
   var fashionLi = fashionUl.find('li');
   var showN = 0;
   var timed = 1;
+ 
+  fashionImg.hide();
+  fashionBtn.hide();
+  fashionTitle.hide();
+  win.on('scroll',function(e){
+    var winSt = win.scrollTop();
+    if(winSt >= 500){
+      fashionImg.stop().fadeIn();
+      fashionBtn.stop().fadeIn();
+      fashionTitle.stop().fadeIn();
+      // fashionTitle.stop().animate({'left':10+'%', 'opacity':1});
+    }
+  });
+
 
   var showLiImg = function(){
     var nn = fashionUl.children('.action').index();
@@ -64,7 +70,7 @@
           }, timed);
         });
       });
-    };
+    }
   });
 
  // jQuery end

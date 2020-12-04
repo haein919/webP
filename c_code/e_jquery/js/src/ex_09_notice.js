@@ -29,7 +29,7 @@
   var indiArea = indiCon.children('ul');
   
   // 기본 세팅
-  var myViewLen = 70; // 한번에 보일 갯수
+  var myViewLen = 20; // 한번에 보일 갯수
 
   // 인디케이터 생성하기
   var indiLen = Math.ceil(dataFile.length / myViewLen);
@@ -40,6 +40,34 @@
     indiLi = indiArea.children('li').eq(indiN);
     indiLi.find('a').text(indiN + 1);
   }
+
+  // 인디케이터 보일 개수 조정하기
+  var indiViewLen = 5; // 보고싶은 아이
+  var iv = 0; // 최초값
+  indiLi = indiArea.children('li');
+  var memoryN;
+
+  for(; iv < indiLen; iv +=1 ){ // iv를 전체 인디갯수(25)전까지 +1하면서 아래 기능을 반복해줌
+    if(iv < indiViewLen){ // 근데 iv가 indiViewLen(5)보다 작으면
+      memoryN = iv+1; // 빠져나가기 전 마지막 숫자 카운트는 기억해 줘야함
+      continue; // 건너뛰어라 (5가 될때 까지 기능하지 말고): ↑위와 같은 기능이 없을 때를 위해 작성해줘야하고 기능이 있으면 없어도 됨
+    }else{
+      indiLi.eq(iv).hide(); // 1부터 5까지만 보이고 나머지는 display:none; 상태
+    }
+  }
+
+  var nBtn = indiCon.find('.next_notice');
+  var pBtn = indiCon.find('.prev_notice');
+
+  nBtn.on('click', function(e){
+    e.preventDefault();
+    var nbn = memoryN;
+    indiLi.hide();
+    for(; nbn < memoryN+indiViewLen; nbn += 1 ){
+      indiLi.eq(nbn).show();
+    }
+    memoryN = nbn;
+  });
 
   // 내용 넣기
   var reSetting = function(n){

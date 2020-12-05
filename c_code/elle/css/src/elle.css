@@ -63,8 +63,7 @@ html,body { width:100%; height:100%; }
   .btn_area button:hover i { background-color:#d00; }
 
   .allmenu_outer { display:none; position:absolute; top:0; left:0; z-index:-600; 
-    width:100vw; height:1000px; ;
-    padding-top:120px; box-sizing:border-box; background-color:rgba(0,0,0,0.9); }
+    width:100vw; height:1000px; padding-top:100px; box-sizing:border-box; background-color:rgba(0,0,0,0.9); }
   .allmenu { float:left; width:100%; height:85%; }
   .allmenu ul { width:100%; height:100%; }
   .allmenu li { width:90%; height:auto; margin:auto; }
@@ -593,8 +592,20 @@ html,body { width:100%; height:100%; }
   .lovelife_img_area>div{ display: inline-block;  margin-left:3vw;  }
   .lovelife_img_area>div:first-of-type{margin-left: 0;}
   
-  .lovelife_img_area dl { position:relative; width:100%; height:80%; margin-bottom:20px;
-    background-color:#111; padding-top:20px; box-sizing: border-box; box-shadow:2px 2px 5px rgba(0,0,0,0.7);}
+  .lovelife_img_area dl { 
+    position:relative; width:100%; height:80%; margin-bottom:20px;
+    background-color:#111; padding-top:20px; box-sizing:border-box; 
+    box-shadow:2px 2px 5px rgba(0,0,0,0.7); }
+
+    @keyframes swing{
+      20% { transform: rotate3d(0, 0, 1, 5deg); }
+      40% { transform: rotate3d(0, 0, 1, -5deg); }
+      60% { transform: rotate3d(0, 0, 1, 0deg); }
+      80% { transform: rotate3d(0, 0, 1, 5deg); }
+      100% { transform: rotate3d(0, 0, 1, 0deg); }
+    }
+  .lovelife_img_area dl.action { transform-origin:top center; animation: swing 2s 1 alternate linear; }
+
   .lovelife_img_area dl a { display: block; width:100%; height:100%; 
     background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
   .lovelife_img_area dt { width:100%; height:85%; }
@@ -775,8 +786,21 @@ letter-spacing:2rem; text-transform:uppercase; text-align:center; }
 .lovelife_img_area>div{ display: inline-block;  margin-left:3vw;  }
 .lovelife_img_area>div:first-of-type{margin-left: 0;}
 
-.lovelife_img_area dl { position:relative; width:100%; height:80%; margin-bottom:20px;
-  background-color:#111; padding-top:20px; box-sizing: border-box; box-shadow:2px 2px 5px rgba(0,0,0,0.7);}
+.lovelife_img_area dl { 
+  position:relative; width:100%; height:80%; margin-bottom:20px;
+  background-color:#111; padding-top:20px; 
+  box-sizing: border-box; box-shadow:2px 2px 5px rgba(0,0,0,0.7); 
+  transition:all 300ms ease; }
+
+  @keyframes swing{
+    20% { transform: rotate3d(0, 0, 1, 5deg); }
+    40% { transform: rotate3d(0, 0, 1, -5deg); }
+    60% { transform: rotate3d(0, 0, 1, 0deg); }
+    80% { transform: rotate3d(0, 0, 1, 5deg); }
+    100% { transform: rotate3d(0, 0, 1, 0deg); }
+  }
+.lovelife_img_area dl.action { transform-origin:top center; animation: swing 2s 1 alternate linear; }
+
 .lovelife_img_area dl a { display: block; width:100%; height:100%; 
   background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
 .lovelife_img_area dt { width:100%; height:85%; }

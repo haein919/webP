@@ -40,7 +40,7 @@
       fashionImg.stop().fadeIn();
       fashionBtn.stop().fadeIn();
       fashionTitle.stop().fadeIn();
-      // fashionTitle.stop().animate({'left':10+'%', 'opacity':1});
+      fashionTitle.stop().animate({'left':6+'%', 'opacity':1});
     }
   });
 

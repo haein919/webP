@@ -23,6 +23,7 @@
 // fashionBox 이미지 slide
   var win = $(window);
   var fashionBox = $('#fashionBox');
+  var fashionOuter = fashionBox.find('.fashion_outer');
   var fashionBtn = fashionBox.find('button');
   var fashionTitle = fashionBox.find('h3');
   var fashionImg = fashionBox.find('.fashion_img_area');
@@ -30,21 +31,26 @@
   var fashionLi = fashionUl.find('li');
   var showN = 0;
   var timed = 1;
+
+  var winH = win.outerHeight(); 
+  var offsetTop = fashionBox.offset().top; // 선택자가 얼만큼 떨어져있는지
+  // console.log(offsetTop - winH);
+  var myfashionOffset = offsetTop - winH /5 *4;
  
-  fashionImg.hide();
+// fashion title과 img 애니메이션 적용
   fashionBtn.hide();
-  fashionTitle.hide();
   win.on('scroll',function(e){
     var winSt = win.scrollTop();
-    if(winSt >= 500){
-      fashionImg.stop().fadeIn();
+    if(winSt >= myfashionOffset){
       fashionBtn.stop().fadeIn();
-      fashionTitle.stop().fadeIn();
-      fashionTitle.stop().animate({'left':6+'%', 'opacity':1});
+      fashionOuter.addClass('action');
+    }else{
+      fashionOuter.removeClass('action');
+      fashionBtn.stop().fadeOut();
     }
   });
 
-
+// fashion 이미지 slide
   var showLiImg = function(){
     var nn = fashionUl.children('.action').index();
     return nn;

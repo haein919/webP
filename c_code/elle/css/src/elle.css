@@ -323,10 +323,11 @@ html,body { width:100%; height:100%; }
   #fashionBox { width:100%; height:auto; min-height:58.59375vw; margin-bottom:400px; }
   .fashion_outer { position:relative; width:100%; height:auto; min-height:58.59375vw;  }
   
-  .fashion_outer h3 { position:absolute; top:50%; left:10%; z-index:100; 
-    transform:translateY(-50%); font-size:2rem; text-transform:uppercase; letter-spacing:1rem;
-    transition:all 300ms }
-  
+  .fashion_outer h3 { position:absolute; top:50%; left:0; z-index:100; 
+    transform:scale(1) translate(0, -80%); font-size:2rem; text-transform:uppercase; letter-spacing:1rem;
+    transition:all 300ms;  opacity:0; }
+  .fashion_outer.action h3 { transform:translate(30%, -50%); opacity:1; }
+ 
   .fashion_img_area { float:right; width:75%; height:100%; }
   .fashion_img_area ul { width:100%; height:58.59375vw; }
   .fashion_img_area li { position:absolute; top:0; right:0; z-index:50; width:75%; height:100%;
@@ -500,7 +501,12 @@ html,body { width:100%; height:100%; }
   .fashion_outer { position:relative; width:68.055555vw; height:auto; min-height:38.888888vw;
     margin:auto;  }
   
-  .fashion_outer h3 { position:absolute; top:50%; left:0; z-index:100; transform:translateY(-50%); font-size:2rem; text-transform:uppercase; letter-spacing:1rem; }
+  .fashion_outer h3 { position:absolute; top:50%; left:0; z-index:100; 
+    transform:scale(1) translate(-10%, -80%); font-size:2rem; text-transform:uppercase; letter-spacing:1rem;
+    transition:all 300ms; opacity:0; }
+ 
+  .fashion_outer.action h3 { transform:scale(1) translate(0, -50%); opacity:1; }
+  .fashion_outer.action .fashion_img_area { transform:translateX(0); opacity: 1;}
   
   .fashion_Nbtn { position:absolute; top:50%; right:5%; z-index:100; transform:translateY(-50%);
     width:60px; height:60px; }
@@ -509,9 +515,9 @@ html,body { width:100%; height:100%; }
     background-repeat:no-repeat; background-position:50% 50%; background-size:cover;
     filter:drop-shadow(1px 1px 2px rgba(0,0,0,0.5)); }
   
-  .fashion_img_area { float:right; width:75%; height:auto; }
+  .fashion_img_area { float:right; width:75%; height:auto; transform:translateX(5rem); transition:all 300ms 100ms; opacity:0; }
   .fashion_img_area ul { width:100%; height:38.888888vw; }
-  .fashion_img_area li { position:absolute; top:0; right:0; z-index:50; width:75%; height:100%;
+  .fashion_img_area li { position:absolute; top:0; right:0; z-index:50; width:100%; height:100%;
     background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
   .fashion_img_area .fashion_img01 { background-image:url('../../img/main/main_fashion.jpg'); }
   .fashion_img_area .fashion_img02 { z-index:40; background-image:url('../../img/main/main_fashion_big2.jpg');}
@@ -598,13 +604,14 @@ html,body { width:100%; height:100%; }
     box-shadow:2px 2px 5px rgba(0,0,0,0.7); }
 
     @keyframes swing{
-      20% { transform: rotate3d(0, 0, 1, 5deg); }
-      40% { transform: rotate3d(0, 0, 1, -5deg); }
-      60% { transform: rotate3d(0, 0, 1, 0deg); }
-      80% { transform: rotate3d(0, 0, 1, 5deg); }
-      100% { transform: rotate3d(0, 0, 1, 0deg); }
+      20% { transform: rotate(5deg); }
+      40% { transform: rotate(-5deg); }
+      60% { transform: rotate(0deg); }
+      80% { transform: rotate(5deg); }
+      100% { transform: rotate(0deg); }
     }
-  .lovelife_img_area dl.action { transform-origin:top center; animation: swing 2s 1 alternate linear; }
+
+  .lovelife_img_area dl.action { transform-origin:50% 0; animation: swing 2s 1 alternate linear; }
 
   .lovelife_img_area dl a { display: block; width:100%; height:100%; 
     background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
@@ -695,7 +702,14 @@ html,body { width:100%; height:100%; }
 .fashion_outer { position:relative; width:73.958333vw; height:auto; min-height:31.25vw;
   margin:auto;  }
 
-.fashion_outer h3 { position:absolute; top:50%; left:0; z-index:100; transform:translateY(-50%); font-size:3rem; text-transform:uppercase; letter-spacing:1rem; }
+.fashion_outer h3 { position:absolute; top:50%; left:0; z-index:100; transform:translateY(-50%); font-size:2.5rem; text-transform:uppercase; letter-spacing:1rem; }
+
+.fashion_outer h3 { position:absolute; top:50%; left:0; z-index:100; 
+  transform:scale(1) translate(-10%, -80%); font-size:2rem; text-transform:uppercase; letter-spacing:1rem;
+  transition:all 300ms; opacity:0; }
+
+.fashion_outer.action h3 { transform:scale(1) translate(0, -50%); opacity:1; }
+.fashion_outer.action .fashion_img_area { transform:translateX(0); opacity: 1;}
 
 .fashion_Nbtn { position:absolute; top:50%; right:5%; z-index:100; transform:translateY(-50%);
   width:80px; height:80px; }
@@ -704,9 +718,9 @@ html,body { width:100%; height:100%; }
   background-repeat:no-repeat; background-position:50% 50%; background-size:cover; 
   filter:drop-shadow(1px 1px 2px rgba(0,0,0,0.5)); }
 
-.fashion_img_area { float:right; width:auto; height:31.25vw; }
+.fashion_img_area { float:right; width:auto; height:31.25vw; transform:translateX(5rem); transition:all 300ms 100ms; opacity:0; }
 .fashion_img_area ul { width:65.625vw; height:100%; }
-.fashion_img_area li { position:absolute; top:0; right:0; z-index:50; width:65.625vw; height:100%; 
+.fashion_img_area li { position:absolute; top:0; right:0; z-index:50; width:65vw; height:100%; 
   background-repeat:no-repeat; background-position:50% 50%; background-size:cover; }
 .fashion_img_area a { display: block; width:100%; height:100%; }
 .fashion_img_area .fashion_img01 { background-image:url('../../img/main/main_fashion_big.jpg'); }

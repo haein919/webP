@@ -9,15 +9,17 @@
   var lifeArea = lovelifeImgArea.find('.life_area');
   var lovelifeDl = lovelifeImgArea.find('dl');
 
+  var winH = win.outerHeight(); 
   var offsetTop = lovelifeBox.offset().top; // 선택자가 얼만큼 떨어져있는지
-  console.log(offsetTop);
+  // console.log(offsetTop - winH);
+  var myLoveLifeOffset = offsetTop - winH;
 
   loveArea.hide();
   lovelifeArea.hide();
   lifeArea.hide();
   win.on('scroll',function(e){
     var winSt = win.scrollTop();
-    if(winSt >= 2900){
+    if(winSt >= myLoveLifeOffset){
       loveArea.stop().fadeIn();
       lovelifeArea.stop().fadeIn();
       lifeArea.stop().fadeIn();

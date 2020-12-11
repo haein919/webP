@@ -1,0 +1,10 @@
+/* ex_11_mousemove.css */
+
+#wrap { position:relative;
+  width:80%; min-width:60rem; height:800px; margin:2rem auto; 
+  border:1px solid #333; border-radius:0.5rem; background-color:#ddd; }
+
+.charactor { display:none; position:absolute; 
+  top:0; left:0; bottom:0; right:0; margin:auto;
+  width:150px; height:150px; background-color:#9ad; cursor:pointer; }
+.charactor img { width:100%; height:auto; }

@@ -1,0 +1,39 @@
+/* ex_13_landing.css */
+
+#wrap { width:100%; height:auto; min-height:2000px;
+  padding:0 1rem; box-sizing:border-box; background-color:#dfdfdf; }
+
+#headBox { position:fixed; z-index:100; top:1rem; left:1rem; 
+  width:9.375rem; height:2rem; background-color:#fff; }
+
+h1 { width:100%; height:100%; font-size:1.2rem; text-align:center; }
+
+#viewBox { width:100%; height:100vh; min-height:800px; background-color:#055; }
+
+#conBox { width:100%; height:150rem; background-color:#aaa;
+  background-image:url(../../img/zoom/zoom_01_big.jpg);
+  background-repeat:no-repeat; background-position:50% 0; background-size:130%; }
+#conBox > h2 { transform:translateY(-5rem); }
+.content_area { opacity:0; transform:translateY(-5rem);
+  width:60%; height:400px; margin:50px auto; background-color:#fff;
+  transition:all 500ms linear 800ms; }
+.action > .content_area { opacity:1; transform:translateY(0); }
+
+#moreBox { width:80%; max-width:100rem; min-width:60rem; height:150rem; 
+  margin:auto; background-color:#ff5;
+  background-image:url(../../img/zoom/zoom_04_big.jpg);
+  background-repeat:no-repeat; background-position:50% 0; background-size:130%;
+  background-attachment:fixed; }
+
+h2 { width:300px; height:3rem; background-color:#086; 
+     margin:auto; text-align:center; color:#fff;
+     opacity:0; transition:all 300ms ease; }
+
+#moreBox > h2 { transform:translateX(-50rem) rotateX(720deg); }
+#wrap .action > h2 { opacity:1; transform:translate(0) rotate(0); }
+#moreBox.action > h2 { transform:translate(0) rotateX(0) scale(1.5); }
+
+#moreBox.more { background-color:#0ca; }
+#moreBox.more > h2 { position:fixed; top:0; right:0; opacity:1; }
+
+#footBox { width:100%; height:15rem; background-color:#555; }

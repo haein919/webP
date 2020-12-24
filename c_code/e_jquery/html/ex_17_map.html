@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- ex_17_map.html -->
+<html lang="ko-KR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="../fonts/fontawesome_5/css/all.css">
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+ 
+ <link rel="stylesheet" href="../css/base/reset.css">
+ <link rel="stylesheet" href="../css/base/common.css">
+ <link rel="stylesheet" href="../css/src/ex_17_map.css">
+ 
+ <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+ <link rel="apple-touch-icon" href="../img/favicon.png">
+ <title>문서제목</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="./content.html">지도 만들기</a></h1>
+    <div class="part">
+      <h2>찾아오는 길</h2>
+      <div class="map_area">
+        <div class="map_img" id="map"></div>
+        <div class="store">
+          <h3>매장명</h3>
+          <ul>
+            <li class="action"><a href="#" data-X="37.26277801916164" data-Y="127.02996568532602">수원점</a></li>
+            <li><a href="#" data-X="37.20310399337357" data-Y="127.06837667006684">화성점</a></li>
+            <li><a href="#" data-X="37.37183913665455" data-Y="126.95157864835619">안양점</a></li>
+            <li><a href="#" data-X="37.31280654364745" data-Y="126.82938564569609">안산점</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- script -->
+  <script src="../js/base/jquery-3.5.1.js"></script>
+  <script src="../js/base/jquery-ui.js"></script>
+  <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7dbf136389f79b82f77970ff2e864725"></script>
+  <script src="../js/src/ex_17_map.js"></script>
+</body>
+</html>
